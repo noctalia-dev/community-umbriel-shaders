@@ -1,0 +1,6 @@
+# Merge into ~/.config/umbriel/config.toml; do not duplicate existing tables.
+[include]
+files = ["shaders/community/border/dual-orbit/effect.toml"]
+
+[effects]
+border = "dual-orbit"

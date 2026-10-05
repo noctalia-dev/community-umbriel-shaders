@@ -2,7 +2,7 @@
 
 A collection of reusable GLSL effects for the [Umbriel Wayland compositor](https://github.com/noctalia-dev/umbriel), organised by kind.
 
-This collection includes 77 community presets by Barrulus, six bundled Umbriel examples, and the original minimal animation example. Browse the categories for descriptions, previews, and copyable settings:
+This collection includes 77 community presets by Barrulus, Dual Orbit by neonvoidx, six bundled Umbriel examples, and the original minimal animation example. Browse the categories for descriptions, previews, and copyable settings:
 
 | Kind | What it affects |
 | --- | --- |
@@ -439,6 +439,8 @@ Check config paths and GLSL compilation, then test the effect in a compositor, i
 ## Attribution and licensing
 
 Barrulus’s 74 contributed presets are [MIT licensed](LICENSES/Barrulus-MIT.txt). The six bundled Umbriel examples retain [Noctalia’s MIT notice](LICENSES/Noctalia-MIT.txt). Each effect README identifies its source. Keep the appropriate notice when redistributing those shaders.
+
+Dual Orbit is [MIT licensed by neonvoidx](LICENSES/neonvoidx-MIT.txt).
 
 `animation/tv-glitch` is ported from Simon Schneegans’s [Burn-My-Windows](https://github.com/Schneegans/Burn-My-Windows) and is [GPL-3.0-or-later](LICENSES/BurnMyWindows-GPL-3.0-or-later.txt), like its source.
 

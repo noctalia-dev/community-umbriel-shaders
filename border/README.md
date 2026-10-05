@@ -7,6 +7,7 @@
 | <img src="accent-pulse/preview.png" width="160" alt="accent-pulse preview"> | [accent-pulse](accent-pulse/) | A soft pulse travels around the focused border, tinted by the theme accent. |
 | <img src="beach-surf/preview.png" width="160" alt="beach-surf preview"> | [beach-surf](beach-surf/) | Moving surf and foam around the focused window. |
 | <img src="cartoon-chase/preview.png" width="160" alt="cartoon-chase preview"> | [cartoon-chase](cartoon-chase/) | A cartoon bird, a pursuing coyote, and a spinning devil race around the window. |
+| <img src="dual-orbit/preview.png" width="160" alt="dual-orbit preview"> | [dual-orbit](dual-orbit/) | Two bright accent highlights circle opposite sides of a steady border. |
 | <img src="faerie-magic/preview.png" width="160" alt="faerie-magic preview"> | [faerie-magic](faerie-magic/) | Iridescent threads, wand-light, and fairy dust around the focused window. |
 | <img src="flowering-vine/preview.png" width="160" alt="flowering-vine preview"> | [flowering-vine](flowering-vine/) | Intertwined vines, opening flowers, and drifting blooms around the focused window. |
 | <img src="flowing-water/preview.png" width="160" alt="flowing-water preview"> | [flowing-water](flowing-water/) | Circulating swells, curling crests, and airborne spray around the window. |

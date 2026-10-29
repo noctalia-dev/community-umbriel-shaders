@@ -3,7 +3,7 @@
   "draft": false,
   "source": {
     "repository": "https://github.com/noctalia-dev/community-umbriel-shaders",
-    "revision": "4187026252a3bb37c99cac5701c0481e010d80a4"
+    "revision": "e46862db03984ab4780938b4ccc849f282f4d9a6"
   },
   "feature_definitions": {
     "preset-effects": "Umbriel named effect presets and selectors; the original preset API was introduced at 512e2fb3.",

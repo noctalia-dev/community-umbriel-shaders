@@ -1,0 +1,8 @@
+publish = true
+name = "Candle Snuff"
+description = "A quick dim and fade with a small orange-to-green edge flicker, confined to the departing window."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/candle-snuff/README.md"]
+uses = ["animation.windows_out"]
+tags = ["fire", "horror"]

@@ -55,7 +55,7 @@ per pixel. This is an animated pass over the full selected window, with no
 feedback buffers, blur kernels or external textures. Hardware performance and
 native HDR/rotation/fractional scaling remain unverified.
 
-Original shader by Barrulus with Codex assistance.
+Original shader by Barrulus.
 [MIT license](../../LICENSES/Barrulus-MIT.txt).
 
 ## Related Diwali effects

@@ -79,5 +79,5 @@ switch directions and swipe cancellation.
 
 ## Attribution
 
-Original shader by Barrulus with Codex assistance.
+Original shader by Barrulus.
 [MIT license](../../LICENSES/Barrulus-MIT.txt).

@@ -1,0 +1,8 @@
+publish = true
+name = "Ghostly Tear Border"
+description = "A luminous, uneven pearl thread follows the focused window."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "border/ghostly-tear-border/README.md"]
+uses = ["effects.border"]
+tags = ["horror"]

@@ -1,0 +1,12 @@
+publish = true
+name = "Fractal Trail"
+description = "A compact, short-lived trail of crisp, brightly coloured nested fractal contours."
+author = "Barrulus"
+tested_on = ["0.1.0 (a37ae93)"]
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "LICENSES/Noctalia-MIT.txt", "cursor/fractal-trail/README.md"]
+uses = ["effects.cursor"]
+tags = ["psychedelic", "geometric", "colourful"]
+
+[requirements]
+features = ["cursor-pointer-history"]

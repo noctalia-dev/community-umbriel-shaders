@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 // Copyright (c) 2026 Noctalia
-// Full-scene API adaptation by Barrulus with Codex assistance.
+// Full-scene API adaptation by Barrulus.
 // Adapted from the session workspace-pair shader to the full-scene reveal API.
 uniform vec2 umbriel_workspace_axis;
 

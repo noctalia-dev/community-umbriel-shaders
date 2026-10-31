@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright (c) 2026 Barrulus. Original procedural artwork with Codex assistance.
+// Copyright (c) 2026 Barrulus. Original procedural artwork.
 // Shared artwork must remain identical in the border and companion overlay.
 const float INTENSITY = 0.95;
 const float PUMPKIN_SIZE = 22.0; // fruit half-width in logical pixels

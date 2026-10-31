@@ -1,0 +1,9 @@
+publish = true
+name = "Spooky Move"
+description = "Slow, deeply stretching window movement with a lingering ghostly sway, adapted from Wobbly Move."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/spooky-move/README.md"]
+uses = ["animation.windows_move"]
+tags = ["horror", "playful"]
+tested_on = ["0.1.0 (a37ae93)"]

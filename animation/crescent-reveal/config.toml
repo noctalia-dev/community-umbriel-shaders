@@ -1,0 +1,12 @@
+# Merge into ~/.config/umbriel/config.toml; append includes and merge existing tables.
+[include]
+files = ["shaders/community/animation/crescent-reveal/effect.toml"]
+
+[animation]
+enabled = true
+
+[animation.windows_in]
+enabled = true
+effect = "after-dark.crescent-reveal"
+duration_ms = 1300
+curve = "linear"

@@ -49,7 +49,7 @@ outside the shallow inner fringe. No native border-light or feedback passes
 are used. Hardware performance and native HDR/rotation/fractional scaling
 remain unverified.
 
-Original artwork by Barrulus with Codex assistance; perimeter geometry adapted
+Original artwork by Barrulus; perimeter geometry adapted
 from Barrulus's Fairy Lights and Ghostly Tear Border.
 [MIT license](../../LICENSES/Barrulus-MIT.txt).
 

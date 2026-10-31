@@ -1,0 +1,8 @@
+publish = true
+name = "Crescent Reveal — Pumpkin Fire"
+description = "Pumpkin fire ignites at the bottom-left and burns the window into existence toward the top-right."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/crescent-reveal/README.md"]
+uses = ["animation.windows_in"]
+tags = ["fire", "horror"]

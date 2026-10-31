@@ -41,7 +41,7 @@ preserved. No feedback buffers or continuous idle clock are used; retained
 history drives the fade. Long sweeps enlarge the drawn rectangle. Hardware
 performance and native HDR/rotation/fractional scaling remain unverified.
 
-Original artwork by Barrulus with Codex assistance, using the stable-history
+Original artwork by Barrulus, using the stable-history
 emission approach from Snowflake Trail.
 [MIT license](../../LICENSES/Barrulus-MIT.txt).
 

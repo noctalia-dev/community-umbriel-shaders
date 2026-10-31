@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 // Copyright (c) 2026 Noctalia
-// Full-scene API adaptation by Barrulus with Codex assistance.
+// Full-scene API adaptation by Barrulus.
 uniform vec2 umbriel_workspace_axis;
 
 float workspace_sign() {

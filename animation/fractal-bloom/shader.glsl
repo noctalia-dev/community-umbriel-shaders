@@ -67,3 +67,4 @@ vec4 animation(vec2 uv) {
     float ink = edge * envelope * clamp(INTENSITY, 0.0, 1.0);
     return vec4(mix(source.rgb, colour * source.a, ink), source.a) * mask;
 }
+

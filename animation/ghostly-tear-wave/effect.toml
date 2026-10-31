@@ -1,0 +1,3 @@
+[effects.preset.ghostly-tear-wave]
+kind = "animation"
+shader = "shader.glsl"

@@ -14,8 +14,10 @@ effects require published dependencies; published families require published
 members. To withdraw an entry, set it back to `false` and update any published
 dependants or families in the same change.
 
-The initial migration marks the existing 136 catalogue effects and ten families
-as eligible. Publication does not claim new visual testing.
+The initial migration marked 136 catalogue effects and ten families as eligible.
+Fifteen additional effects bring the catalogue to 151, with updated family
+memberships and defaults. Publication does not claim new visual testing;
+per-effect READMEs record their validation.
 
 ## Contributor checks
 

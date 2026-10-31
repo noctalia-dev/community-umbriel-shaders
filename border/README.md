@@ -7,6 +7,7 @@
 | <img src="spectrum/preview.png" width="160" alt="Spectrum preview"> | [Spectrum](spectrum/) | Thin audio-driven colour ring with angular frequency detail; dims in silence and restores the native ring when disconnected. |
 | <img src="fractal-flow/preview.png" width="160" alt="Fractal Flow preview"> | [Fractal Flow](fractal-flow/) | A rolling fractal front unfolds, splits and merges around the focused window and its inward overlay. |
 | <img src="diya-lights/preview.png" width="160" alt="Diya Lights preview"> | [Diya Lights](diya-lights/) | Small oil lamps straddling the border, with multicoloured sparkling lights and a matching inward overlay. |
+| <img src="ghostly-tear-border/preview.png" width="160" alt="Ghostly Tear Border preview"> | [ghostly-tear-border](ghostly-tear-border/) | A luminous pearl thread with locally curling mint and lavender wisps, extending outward and up to eight pixels into the content. |
 | <img src="accent-pulse/preview.png" width="160" alt="accent-pulse preview"> | [accent-pulse](accent-pulse/) | A soft pulse travels around the focused border, tinted by the theme accent. |
 | <img src="beach-surf/preview.png" width="160" alt="beach-surf preview"> | [beach-surf](beach-surf/) | Moving surf and foam around the focused window. |
 | <img src="cartoon-chase/preview.png" width="160" alt="cartoon-chase preview"> | [cartoon-chase](cartoon-chase/) | A cartoon bird, a pursuing coyote, and a spinning devil race around the window. |

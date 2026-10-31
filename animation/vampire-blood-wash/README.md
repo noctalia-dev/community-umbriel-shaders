@@ -70,5 +70,5 @@ hardware performance, HDR and rotated outputs have not been benchmarked.
 
 ## Attribution
 
-Original shader by Barrulus with Codex assistance.
+Original shader by Barrulus.
 [MIT license](../../LICENSES/Barrulus-MIT.txt).

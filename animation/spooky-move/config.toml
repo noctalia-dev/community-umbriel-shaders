@@ -1,0 +1,12 @@
+# Merge into existing tables and append to your include list.
+[include]
+files = ["shaders/community/animation/spooky-move/effect.toml"]
+
+[animation]
+enabled = true
+
+[animation.windows_move]
+enabled = true
+effect = "after-dark.spooky-move"
+duration_ms = 1400
+curve = "easeout"

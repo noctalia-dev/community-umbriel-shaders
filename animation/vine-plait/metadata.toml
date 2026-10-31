@@ -1,0 +1,15 @@
+publish = true
+name = "Vine Plait"
+description = "A thick, uneven braid of flowering vines rolls gently up or down, revealing old and new workspace scenes through its gaps."
+tested_on = ["0.1.0 (a37ae93)"]
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/vine-plait/README.md"]
+uses = ["animation.workspaces"]
+tags = ["nature"]
+
+[requirements]
+features = ["workspace-reveal-full-scene"]
+
+[required_settings]
+"animation.workspaces.style" = "reveal"

@@ -1,0 +1,6 @@
+# Merge into existing tables and append to your include list.
+[include]
+files = ["shaders/community/window/dappled-light/effect.toml"]
+
+[effects]
+window = "flowering-vine.dappled-light"

@@ -120,3 +120,4 @@ vec4 window(vec2 uv) {
     vec4 ink = psyche_edge(point, umbriel_size, umbriel_corner_radius, d);
     return vec4(source.rgb * (1.0 - ink.a) + ink.rgb * source.a, source.a);
 }
+

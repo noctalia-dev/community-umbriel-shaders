@@ -4,11 +4,19 @@
 
 | Preview | Effect | Description |
 | --- | --- | --- |
+| <img src="petal-scatter/preview.png" width="160" alt="Petal Scatter preview"> | [Petal Scatter](petal-scatter/) | A gust peels flower petals away as the window clears. |
+| <img src="petal-gather/preview.png" width="160" alt="Petal Gather preview"> | [Petal Gather](petal-gather/) | A curling breeze gathers flower petals along the opening window edge. |
+| <img src="vine-plait/preview.png" width="160" alt="Vine Plait preview"> | [Vine Plait](vine-plait/) | A horizontal plait of flowering vines rolls up or down across two complete workspace scenes. |
 | <img src="fractal-iris/preview.png" width="160" alt="Fractal Iris preview"> | [Fractal Iris](fractal-iris/) | An unfolding fractal front reveals the incoming workspace, with advance tears that widen and merge. |
 | <img src="fractal-bloom/preview.png" width="160" alt="Fractal Bloom preview"> | [Fractal Bloom](fractal-bloom/) | Windows open and close through a mirrored fractal mandala. |
 | <img src="cloud-puff/preview.png" width="160" alt="Cloud Puff preview"> | [Cloud Puff](cloud-puff/) | Bright gold, magenta and cyan cloud puffs for window opening and closing. |
 | <img src="rangoli-iris/preview.png" width="160" alt="Rangoli Iris preview"> | [Rangoli Iris](rangoli-iris/) | A full-scene workspace iris with white floral linework, coloured rings and blue spiral beads. |
+| <img src="ghostly-tear-wave/preview.png" width="160" alt="Ghostly Tear Wave opening"> | [ghostly-tear-wave](ghostly-tear-wave/) | Pale ragged fronts open upward and downward from a centre line; closing tears inward from the top and bottom until the line dissolves. |
+| <img src="witching-hour/preview.png" width="160" alt="Witching Hour workspace reveal"> | [witching-hour](witching-hour/) | A ragged orange-and-green fire portal reveals the entire next scene, including wallpaper and shell surfaces. Requires the full-scene workspace reveal API. |
 | <img src="ghostly-tear/preview.png" width="160" alt="Ghostly Tear workspace reveal"> | [ghostly-tear](ghostly-tear/) | A pale mint, lavender and pearl portal tears outwards from the centre; scattered holes merge into its ragged opening. Requires full-scene workspace reveal. |
+| <img src="crescent-reveal/preview.png" width="160" alt="Crescent Reveal preview"> | [crescent-reveal](crescent-reveal/) | Pumpkin fire burns the window into existence diagonally from bottom-left to top-right, with a curved flame front and embers. |
+| <img src="candle-snuff/preview.png" width="160" alt="Candle Snuff preview"> | [candle-snuff](candle-snuff/) | A quick dim and fade with a small orange-to-green edge flicker, confined to the departing window. |
+| <img src="spooky-move/preview.png" width="160" alt="Spooky Move preview"> | [Spooky Move](spooky-move/) | After Dark's slow, deeply stretching variation of Wobbly Move for moves, resizes and layout changes. |
 | <img src="beach-surf-animation/preview.png" width="160" alt="beach-surf-animation preview"> | [beach-surf-animation](beach-surf-animation/) | A water-and-foam window reveal and disappearance. |
 | <img src="example/preview.png" width="160" alt="example preview"> | [example](example/) | A minimal opening effect that fades the window in while scaling from 96% to full size. |
 | <img src="paper-animation/preview.png" width="160" alt="paper-animation preview"> | [paper-animation](paper-animation/) | A sheet falls and unfurls on opening, then scrunches and falls away on closing. |
@@ -29,12 +37,11 @@
 | <img src="vhs/preview.png" width="160" alt="VHS preview"> | [vhs](vhs/) | Opening introduces the window through horizontal tape stretch, rolling tracking errors, scanlines, noise, and colour bleed. Closing stretches and distorts the picture as it disappears. |
 | <img src="magic/preview.png" width="160" alt="Magic preview"> | [magic](magic/) | Opening reveals the window from a violet puff surrounded by drifting golden four-point sparkles. Closing dissolves the window into the puff and sparkling dust. |
 | <img src="triangle-flaps/preview.png" width="160" alt="Triangle Flaps preview"> | [triangle-flaps](triangle-flaps/) | Equilateral triangles point alternately up and down. Each independently traces its outline at a random time, then unfolds downward under acceleration to reveal the window. On closing, the triangles hinge downward, fall, and fade at different times. |
-| <img src="blood-in/preview.png" width="160" alt="Blood In preview"> | [blood-in](blood-in/) | Wave of blood reveals the window top to bottom. |
-| <img src="blood-out/preview.png" width="160" alt="Blood Out preview"> | [blood-out](blood-out/) | Drains out the bottom with same wave as Blood In. |
+| <img src="blood-in/preview.png" width="160" alt="Blood In preview"> | [Blood In](blood-in/) | Wave of blood reveals the window top to bottom. |
+| <img src="blood-out/preview.png" width="160" alt="Blood Out preview"> | [Blood Out](blood-out/) | Drains out the bottom with same wave as Blood In. |
 | <img src="workspace-transation-vhs-ripple/preview.png" width="160" alt="Workspace VHS Ripple preview"> | [workspace-transation-vhs-ripple](workspace-transation-vhs-ripple/) | Strong VHS tracking distortion and ripples over the native workspace slide. |
 | <img src="kzzzt-open/preview.png" width="160" alt="kzzzt-open preview"> | [kzzzt-open](kzzzt-open/) | Opening strikes the window into being with one overexposed, torn frame, then it stutters in through displaced bands and phosphor bloom while circuit traces flare at its edges and settle. |
 | <img src="kzzzt-close/preview.png" width="160" alt="kzzzt-close preview"> | [kzzzt-close](kzzzt-close/) | Closing overdrives the window’s own colours into phosphor and tears it into bands, then blows it out like a fuse, with one overexposed pop and a short fading afterglow. |
-| <img src="witching-hour/preview.png" width="160" alt="Witching Hour workspace reveal"> | [witching-hour](witching-hour/) | A ragged orange-and-green fire portal reveals the entire next scene, including wallpaper and shell surfaces. Requires the full-scene workspace reveal API. |
 | <img src="workspace-iris/preview.png" width="160" alt="Workspace Iris preview"> | [workspace-iris](workspace-iris/) | A clean circular aperture opens from the centre, revealing the incoming scene without moving either image. Requires full-scene workspace reveal. |
 | <img src="workspace-burn/preview.png" width="160" alt="Workspace Burn preview"> | [workspace-burn](workspace-burn/) | A noisy advancing burn front consumes the outgoing scene, with a narrow orange hot rim and a broader charred edge. Requires full-scene workspace reveal. |
 | <img src="workspace-shatter/preview.png" width="160" alt="Workspace Shatter preview"> | [workspace-shatter](workspace-shatter/) | Cracks spread through the outgoing scene before irregular rigid shards rotate and fall away, exposing the intact destination. Requires full-scene workspace reveal. |

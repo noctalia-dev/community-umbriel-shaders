@@ -27,5 +27,5 @@ selected window effect.
 
 ## Attribution
 
-Original procedural artwork by Barrulus with Codex assistance.
+Original procedural artwork by Barrulus.
 [MIT license](../../LICENSES/Barrulus-MIT.txt).

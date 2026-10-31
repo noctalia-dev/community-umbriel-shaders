@@ -623,8 +623,8 @@
       "sha256": "2de9f556fc0b196a086137f32d57226fd9856c3d18794124f347b21c88ff44ab"
     },
     "animation/vampire-blood-wash/README.md": {
-      "bytes": 2952,
-      "sha256": "0216d1b5fc42011c8835a90d60aaf061be79c8c40ca257361cb1e979a2c94f0f"
+      "bytes": 2930,
+      "sha256": "5cf187d3fd595d75c4884387f44ee83dd3ef1faab9b92af762a38ec03647156c"
     },
     "animation/vampire-blood-wash/config.toml": {
       "bytes": 286,
@@ -647,8 +647,8 @@
       "sha256": "2c1b62c12efbff093923569a0f72ffee72eb0373f5da504a8b29ecb4e25220cb"
     },
     "animation/workspace-iris/README.md": {
-      "bytes": 3279,
-      "sha256": "86b34eb32e5071fec6344af12267a7840aaa956516b6cfd85bf168dc4480e4cb"
+      "bytes": 3257,
+      "sha256": "ad907e439b99ba3a623341f63864bcd07a4275da49df13a00f428a965e5537c1"
     },
     "animation/workspace-iris/config.toml": {
       "bytes": 278,
@@ -667,8 +667,8 @@
       "sha256": "5cc279dd118758ac63f0c8d40f2e8a3dc3a2d7fc4883aa5f8aa6d4e011ed8507"
     },
     "animation/workspace-iris/shader.glsl": {
-      "bytes": 883,
-      "sha256": "8ce8c04aa8eb33241d5f6cdae3cbdd502fa5181c7f78fcadf6c5c59529dc6c15"
+      "bytes": 861,
+      "sha256": "542d2090df4fa45cf07e9b16496aa083611f0a8c1baf001162726d12dc492b98"
     },
     "border/flowering-vine/README.md": {
       "bytes": 6459,
@@ -731,8 +731,8 @@
       "sha256": "72ec7c53998d1901e755b61c3339d1e56b393b9832dcbc18a8f41481d2e4b944"
     },
     "cursor/vampire-wake/README.md": {
-      "bytes": 2924,
-      "sha256": "04f51137e69b0a02bdd4680ba0dd0f1942fc830fbd94b2afdace23b01dd639e9"
+      "bytes": 2902,
+      "sha256": "e840557e113824a58835b9b5b98c11578dc19d04eb969da397108d48f3f97379"
     },
     "cursor/vampire-wake/config.toml": {
       "bytes": 173,
@@ -751,8 +751,8 @@
       "sha256": "c0e54efb11851b6cead135b1ed81681ea44f03902a794df028f0836fc576ec93"
     },
     "cursor/vampire-wake/shader.glsl": {
-      "bytes": 6088,
-      "sha256": "9a72c1520b9a64b219fae681aa24c9110302eba2e8394cfda316a0347e503b28"
+      "bytes": 6066,
+      "sha256": "67d6a5a8b2517a418e01bacd2184d5bcd283a540252c08bafe23f41aa19ce772"
     },
     "window/flowering-vine-overlay/README.md": {
       "bytes": 5671,

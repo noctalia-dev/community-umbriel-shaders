@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright (c) 2026 Barrulus. Original Diwali artwork with Codex assistance.
+// Copyright (c) 2026 Barrulus. Original Diwali artwork.
 // Stable birth phases keep every spark anchored to its emission point.
 const float TRAIL_LIFE = 1.45; // Seconds, below two-second history retention.
 const float INTENSITY = 0.95; // 0..1.

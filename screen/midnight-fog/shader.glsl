@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright (c) 2026 Barrulus. Original shader with Codex assistance.
+// Copyright (c) 2026 Barrulus. Original shader.
 const float INTENSITY = 0.68; // 0..1
 const float FOG_HEIGHT = 0.32; // output height fraction, use 0.15..0.45
 

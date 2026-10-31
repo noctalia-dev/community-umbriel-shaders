@@ -109,5 +109,5 @@ apart from attribution comments and the preset name.
 
 ## Attribution
 
-Author/contributor: Barrulus, with Codex assistance. Original implementation,
+Author/contributor: Barrulus. Original implementation,
 2026-10-01. License: [MIT](../../LICENSES/Barrulus-MIT.txt).

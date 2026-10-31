@@ -53,7 +53,7 @@ the transition runs. No feedback buffers or external textures. Native HDR,
 rotation/fractional scaling, interrupted lifecycle transitions and hardware
 performance remain unverified.
 
-Original shader by Barrulus with Codex assistance, using the Firelit Clouds
+Original shader by Barrulus, using the Firelit Clouds
 noise helpers. [MIT license](../../LICENSES/Barrulus-MIT.txt).
 
 ## Related Diwali effects

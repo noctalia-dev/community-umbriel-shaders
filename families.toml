@@ -1,67 +1,118 @@
-# Catalogue-only families. Members and defaults reference existing shader IDs.
+# Catalogue-only family definitions. Members reference existing shader IDs.
+# Defaults select standalone effects; companion overlays stay attached to borders.
 
 [families.after-dark]
 publish = true
 name = "After Dark"
-description = "Pumpkin borders, witchfire cursor trails and low fog for a Halloween desktop."
-members = ["cursor/witchfire", "border/somethings-watching", "window/somethings-watching-overlay", "screen/midnight-fog"]
+description = "Pumpkin vines, witchfire, haunted glass and fog for a Halloween desktop."
+members = ["cursor/witchfire", "border/somethings-watching", "window/somethings-watching-overlay", "window/haunted-glass", "screen/midnight-fog", "animation/crescent-reveal", "animation/candle-snuff", "animation/witching-hour", "animation/spooky-move"]
 tags = ["horror", "fire"]
 
 [families.after-dark.defaults]
 "effects.cursor" = "cursor/witchfire"
 "effects.border" = "border/somethings-watching"
+"effects.window" = "window/haunted-glass"
 "effects.screen" = "screen/midnight-fog"
+"animation.windows_in" = "animation/crescent-reveal"
+"animation.windows_out" = "animation/candle-snuff"
+"animation.workspaces" = "animation/witching-hour"
+"animation.windows_move" = "animation/spooky-move"
 
 [families.beach-surf]
 publish = true
 name = "Beach Surf"
-description = "Coordinated surf and foam around windows and through their transitions."
-members = ["animation/beach-surf-animation", "border/beach-surf", "window/beach-surf-overlay"]
+description = "Coordinated surf and foam around windows and through their transitions, with a bioluminescent Pond Wake cursor trail."
+members = ["animation/beach-surf-animation", "border/beach-surf", "window/beach-surf-overlay", "cursor/pond-wake"]
 tags = ["water", "nature"]
+
+[families.beach-surf.defaults]
+"effects.cursor" = "cursor/pond-wake"
+"effects.border" = "border/beach-surf"
+"animation.windows_in" = "animation/beach-surf-animation"
+"animation.windows_out" = "animation/beach-surf-animation"
 
 [families.diwali]
 publish = true
 name = "Diwali"
-description = "Oil lamps, sparkling lights, festival trails and a rangoli workspace reveal."
-members = ["border/diya-lights", "window/diya-glow-overlay", "cursor/festival-sparks", "window/firelit-clouds", "animation/rangoli-iris"]
+description = "Oil lamps, sparkling lights, festival trails, cloud-puff window transitions and a rangoli workspace reveal."
+members = ["border/diya-lights", "window/diya-glow-overlay", "cursor/festival-sparks", "window/firelit-clouds", "animation/rangoli-iris", "animation/cloud-puff"]
 tags = ["festival", "glow"]
+
+[families.diwali.defaults]
+"animation.windows_in" = "animation/cloud-puff"
+"animation.windows_out" = "animation/cloud-puff"
+"effects.border" = "border/diya-lights"
+"effects.window" = "window/firelit-clouds"
+"effects.cursor" = "cursor/festival-sparks"
+"animation.workspaces" = "animation/rangoli-iris"
 
 [families.flowering-vine]
 publish = true
 name = "Flowering Vine"
-description = "A flowering vine border and its matching inward decoration."
-members = ["border/flowering-vine", "window/flowering-vine-overlay"]
+description = "Flowering borders, a blossom cursor trail, dappled window light and windborne petal transitions, with a rolling vine workspace plait."
+members = ["border/flowering-vine", "window/flowering-vine-overlay", "cursor/blossom-trail", "window/dappled-light", "animation/vine-plait", "animation/petal-gather", "animation/petal-scatter"]
 tags = ["nature"]
+
+[families.flowering-vine.defaults]
+"effects.border" = "border/flowering-vine"
+"effects.window" = "window/dappled-light"
+"effects.cursor" = "cursor/blossom-trail"
+"animation.workspaces" = "animation/vine-plait"
+"animation.windows_in" = "animation/petal-gather"
+"animation.windows_out" = "animation/petal-scatter"
 
 [families.ghostly-tear]
 publish = true
 name = "Ghostly Tear"
-description = "A ghostly window reveal with three alternative spectral cursor trails."
-members = ["animation/ghostly-tear", "cursor/ghost-thread", "cursor/frayed-veil", "cursor/spectral-wake"]
+description = "Pearl, mint and lavender fabric, wisps and ghostly reveals, with Spectral Wake by default, two alternative cursor trails and stretchy Spooky Move motion."
+members = ["animation/ghostly-tear", "animation/ghostly-tear-wave", "border/ghostly-tear-border", "window/ghostly-tear-overlay", "cursor/ghost-thread", "cursor/frayed-veil", "cursor/spectral-wake", "animation/spooky-move"]
 tags = ["horror", "texture"]
+
+[families.ghostly-tear.defaults]
+"effects.cursor" = "cursor/spectral-wake"
+"animation.windows_move" = "animation/spooky-move"
+"effects.border" = "border/ghostly-tear-border"
+"animation.windows_in" = "animation/ghostly-tear-wave"
+"animation.windows_out" = "animation/ghostly-tear-wave"
+"animation.workspaces" = "animation/ghostly-tear"
 
 [families.kzzzt]
 publish = true
 name = "kzzzt"
-description = "Circuit traces and phosphor glitches across opening, closing, borders and windows."
-members = ["animation/kzzzt-open", "animation/kzzzt-close", "border/kzzzt-ring", "window/kzzzt"]
+description = "Circuit traces and phosphor glitches across opening, closing, borders and windows, with a compact sparking circuit cursor trail."
+members = ["animation/kzzzt-open", "animation/kzzzt-close", "border/kzzzt-ring", "window/kzzzt", "cursor/kzzzt-trail"]
 tags = ["glitch", "circuit"]
+
+[families.kzzzt.defaults]
+"effects.cursor" = "cursor/kzzzt-trail"
+"effects.border" = "border/kzzzt-ring"
+"effects.window" = "window/kzzzt"
+"animation.windows_in" = "animation/kzzzt-open"
+"animation.windows_out" = "animation/kzzzt-close"
 
 [families.paper]
 publish = true
 name = "Paper"
-description = "Paper edges and crumpled stationery with a matching opening and closing transition."
-members = ["animation/paper-animation", "border/paper", "window/paper-overlay", "window/paper-content"]
+description = "Paper edges and crumpled stationery with a matching opening and closing transition, plus a short dripping-ink cursor with ragged splotches."
+members = ["animation/paper-animation", "border/paper", "window/paper-overlay", "window/paper-content", "cursor/ink-drip"]
 tags = ["texture"]
+
+[families.paper.defaults]
+"effects.cursor" = "cursor/ink-drip"
+"effects.border" = "border/paper"
+"effects.window" = "window/paper-content"
+"animation.windows_in" = "animation/paper-animation"
+"animation.windows_out" = "animation/paper-animation"
 
 [families.psychedelic]
 publish = true
 name = "Psychedelic"
-description = "Coordinated kaleidoscopic borders, window patterns and fractal transitions."
-members = ["animation/fractal-iris", "border/fractal-flow", "window/fractal-flow-overlay", "window/fractal-veil", "animation/fractal-bloom"]
+description = "Coordinated kaleidoscopic borders, window patterns and fractal transitions, with a sharp, short-lived fractal cursor trail."
+members = ["animation/fractal-iris", "border/fractal-flow", "window/fractal-flow-overlay", "window/fractal-veil", "animation/fractal-bloom", "cursor/fractal-trail"]
 tags = ["psychedelic", "geometric", "colourful"]
 
 [families.psychedelic.defaults]
+"effects.cursor" = "cursor/fractal-trail"
 "effects.border" = "border/fractal-flow"
 "effects.window" = "window/fractal-veil"
 "animation.workspaces" = "animation/fractal-iris"
@@ -75,9 +126,21 @@ description = "Blood-washed transitions, a heartbeat border and a bat-filled cur
 members = ["animation/blood-in", "animation/blood-out", "border/heartbeat", "animation/vampire-blood-wash", "animation/blood-sweep", "cursor/vampire-wake"]
 tags = ["horror", "blood"]
 
+[families.vampire.defaults]
+"effects.border" = "border/heartbeat"
+"effects.cursor" = "cursor/vampire-wake"
+"animation.windows_in" = "animation/blood-in"
+"animation.windows_out" = "animation/blood-out"
+"animation.workspaces" = "animation/vampire-blood-wash"
+
 [families.wobbly]
 publish = true
 name = "Wobbly"
 description = "Elastic window movement with matching opening and closing deformation."
 members = ["animation/wobbly-lifecycle", "animation/wobbly-move"]
 tags = ["playful"]
+
+[families.wobbly.defaults]
+"animation.windows_in" = "animation/wobbly-lifecycle"
+"animation.windows_out" = "animation/wobbly-lifecycle"
+"animation.windows_move" = "animation/wobbly-move"

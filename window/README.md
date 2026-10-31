@@ -4,11 +4,13 @@
 
 | Preview | Effect | Description |
 | --- | --- | --- |
+| <img src="dappled-light/preview.png" width="160" alt="Dappled Light preview"> | [Dappled Light](dappled-light/) | Subtle swaying leaf shadows and warm light, without distorting content. |
 | <img src="speaker-ripple/preview.png" width="160" alt="Speaker Ripple preview"> | [Speaker Ripple](speaker-ripple/) | Coloured pressure rings kick inward and recoil with the music; individual frequency bands buckle the waves like an equaliser. |
 | <img src="fractal-flow-overlay/preview.png" width="160" alt="Fractal Flow Overlay preview"> | [Fractal Flow Overlay](fractal-flow-overlay/) | The inward half of Fractal Flow, sharing its coordinates, colours and clock. |
 | <img src="fractal-veil/preview.png" width="160" alt="Fractal Veil preview"> | [Fractal Veil](fractal-veil/) | Small, faint kaleidoscope rosettes rotate and gently change across the window. |
 | <img src="diya-glow-overlay/preview.png" width="160" alt="Diya Glow preview"> | [Diya Glow](diya-glow-overlay/) | Inward halves of the Diya Lights lamps and coloured lights; automatically selected by the border. |
 | <img src="firelit-clouds/preview.png" width="160" alt="Firelit Clouds preview"> | [Firelit Clouds](firelit-clouds/) | Gentle roiling clouds backlit by coloured firework pulses. |
+| <img src="ghostly-tear-overlay/preview.png" width="160" alt="Ghostly Tear Overlay preview"> | [ghostly-tear-overlay](ghostly-tear-overlay/) | Shallow pearl, mint and lavender wisps fading within eight pixels of the client edge; companion to Ghostly Tear Border. |
 | <img src="adaptive-text-v4/preview.png" width="160" alt="adaptive-text-v4 preview"> | [adaptive-text-v4](adaptive-text-v4/) | An experimental content-adaptive contrast treatment. |
 | <img src="autumn-leaves/preview.png" width="160" alt="autumn-leaves preview"> | [autumn-leaves](autumn-leaves/) | Animated autumn leaves over window content. |
 | <img src="beach-surf-overlay/preview.png" width="160" alt="beach-surf-overlay preview"> | [beach-surf-overlay](beach-surf-overlay/) | The inner-window half of the beach-surf border effect; keeps inward decoration visible. |
@@ -21,7 +23,6 @@
 | <img src="kzzzt/preview.png" width="160" alt="kzzzt preview"> | [kzzzt](kzzzt/) | Hard-edged circuit traces creep in from the window edges and carry current, with colour-split glitches, scanlines, and a slow roll; reacts to sound when an audio level is fed to Umbriel. |
 | <img src="liquid-glass/preview.png" width="160" alt="liquid-glass preview"> | [liquid-glass](liquid-glass/) | Diffused content with a refractive bevel and soft reflection. |
 | <img src="mercury-sheen/preview.png" width="160" alt="mercury-sheen preview"> | [mercury-sheen](mercury-sheen/) | Flowing liquid-metal highlights give the content a chrome sheen. |
-| <img src="music-smoke/preview.png" width="160" alt="Music Smoke preview"> | [music-smoke](music-smoke/) | Audio-reactive rising smoke; silence restores the sampled window. |
 | <img src="neon-bleed-overlay/preview.png" width="160" alt="neon-bleed-overlay preview"> | [neon-bleed-overlay](neon-bleed-overlay/) | The inner-window half of the neon-bleed border effect; keeps inward decoration visible. |
 | <img src="paper-content/preview.png" width="160" alt="paper-content preview"> | [paper-content](paper-content/) | Neutral white crumpled stationery, with static fibres and folds behind the content. |
 | <img src="paper-overlay/preview.png" width="160" alt="paper-overlay preview"> | [paper-overlay](paper-overlay/) | The inner-window half of the paper border effect; keeps inward decoration visible. |
@@ -45,4 +46,6 @@
 | <img src="sentient-circuit/preview.png" width="160" alt="sentient-circuit preview"> | [sentient-circuit](sentient-circuit/) | Etched circuit buses, independent junctions, and light-reactive pulses. |
 | <img src="sentient-circuit-v2/preview.png" width="160" alt="sentient-circuit-v2 preview"> | [sentient-circuit-v2](sentient-circuit-v2/) | Growing, pulsing, and decaying circuit colonies in copper and pollen tones. |
 | <img src="snowfall/preview.png" width="160" alt="snowfall preview"> | [snowfall](snowfall/) | Snow falling over window content. |
-| <img src="somethings-watching-overlay/preview.png" width="160" alt="Inward vines, pumpkins and skeletons"> | [somethings-watching-overlay](somethings-watching-overlay/) | Inward vines, growing pumpkins, cat eyes and skeletons, selected by the After Dark border. |
+| <img src="haunted-glass/preview.png" width="160" alt="Haunted Glass preview"> | [haunted-glass](haunted-glass/) | Three hooked talons dent and rake the glass, leaving grooves and branching fractures that heal. |
+| <img src="somethings-watching-overlay/preview.png" width="160" alt="Inward fire and eyes"> | [somethings-watching-overlay](somethings-watching-overlay/) | Inward vines, growing pumpkins, cat eyes and skeletons, selected by the After Dark border. |
+| <img src="music-smoke/preview.png" width="160" alt="Music Smoke preview"> | [music-smoke](music-smoke/) | Audio-reactive rising smoke; silence restores the sampled window. |

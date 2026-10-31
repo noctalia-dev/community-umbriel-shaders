@@ -1,0 +1,12 @@
+publish = true
+name = "kzzzt Trail"
+description = "A short circuit-board trail with angular branches, terminal pads and brief electric zap sparks."
+author = "Barrulus"
+tested_on = ["0.1.0 (a37ae93)"]
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "LICENSES/Noctalia-MIT.txt", "cursor/kzzzt-trail/README.md"]
+uses = ["effects.cursor"]
+tags = ["circuit", "glitch"]
+
+[requirements]
+features = ["cursor-pointer-history"]

@@ -1,0 +1,5 @@
+[effects.preset."psychedelic.fractal-trail"]
+kind = "cursor"
+shader = "shader.glsl"
+radius = 48
+palette = true

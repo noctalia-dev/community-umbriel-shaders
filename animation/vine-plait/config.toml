@@ -1,0 +1,13 @@
+# Merge into existing tables and append to your include list.
+[include]
+files = ["shaders/community/animation/vine-plait/effect.toml"]
+
+[animation]
+enabled = true
+
+[animation.workspaces]
+enabled = true
+effect = "flowering-vine.vine-plait"
+duration_ms = 2600
+curve = "linear"
+style = "reveal"

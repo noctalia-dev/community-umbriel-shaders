@@ -69,6 +69,6 @@ composition have not been benchmarked.
 
 ## Attribution
 
-Original shader by Barrulus with Codex assistance, combining the centre-out
+Original shader by Barrulus, combining the centre-out
 portal idea of Witching Hour with procedural fabric erosion inspired by
 Workspace Burn. [MIT license](../../LICENSES/Barrulus-MIT.txt).

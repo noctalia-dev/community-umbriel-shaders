@@ -61,7 +61,7 @@ have not been benchmarked.
 
 ## Attribution
 
-Adapted from Witchfire by Barrulus with Codex assistance. Curve interpolation
+Adapted from Witchfire by Barrulus. Curve interpolation
 derives from Comet and Noctalia's bundled trail shader.
 [Barrulus MIT](../../LICENSES/Barrulus-MIT.txt) and
 [Noctalia MIT](../../LICENSES/Noctalia-MIT.txt).

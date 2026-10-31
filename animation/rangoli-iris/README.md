@@ -61,8 +61,7 @@ No previous-frame feedback or blur passes. Full-scene composition requires
 scene captures. Hardware performance, native HDR, output rotation and native
 fractional scaling remain unverified.
 
-Procedural interpretation of the user-supplied reference by Barrulus with
-Codex assistance; the reference bitmap is not bundled. Shader and helper code
+Procedural interpretation of the user-supplied reference by Barrulus; the reference bitmap is not bundled. Shader and helper code
 use the [Barrulus MIT license](../../LICENSES/Barrulus-MIT.txt).
 
 ## Related Diwali effects

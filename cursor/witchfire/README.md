@@ -2,6 +2,8 @@
 
 A long green witchfire ribbon follows a time-weighted Catmull–Rom curve. Thin flame wisps peel away from its bends, and orange embers drift behind it. Twelve subdivisions per segment smooth fast swirls instead of joining retained samples with straight chords.
 
+Part of [Umbriel After Dark](../../families.toml).
+
 ![Headless compositor preview](preview.png)
 
 This is an isolated Umbriel capture over synthetic content. A still image does
@@ -12,7 +14,7 @@ not demonstrate motion, output transforms or performance.
 Save this directory under `~/.config/umbriel/shaders/community/cursor/witchfire/`.
 Merge [config.toml](config.toml) into your configuration, appending include paths
 and merging existing tables. Including a preset registers it; selection enables
-it. The preset name is `after-dark.witchfire`.
+it. Choose **After Dark → Apply family** in the plugin.
 
 ## Configuration options
 

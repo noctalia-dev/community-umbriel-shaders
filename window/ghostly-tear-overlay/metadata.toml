@@ -1,0 +1,9 @@
+publish = true
+name = "Ghostly Tear Overlay"
+description = "Shallow pearl, mint and lavender wisps curl into the window from its edges."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "window/ghostly-tear-overlay/README.md"]
+uses = ["effects.window"]
+tags = ["horror"]
+role = "companion"

@@ -71,5 +71,5 @@ output-wide coordinates and navigation direction from `umbriel_workspace_axis`.
 Shared helpers and the saved parameter values are embedded in this shader so it
 can be downloaded independently.
 
-Original shader by Barrulus with Codex assistance.
+Original shader by Barrulus.
 [MIT license](../../LICENSES/Barrulus-MIT.txt).

@@ -24,6 +24,50 @@ Append the include path to your existing `files` array and merge selectors into 
 
 Borders apply to the focused, decorated window. Fullscreen and urgent windows do not display the border effect.
 
+## Optional audio response
+
+This is Umbriel's bundled `pulse`, renamed `accent-pulse` in this collection.
+For audio-driven brightness with the original travelling pulse during silence,
+download [shader-audio.glsl](shader-audio.glsl) beside `effect.toml` and change
+the existing preset's `shader` value to `"shader-audio.glsl"`. Keep
+`animated = true` (the default) and `speed` above zero for idle motion.
+
+Requires Umbriel's spectrum API, verified at revision
+[`76477c29`](https://github.com/noctalia-dev/umbriel/commit/76477c29).
+The older `umbriel_audio_level()` helper is no longer supplied by current
+Umbriel; use `umbriel_audio_spectrum(position)` instead.
+
+In Noctalia, enable **Settings → Umbriel → Audio → Provide Audio to Umbriel**.
+It is disabled by default. Alternatively, merge this into **Noctalia's**
+configuration, not Umbriel's:
+
+```toml
+[shell]
+umbriel_audio_provider_enabled = true
+```
+
+See [Noctalia's audio setup](https://github.com/noctalia-dev/noctalia/blob/main/docs/user/compositor-settings/umbriel.mdx#audio-reactive-effects).
+For older Noctalia or another shell, use the
+[standalone Python analyser](../../tools/README.md#standalone-audio-analyser)
+(Python and PipeWire's `pw-record`; no pip packages). It sends Umbriel's current
+[audio IPC](https://github.com/noctalia-dev/umbriel/blob/main/docs/user/ipc.md#audio-input).
+Selecting a shader alone does not start audio capture. Update both Umbriel and
+the provider if they use different audio protocol versions.
+
+The variant estimates activity from three low/middle/high spectrum positions.
+Below `SILENCE_LOW = 0.02`, or without a feed, it preserves the original pulse;
+above `SILENCE_HIGH = 0.10` brightness follows the audio, blending between the
+two at intermediate levels. Availability alone cannot detect silence: a live
+provider can keep sending zeroes. `AUDIO_GAIN = 2.0` controls response strength;
+lower the silence thresholds if quiet audio keeps the idle pulse active.
+These are visual intensities, not calibrated loudness or fixed frequency bands.
+The variant adds spectrum texture reads but no feedback buffers.
+
+The bundled `audio` example reacts only to the lowest spectrum band and stays
+dim without input. First check the provider toggle if it appears unresponsive.
+Shader compilation failures also fall back to ordinary rendering; check
+Umbriel's logs for obsolete helper names.
+
 ## Configuration options
 
 Edit the existing `[effects.preset."accent-pulse"]` table in [effect.toml](effect.toml).

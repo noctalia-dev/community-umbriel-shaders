@@ -1,0 +1,6 @@
+# Merge into existing tables and append to your include list.
+[include]
+files = ["shaders/community/cursor/blossom-trail/effect.toml"]
+
+[effects]
+cursor = "flowering-vine.blossom-trail"

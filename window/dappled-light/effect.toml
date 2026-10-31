@@ -1,0 +1,3 @@
+[effects.preset."flowering-vine.dappled-light"]
+kind = "window"
+shader = "shader.glsl"

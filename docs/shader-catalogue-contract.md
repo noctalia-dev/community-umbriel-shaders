@@ -205,8 +205,9 @@ See [tool commands](../tools/README.md#catalogue-generation) and the reproducibl
 [nine-effect JSON example](catalogue-examples/registry.example.json). That example
 is explicitly a draft and hashes the source files in this checkout.
 
-The initial migration covers 136 presets and ten families already present
-upstream. `animation/example` is excluded pending clarification of its original
+The upstream migration covers 136 presets and ten families. This fork retains
+fifteen additional presets, for 151 total, with their additional family memberships
+and defaults. `animation/example` is excluded pending clarification of its original
 licence. The generator preserves existing contributor credits and notice files;
 it cannot establish licence permission itself.
 

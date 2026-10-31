@@ -1,0 +1,12 @@
+# Merge into existing tables and append to your include list.
+[include]
+files = ["shaders/community/animation/petal-scatter/effect.toml"]
+
+[animation]
+enabled = true
+
+[animation.windows_out]
+enabled = true
+effect = "flowering-vine.petal-scatter"
+duration_ms = 850
+curve = "linear"

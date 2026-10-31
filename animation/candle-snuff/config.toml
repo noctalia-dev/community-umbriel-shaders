@@ -1,0 +1,12 @@
+# Merge into ~/.config/umbriel/config.toml; append includes and merge existing tables.
+[include]
+files = ["shaders/community/animation/candle-snuff/effect.toml"]
+
+[animation]
+enabled = true
+
+[animation.windows_out]
+enabled = true
+effect = "after-dark.candle-snuff"
+duration_ms = 240
+curve = "linear"

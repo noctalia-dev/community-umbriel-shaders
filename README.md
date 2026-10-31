@@ -15,11 +15,25 @@ This collection includes community presets by Barrulus, Dual Orbit by neonvoidx,
 Ten new [paired window transitions](animation/) include Shattered Glass, Wet Paint,
 Flame Grilled, Glitch, Cells, Void, Old TV, VHS, Magic, and Triangle Flaps.
 
-**Psychedelic** groups an unfolding fractal workspace iris, a rolling border
-with an inward overlay, a subtle window veil and opening/closing animations.
-Its membership and recommended selections are declared in
-[families.toml](families.toml). Families reference the individual shaders;
-they have no copied files or separate configuration directories.
+**Umbriel After Dark** groups coordinated cursor, border, window, screen,
+opening and closing effects, the Witching Hour workspace transition and
+[Spooky Move](animation/spooky-move/), a slower, stretchier movement animation.
+**Psychedelic** groups a fractal workspace iris,
+a rolling border with its inward overlay, a subtle window veil, a short
+[Fractal Trail](cursor/fractal-trail/) cursor and
+opening/closing animations. Choose either family in the plugin to select its
+members and **Apply family**. Membership and defaults are declared in
+[families.toml](families.toml); each shader keeps its own files and settings.
+
+**Flowering Vine** pairs its border and inward overlay with
+[Blossom Trail](cursor/blossom-trail/), [Dappled Light](window/dappled-light/),
+the rolling [Vine Plait](animation/vine-plait/) workspace transition, and
+[Petal Gather](animation/petal-gather/)/[Petal Scatter](animation/petal-scatter/)
+opening and closing animations. It has no screen or movement default.
+
+[**Witching Hour**](animation/witching-hour/) adds a Halloween workspace reveal:
+a ragged orange-and-green fire portal unveils the next workspace in place.
+It requires the newer workspace `style = "reveal"` API.
 
 [**Shake Locator**](cursor/shake-locator/) reveals rings when you shake the mouse.
 [**Shake Grow**](cursor/shake-grow/) builds a growing arrow beneath the pointer
@@ -29,15 +43,6 @@ motion history without a continuously running animation clock.
 For adjustments, see the [configuration reference](#configuration-reference),
 [border width and overlays](#border-width-padding-and-overlays), and the
 **Configuration options** section in each effect's README.
-
-## Halloween effects
-
-- [Witching Hour](animation/witching-hour/): a burning portal between workspaces, using the new reveal mode.
-- [Witchfire](cursor/witchfire/): a curved green cursor trail with orange embers.
-- [Pumpkin Parade](border/somethings-watching/): growing pumpkins, cat eyes and marching skeletons around the border, with its included inward overlay.
-- [Midnight Fog](screen/midnight-fog/): low purple mist across the output.
-
-Each preset includes an activation example and a real headless compositor preview.
 
 Thirteen recovered [full-scene workspace transitions](animation/) include
 [Iris](animation/workspace-iris/), [Burn](animation/workspace-burn/), Shatter,
@@ -445,12 +450,16 @@ Set `palette = false` in an installed preset's `effect.toml` to restore its
 original colours (shown in the static previews). For paired borders and window
 overlays, set it in both presets; the setting is independent for each half.
 
-Thirteen effects remain palette-neutral because they transform existing content
+Fifteen effects remain palette-neutral because they transform existing content
 without a separate coloured artwork layer: animation `example`, `reveal`,
-`squash`, `vhs`, `wobbly-lifecycle`, `wobbly-move`, and
+`squash`, `vhs`, `wobbly-lifecycle`, `wobbly-move`, `spooky-move`, and
 `workspace-transation-vhs-ripple`; cursor `spotlight`; screen `vignette`; and
-window `adaptive-text-v4`, `crt`, `flap-board`, and `scanlines`. Their distortion,
+window `adaptive-text-v4`, `crt`, `dappled-light`, `flap-board`, and `scanlines`. Their distortion,
 channel separation, contrast, or darkening continues to use the source image.
+
+[Pond Wake](cursor/pond-wake/) also ignores the theme palette: its stirred
+bioluminescence deliberately stays blue-green, controlled by `BIO_COLOUR`.
+[Starlight](cursor/starlight/) uses neutral white sparkles with untinted refraction.
 
 ## Troubleshooting
 
@@ -464,7 +473,7 @@ channel separation, contrast, or darkening continues to use the source image.
 
 ## Catalogue metadata and families
 
-The local catalogue covers 136 licensed presets and ten families. Each effect's
+The local catalogue covers 151 licensed presets and ten families. Each effect's
 `metadata.toml` supplies its display name, description, contributor, licence
 notices, tags and supported uses. `families.toml` groups related
 members; each member can still be applied independently. Families have no folders,
@@ -474,13 +483,14 @@ shader files remain the source of installation dependencies.
 Only entries with `publish = true` in `metadata.toml` appear in generated
 catalogues. Families opt in separately with the same field in each `[families.<id>]` definition.
 Omitting it means `false`. Tags describe the shader; they do not publish it.
-The existing 136 entries and ten families are explicitly opted in. Experimental
+The existing 151 entries and ten families are explicitly opted in. Experimental
 folders can remain in the repository without appearing in the catalogue.
 Published effects must have published dependencies, and published families must
 contain only published members.
 
 `animation/example` is excluded from automatic catalogue installation until its
-original licensing is clarified.
+original licensing is clarified. The audio variants of Accent Pulse and Pulse
+remain manual alternatives described in their READMEs.
 
 Validate the complete catalogue with:
 
@@ -521,6 +531,18 @@ test them before approving `publish = true`. Unpublished files in this public
 repository are still public; the flag controls catalogue inclusion, not access.
 See [publication and review](docs/catalogue-publication.md) for the CI checks and
 required GitHub review settings. The metadata flag alone is not a permission check.
+
+Generate the preview for your new preset using your installed Umbriel:
+
+```sh
+python3 tools/render-preview.py cursor/your-effect
+```
+
+This writes that preset's `preview.png` using an isolated headless compositor
+and synthetic sample content. It requires Python 3.11+, Umbriel, grim and an
+accessible graphics render device. Inspect the PNG and include it in your PR.
+See [preview-tool instructions](tools/README.md) for setup, animation options
+and limitations. The tool renders one preset per invocation.
 
 Shaders use GLSL ES 1.00 and the entry point for their kind: `vec4 animation(vec2 uv)`, `border`, `window`, `screen`, or `cursor`. Do not supply `#version`, `main`, or precision declarations. Return premultiplied RGBA. See the [Umbriel effect API](https://github.com/noctalia-dev/umbriel/blob/main/docs/user/effects.md) for uniforms and sampling semantics.
 

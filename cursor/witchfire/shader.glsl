@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright (c) 2026 Barrulus. Original shader with Codex assistance.
+// Copyright (c) 2026 Barrulus. Original shader.
 // Curve interpolation adapted from Comet and the bundled Noctalia trail shader.
 const float INTENSITY = 0.8;
 const float TRAIL_LIFE = 1.25;

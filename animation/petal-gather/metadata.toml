@@ -1,0 +1,9 @@
+publish = true
+name = "Petal Gather"
+description = "A curling breeze of cream, pink and lilac petals gathers along the edge of an appearing window."
+tested_on = ["0.1.0 (a37ae93)"]
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/petal-gather/README.md"]
+uses = ["animation.windows_in"]
+tags = ["nature", "particles"]

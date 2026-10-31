@@ -73,7 +73,7 @@ performance remain unverified.
 
 ## Attribution
 
-Original artwork by Barrulus with Codex assistance. Time-aware path interpolation
+Original artwork by Barrulus. Time-aware path interpolation
 adapted from this collection's [Train Tracks](../train-tracks/) and
 [Comet](../comet/), originating in Noctalia's trail-path implementation.
 Licenses: [Barrulus MIT](../../LICENSES/Barrulus-MIT.txt) and

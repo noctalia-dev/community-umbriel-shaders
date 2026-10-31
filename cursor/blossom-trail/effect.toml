@@ -1,0 +1,5 @@
+[effects.preset."flowering-vine.blossom-trail"]
+kind = "cursor"
+shader = "shader.glsl"
+radius = 64
+palette = true

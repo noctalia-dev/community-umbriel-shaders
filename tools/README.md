@@ -61,6 +61,48 @@ and [Umbriel spectrum IPC](https://github.com/noctalia-dev/umbriel/blob/main/doc
 
 The script is [MIT licensed](../LICENSES/Barrulus-MIT.txt).
 
+## Generate one shader preview
+
+Requires Python 3.11+, installed Umbriel and `grim`, and an accessible GLES/EGL
+render device. The tool starts a private headless compositor with synthetic
+content and leaves the desktop session alone.
+
+```sh
+# Render into this shader's preview.png; replace it only after success.
+python3 tools/render-preview.py cursor/starlight
+
+# Inspect a capture without replacing the published preview.
+python3 tools/render-preview.py border/flowering-vine -o /tmp/flowering-vine.png
+
+# Capture a closing animation at a particular point.
+python3 tools/render-preview.py animation/wet-paint --event windows_out --progress 0.4
+```
+
+Use `--size 400x600` for portrait content, `--time 2` to change the settling delay,
+`--software` to request software rendering, or `--umbriel`/`--grim` to select
+executables. When an effect file defines multiple presets, pass `--preset NAME`.
+Keep `preview_client.py` beside the script; it supplies the sample content and
+virtual pointer. Run `python3 tools/render-preview.py --help` for all options.
+
+Animation captures use a 1600 ms linear timeline at progress 0.55 by default;
+`--duration-ms` and `--progress` change the capture without editing the preset.
+The tool retains the preset's workspace reveal style. Frozen-clock commands are
+used when available; otherwise it reports approximate wall-clock timing.
+Supported animation events are opening, closing, window movement and workspace
+switches. Persistent clocks and pointer motion are real-time.
+
+Inspect every image before submitting it. Captures show a real compositor at
+scale 1 over synthetic content; they do not establish motion quality, HDR,
+rotated/fractional-scale behaviour or GPU performance. Failed or interrupted
+renders preserve an existing output image.
+
+If EGL initialization fails, make a graphics render device available; software
+rendering does not bypass that requirement. Configuration errors and GLSL errors
+are reported separately. A fallback render after shader compilation failure is
+not accepted as a successful preview.
+
+The preview scripts and synthetic scene use the [Barrulus MIT license](../LICENSES/Barrulus-MIT.txt).
+
 ## Configuration validation
 
 ```sh
@@ -71,12 +113,9 @@ python3 tools/validate.py --umbriel /path/to/umbriel
 
 Checks all installation examples, unique preset names, dependencies and the
 combined library without editing the user's configuration. It detects the
-installed Umbriel validation command. This checks parsing and source loading;
-compile and inspect selected shaders in a compositor session separately.
-
-Include relevant commands and results in the PR description, and retain lasting
-limitations in the shader's README. Local development logs, browser tooling and
-audio-analyser tests are excluded from the tracked repository and checked by CI.
+installed Umbriel validation command. Configuration validation checks parsing
+and source loading; compile and inspect selected shaders in a compositor session
+as a separate step.
 
 ## Catalogue generation
 
@@ -112,6 +151,7 @@ and [publication rules](../docs/catalogue-publication.md).
 
 ```sh
 python3 -m unittest discover -s tools -p 'test*catalogue.py'
+python3 -m unittest discover -s tools -p test_render_preview.py
 python3 tools/catalogue.py --draft --metadata-root docs/catalogue-examples \
   --check docs/catalogue-examples/registry.example.json
 ```

@@ -1,0 +1,7 @@
+# Prefer the paired border preset, which includes and selects this overlay.
+# Standalone use applies the inner wisps as an ordinary window effect.
+[include]
+files = ["shaders/community/window/ghostly-tear-overlay/effect.toml"]
+
+[effects]
+window = "ghostly-tear-overlay"

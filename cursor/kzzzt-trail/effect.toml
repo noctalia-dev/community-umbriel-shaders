@@ -1,0 +1,5 @@
+[effects.preset."kzzzt-trail"]
+kind = "cursor"
+shader = "shader.glsl"
+radius = 48
+palette = true

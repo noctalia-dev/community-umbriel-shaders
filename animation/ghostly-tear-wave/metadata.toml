@@ -1,0 +1,8 @@
+publish = true
+name = "Ghostly Tear Wave"
+description = "Opening begins along an uneven horizontal line near the window's centre."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/ghostly-tear-wave/README.md"]
+uses = ["animation.windows_in", "animation.windows_out"]
+tags = ["horror"]

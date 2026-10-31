@@ -1,0 +1,8 @@
+publish = true
+name = "Haunted Glass — Claw Strike"
+description = "Three hooked talons press against the inside of the pane, denting the window content around their tips."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "window/haunted-glass/README.md"]
+uses = ["effects.window"]
+tags = ["horror"]

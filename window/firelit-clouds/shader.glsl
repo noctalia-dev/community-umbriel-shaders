@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright (c) 2026 Barrulus. Original Diwali artwork with Codex assistance.
+// Copyright (c) 2026 Barrulus. Original Diwali artwork.
 // Slowly billowing clouds illuminated from behind by unseen fireworks.
 const float INTENSITY = 0.48; // 0..0.8; translucent cloud coverage.
 const float CLOUD_SPEED = 0.045; // Slow independent rolling motion; zero freezes clouds.

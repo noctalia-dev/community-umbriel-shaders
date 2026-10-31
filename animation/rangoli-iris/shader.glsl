@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright (c) 2026 Barrulus. Procedural artwork with Codex assistance.
+// Copyright (c) 2026 Barrulus. Procedural artwork.
 // Inspired by the user's circular floral reference: white linework over
 // vermilion, green, orange and blue rings. No image texture is embedded.
 const float INTENSITY = 0.98; // 0..1; ornament opacity, independent of the iris.

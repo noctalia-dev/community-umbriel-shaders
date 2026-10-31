@@ -1,0 +1,9 @@
+publish = true
+name = "Dappled Light"
+description = "Faint leaf shadows sway across window content, with soft warm light filtering through the gaps."
+tested_on = ["0.1.0 (a37ae93)"]
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "window/dappled-light/README.md"]
+uses = ["effects.window"]
+tags = ["nature", "minimal"]

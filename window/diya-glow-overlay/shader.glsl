@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright (c) 2026 Barrulus. Original Diwali artwork with Codex assistance.
+// Copyright (c) 2026 Barrulus. Original Diwali artwork.
 // Perimeter geometry adapted from Barrulus's Fairy Lights / Ghostly Tear Border.
 // Keep the artwork helpers and constants aligned with the companion shader; see README.md.
 #define DIYA_RADII umbriel_corner_radius

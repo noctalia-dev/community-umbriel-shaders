@@ -1,0 +1,12 @@
+publish = true
+name = "Blossom Trail"
+description = "Short twisting green vines follow the pointer, sprouting cream, pink and lilac blossoms that detach and flutter away."
+tested_on = ["0.1.0 (a37ae93)"]
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "LICENSES/Noctalia-MIT.txt", "cursor/blossom-trail/README.md"]
+uses = ["effects.cursor"]
+tags = ["nature", "particles"]
+
+[requirements]
+features = ["cursor-pointer-history"]

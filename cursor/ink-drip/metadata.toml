@@ -1,0 +1,12 @@
+publish = true
+name = "Ink Drip"
+description = "A short wet-ink stroke sheds falling droplets that spread into ragged splotches and tiny satellite spots."
+author = "Barrulus"
+tested_on = ["0.1.0 (a37ae93)"]
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "LICENSES/Noctalia-MIT.txt", "cursor/ink-drip/README.md"]
+uses = ["effects.cursor"]
+tags = ["texture", "particles"]
+
+[requirements]
+features = ["cursor-pointer-history"]

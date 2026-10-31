@@ -1,0 +1,6 @@
+# Merge into existing tables and append to your include list.
+[include]
+files = ["shaders/community/cursor/ink-drip/effect.toml"]
+
+[effects]
+cursor = "paper.ink-drip"

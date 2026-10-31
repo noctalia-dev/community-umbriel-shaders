@@ -1,11 +1,11 @@
 # Midnight Fog
 
-Low, translucent purple mist drifts along the bottom of the output.
+Low, translucent purple mist drifts along the bottom of the output. Part of [Umbriel After Dark](../../families.toml).
 
 ![Midnight Fog headless preview](preview.png)
 
 Preview: private headless Umbriel capture over synthetic light/dark content.
-A still frame cannot demonstrate the motion or the complete pack together.
+A still frame cannot demonstrate the motion or the complete family together.
 
 ## Use
 
@@ -13,6 +13,7 @@ Save [effect.toml](effect.toml) and [shader.glsl](shader.glsl) in
 `~/.config/umbriel/shaders/community/screen/midnight-fog/`. Merge [config.toml](config.toml)
 into your main configuration, appending includes and merging existing tables.
 Selects `after-dark.midnight-fog`. Including a preset only registers it.
+To apply the family together, choose **After Dark → Apply family** in the plugin.
 
 ## Configuration options
 
@@ -30,6 +31,6 @@ The supplied preview does not verify HDR, rotated outputs or fractional scaling.
 
 ## Attribution
 
-Original shader by Barrulus with Codex assistance, inspired by Umbriel's playful
+Original shader by Barrulus, inspired by Umbriel's playful
 Halloween icon. No raster assets are required.
 License: [Barrulus MIT](../../LICENSES/Barrulus-MIT.txt).

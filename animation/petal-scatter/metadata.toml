@@ -1,0 +1,9 @@
+publish = true
+name = "Petal Scatter"
+description = "A gust peels petals away from a receding window edge and carries them through the cleared space."
+tested_on = ["0.1.0 (a37ae93)"]
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/petal-scatter/README.md"]
+uses = ["animation.windows_out"]
+tags = ["nature", "particles"]

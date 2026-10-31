@@ -24,6 +24,25 @@ Append the include path to your existing `files` array and merge selectors into 
 
 Borders apply to the focused, decorated window. Fullscreen and urgent windows do not display the border effect. The `ring_padding` constant in the shader must match `padding` in `effect.toml`.
 
+## Optional audio response
+
+For audio-driven brightness with the same breathing pulse during silence,
+download [shader-audio.glsl](shader-audio.glsl) beside `effect.toml` and change
+the existing preset's `shader` value to `"shader-audio.glsl"`. Keep
+`animated = true` and `speed` above zero.
+
+Follow [audio setup and compatibility](../accent-pulse/README.md#optional-audio-response),
+including enabling **Provide Audio to Umbriel** in Noctalia. This variant needs
+the current `umbriel_audio_spectrum(position)` API, verified at Umbriel
+[`76477c29`](https://github.com/noctalia-dev/umbriel/commit/76477c29).
+The default `shader.glsl` still needs only the original preset API.
+
+The variant samples low/middle/high spectrum positions. `SILENCE_LOW = 0.02`
+and `SILENCE_HIGH = 0.10` blend between the original pulse and audio brightness;
+`AUDIO_GAIN = 2.0` controls response strength. No feed or silent input preserves
+the original pulse exactly. It adds spectrum texture reads and no feedback
+buffers. The preview above shows the default shader.
+
 ## Theme palette
 
 This preset enables `palette = true` in `effect.toml`. Artwork colours follow

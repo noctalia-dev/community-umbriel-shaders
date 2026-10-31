@@ -3,7 +3,7 @@
   "draft": false,
   "source": {
     "repository": "https://github.com/noctalia-dev/community-umbriel-shaders",
-    "revision": "e46862db03984ab4780938b4ccc849f282f4d9a6"
+    "revision": "f3261171466b86ac4876916266e53130afc3bae3"
   },
   "feature_definitions": {
     "preset-effects": "Umbriel named effect presets and selectors; the original preset API was introduced at 512e2fb3.",
@@ -249,6 +249,63 @@
       }
     },
     {
+      "id": "animation/candle-snuff",
+      "path": "animation/candle-snuff",
+      "name": "Candle Snuff",
+      "description": "A quick dim and fade with a small orange-to-green edge flicker, confined to the departing window.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/candle-snuff/README.md"
+      ],
+      "tags": [
+        "fire",
+        "horror"
+      ],
+      "role": "effect",
+      "kind": "animation",
+      "preset": "after-dark.candle-snuff",
+      "uses": [
+        "animation.windows_out"
+      ],
+      "dependencies": [],
+      "families": [
+        "after-dark"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/candle-snuff/README.md",
+        "animation/candle-snuff/effect.toml",
+        "animation/candle-snuff/shader.glsl"
+      ],
+      "preview": {
+        "image": "animation/candle-snuff/preview.png",
+        "animation": "animation/candle-snuff/preview.gif"
+      },
+      "readme": "animation/candle-snuff/README.md",
+      "config_example": "animation/candle-snuff/config.toml",
+      "activation": {
+        "include": [
+          "animation/candle-snuff/effect.toml"
+        ],
+        "settings": {
+          "animation.enabled": true,
+          "animation.windows_out.curve": "linear",
+          "animation.windows_out.duration_ms": 240,
+          "animation.windows_out.effect": "after-dark.candle-snuff",
+          "animation.windows_out.enabled": true
+        }
+      }
+    },
+    {
       "id": "animation/cells",
       "path": "animation/cells",
       "name": "Cells",
@@ -330,7 +387,9 @@
         "animation.windows_out"
       ],
       "dependencies": [],
-      "families": [],
+      "families": [
+        "diwali"
+      ],
       "requirements": {
         "features": [
           "preset-effects"
@@ -364,6 +423,63 @@
           "animation.windows_out.duration_ms": 550,
           "animation.windows_out.effect": "diwali.cloud-puff",
           "animation.windows_out.enabled": true
+        }
+      }
+    },
+    {
+      "id": "animation/crescent-reveal",
+      "path": "animation/crescent-reveal",
+      "name": "Crescent Reveal — Pumpkin Fire",
+      "description": "Pumpkin fire ignites at the bottom-left and burns the window into existence toward the top-right.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/crescent-reveal/README.md"
+      ],
+      "tags": [
+        "fire",
+        "horror"
+      ],
+      "role": "effect",
+      "kind": "animation",
+      "preset": "after-dark.crescent-reveal",
+      "uses": [
+        "animation.windows_in"
+      ],
+      "dependencies": [],
+      "families": [
+        "after-dark"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/crescent-reveal/README.md",
+        "animation/crescent-reveal/effect.toml",
+        "animation/crescent-reveal/shader.glsl"
+      ],
+      "preview": {
+        "image": "animation/crescent-reveal/preview.png",
+        "animation": "animation/crescent-reveal/preview.gif"
+      },
+      "readme": "animation/crescent-reveal/README.md",
+      "config_example": "animation/crescent-reveal/config.toml",
+      "activation": {
+        "include": [
+          "animation/crescent-reveal/effect.toml"
+        ],
+        "settings": {
+          "animation.enabled": true,
+          "animation.windows_in.curve": "linear",
+          "animation.windows_in.duration_ms": 1300,
+          "animation.windows_in.effect": "after-dark.crescent-reveal",
+          "animation.windows_in.enabled": true
         }
       }
     },
@@ -606,6 +722,67 @@
           "animation.workspaces.effect": "ghostly-tear",
           "animation.workspaces.enabled": true,
           "animation.workspaces.style": "reveal"
+        }
+      }
+    },
+    {
+      "id": "animation/ghostly-tear-wave",
+      "path": "animation/ghostly-tear-wave",
+      "name": "Ghostly Tear Wave",
+      "description": "Opening begins along an uneven horizontal line near the window's centre.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/ghostly-tear-wave/README.md"
+      ],
+      "tags": [
+        "horror"
+      ],
+      "role": "effect",
+      "kind": "animation",
+      "preset": "ghostly-tear-wave",
+      "uses": [
+        "animation.windows_in",
+        "animation.windows_out"
+      ],
+      "dependencies": [],
+      "families": [
+        "ghostly-tear"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/ghostly-tear-wave/README.md",
+        "animation/ghostly-tear-wave/effect.toml",
+        "animation/ghostly-tear-wave/shader.glsl"
+      ],
+      "preview": {
+        "image": "animation/ghostly-tear-wave/preview.png",
+        "animation": "animation/ghostly-tear-wave/preview.gif"
+      },
+      "readme": "animation/ghostly-tear-wave/README.md",
+      "config_example": "animation/ghostly-tear-wave/config.toml",
+      "activation": {
+        "include": [
+          "animation/ghostly-tear-wave/effect.toml"
+        ],
+        "settings": {
+          "animation.enabled": true,
+          "animation.windows_in.curve": "linear",
+          "animation.windows_in.duration_ms": 1100,
+          "animation.windows_in.effect": "ghostly-tear-wave",
+          "animation.windows_in.enabled": true,
+          "animation.windows_out.curve": "linear",
+          "animation.windows_out.duration_ms": 950,
+          "animation.windows_out.effect": "ghostly-tear-wave",
+          "animation.windows_out.enabled": true
         }
       }
     },
@@ -965,6 +1142,124 @@
       }
     },
     {
+      "id": "animation/petal-gather",
+      "path": "animation/petal-gather",
+      "name": "Petal Gather",
+      "description": "A curling breeze of cream, pink and lilac petals gathers along the edge of an appearing window.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/petal-gather/README.md"
+      ],
+      "tags": [
+        "nature",
+        "particles"
+      ],
+      "role": "effect",
+      "kind": "animation",
+      "preset": "flowering-vine.petal-gather",
+      "uses": [
+        "animation.windows_in"
+      ],
+      "dependencies": [],
+      "families": [
+        "flowering-vine"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [
+        "0.1.0 (a37ae93)"
+      ],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/petal-gather/README.md",
+        "animation/petal-gather/effect.toml",
+        "animation/petal-gather/shader.glsl"
+      ],
+      "preview": {
+        "image": "animation/petal-gather/preview.png",
+        "animation": "animation/petal-gather/preview.gif"
+      },
+      "readme": "animation/petal-gather/README.md",
+      "config_example": "animation/petal-gather/config.toml",
+      "activation": {
+        "include": [
+          "animation/petal-gather/effect.toml"
+        ],
+        "settings": {
+          "animation.enabled": true,
+          "animation.windows_in.curve": "linear",
+          "animation.windows_in.duration_ms": 950,
+          "animation.windows_in.effect": "flowering-vine.petal-gather",
+          "animation.windows_in.enabled": true
+        }
+      }
+    },
+    {
+      "id": "animation/petal-scatter",
+      "path": "animation/petal-scatter",
+      "name": "Petal Scatter",
+      "description": "A gust peels petals away from a receding window edge and carries them through the cleared space.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/petal-scatter/README.md"
+      ],
+      "tags": [
+        "nature",
+        "particles"
+      ],
+      "role": "effect",
+      "kind": "animation",
+      "preset": "flowering-vine.petal-scatter",
+      "uses": [
+        "animation.windows_out"
+      ],
+      "dependencies": [],
+      "families": [
+        "flowering-vine"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [
+        "0.1.0 (a37ae93)"
+      ],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/petal-scatter/README.md",
+        "animation/petal-scatter/effect.toml",
+        "animation/petal-scatter/shader.glsl"
+      ],
+      "preview": {
+        "image": "animation/petal-scatter/preview.png",
+        "animation": "animation/petal-scatter/preview.gif"
+      },
+      "readme": "animation/petal-scatter/README.md",
+      "config_example": "animation/petal-scatter/config.toml",
+      "activation": {
+        "include": [
+          "animation/petal-scatter/effect.toml"
+        ],
+        "settings": {
+          "animation.enabled": true,
+          "animation.windows_out.curve": "linear",
+          "animation.windows_out.duration_ms": 850,
+          "animation.windows_out.effect": "flowering-vine.petal-scatter",
+          "animation.windows_out.enabled": true
+        }
+      }
+    },
+    {
       "id": "animation/rangoli-iris",
       "path": "animation/rangoli-iris",
       "name": "Rangoli Iris",
@@ -1140,6 +1435,66 @@
           "animation.windows_out.duration_ms": 800,
           "animation.windows_out.effect": "shattered-glass",
           "animation.windows_out.enabled": true
+        }
+      }
+    },
+    {
+      "id": "animation/spooky-move",
+      "path": "animation/spooky-move",
+      "name": "Spooky Move",
+      "description": "Slow, deeply stretching window movement with a lingering ghostly sway, adapted from Wobbly Move.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/spooky-move/README.md"
+      ],
+      "tags": [
+        "horror",
+        "playful"
+      ],
+      "role": "effect",
+      "kind": "animation",
+      "preset": "after-dark.spooky-move",
+      "uses": [
+        "animation.windows_move"
+      ],
+      "dependencies": [],
+      "families": [
+        "after-dark",
+        "ghostly-tear"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [
+        "0.1.0 (a37ae93)"
+      ],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/spooky-move/README.md",
+        "animation/spooky-move/effect.toml",
+        "animation/spooky-move/shader.glsl"
+      ],
+      "preview": {
+        "image": "animation/spooky-move/preview.png",
+        "animation": "animation/spooky-move/preview.gif"
+      },
+      "readme": "animation/spooky-move/README.md",
+      "config_example": "animation/spooky-move/config.toml",
+      "activation": {
+        "include": [
+          "animation/spooky-move/effect.toml"
+        ],
+        "settings": {
+          "animation.enabled": true,
+          "animation.windows_move.curve": "easeout",
+          "animation.windows_move.duration_ms": 1400,
+          "animation.windows_move.effect": "after-dark.spooky-move",
+          "animation.windows_move.enabled": true
         }
       }
     },
@@ -1442,6 +1797,68 @@
       }
     },
     {
+      "id": "animation/vine-plait",
+      "path": "animation/vine-plait",
+      "name": "Vine Plait",
+      "description": "A thick, uneven braid of flowering vines rolls gently up or down, revealing old and new workspace scenes through its gaps.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/vine-plait/README.md"
+      ],
+      "tags": [
+        "nature"
+      ],
+      "role": "effect",
+      "kind": "animation",
+      "preset": "flowering-vine.vine-plait",
+      "uses": [
+        "animation.workspaces"
+      ],
+      "dependencies": [],
+      "families": [
+        "flowering-vine"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects",
+          "workspace-reveal-full-scene"
+        ]
+      },
+      "required_settings": {
+        "animation.workspaces.style": "reveal"
+      },
+      "tested_on": [
+        "0.1.0 (a37ae93)"
+      ],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/vine-plait/README.md",
+        "animation/vine-plait/effect.toml",
+        "animation/vine-plait/shader.glsl"
+      ],
+      "preview": {
+        "image": "animation/vine-plait/preview.png",
+        "animation": "animation/vine-plait/preview.gif"
+      },
+      "readme": "animation/vine-plait/README.md",
+      "config_example": "animation/vine-plait/config.toml",
+      "activation": {
+        "include": [
+          "animation/vine-plait/effect.toml"
+        ],
+        "settings": {
+          "animation.enabled": true,
+          "animation.workspaces.curve": "linear",
+          "animation.workspaces.duration_ms": 2600,
+          "animation.workspaces.effect": "flowering-vine.vine-plait",
+          "animation.workspaces.enabled": true,
+          "animation.workspaces.style": "reveal"
+        }
+      }
+    },
+    {
       "id": "animation/void",
       "path": "animation/void",
       "name": "Void",
@@ -1697,7 +2114,9 @@
         "animation.workspaces"
       ],
       "dependencies": [],
-      "families": [],
+      "families": [
+        "after-dark"
+      ],
       "requirements": {
         "features": [
           "preset-effects",
@@ -3196,6 +3615,60 @@
       }
     },
     {
+      "id": "border/ghostly-tear-border",
+      "path": "border/ghostly-tear-border",
+      "name": "Ghostly Tear Border",
+      "description": "A luminous, uneven pearl thread follows the focused window.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "border/ghostly-tear-border/README.md"
+      ],
+      "tags": [
+        "horror"
+      ],
+      "role": "effect",
+      "kind": "border",
+      "preset": "ghostly-tear-border",
+      "uses": [
+        "effects.border"
+      ],
+      "dependencies": [
+        "window/ghostly-tear-overlay"
+      ],
+      "families": [
+        "ghostly-tear"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "border/ghostly-tear-border/README.md",
+        "border/ghostly-tear-border/effect.toml",
+        "border/ghostly-tear-border/shader.glsl"
+      ],
+      "preview": {
+        "image": "border/ghostly-tear-border/preview.png",
+        "animation": "border/ghostly-tear-border/preview.gif"
+      },
+      "readme": "border/ghostly-tear-border/README.md",
+      "config_example": "border/ghostly-tear-border/config.toml",
+      "activation": {
+        "include": [
+          "border/ghostly-tear-border/effect.toml"
+        ],
+        "settings": {
+          "effects.border": "ghostly-tear-border"
+        }
+      }
+    },
+    {
       "id": "border/heartbeat",
       "path": "border/heartbeat",
       "name": "Heartbeat",
@@ -3874,6 +4347,64 @@
       }
     },
     {
+      "id": "cursor/blossom-trail",
+      "path": "cursor/blossom-trail",
+      "name": "Blossom Trail",
+      "description": "Short twisting green vines follow the pointer, sprouting cream, pink and lilac blossoms that detach and flutter away.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "LICENSES/Noctalia-MIT.txt",
+        "cursor/blossom-trail/README.md"
+      ],
+      "tags": [
+        "nature",
+        "particles"
+      ],
+      "role": "effect",
+      "kind": "cursor",
+      "preset": "flowering-vine.blossom-trail",
+      "uses": [
+        "effects.cursor"
+      ],
+      "dependencies": [],
+      "families": [
+        "flowering-vine"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects",
+          "cursor-pointer-history"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [
+        "0.1.0 (a37ae93)"
+      ],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "LICENSES/Noctalia-MIT.txt",
+        "cursor/blossom-trail/README.md",
+        "cursor/blossom-trail/effect.toml",
+        "cursor/blossom-trail/shader.glsl"
+      ],
+      "preview": {
+        "image": "cursor/blossom-trail/preview.png",
+        "animation": "cursor/blossom-trail/preview.gif"
+      },
+      "readme": "cursor/blossom-trail/README.md",
+      "config_example": "cursor/blossom-trail/config.toml",
+      "activation": {
+        "include": [
+          "cursor/blossom-trail/effect.toml"
+        ],
+        "settings": {
+          "effects.cursor": "flowering-vine.blossom-trail"
+        }
+      }
+    },
+    {
       "id": "cursor/comet",
       "path": "cursor/comet",
       "name": "Comet",
@@ -4138,6 +4669,65 @@
       }
     },
     {
+      "id": "cursor/fractal-trail",
+      "path": "cursor/fractal-trail",
+      "name": "Fractal Trail",
+      "description": "A compact, short-lived trail of crisp, brightly coloured nested fractal contours.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "LICENSES/Noctalia-MIT.txt",
+        "cursor/fractal-trail/README.md"
+      ],
+      "tags": [
+        "psychedelic",
+        "geometric",
+        "colourful"
+      ],
+      "role": "effect",
+      "kind": "cursor",
+      "preset": "psychedelic.fractal-trail",
+      "uses": [
+        "effects.cursor"
+      ],
+      "dependencies": [],
+      "families": [
+        "psychedelic"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects",
+          "cursor-pointer-history"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [
+        "0.1.0 (a37ae93)"
+      ],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "LICENSES/Noctalia-MIT.txt",
+        "cursor/fractal-trail/README.md",
+        "cursor/fractal-trail/effect.toml",
+        "cursor/fractal-trail/shader.glsl"
+      ],
+      "preview": {
+        "image": "cursor/fractal-trail/preview.png",
+        "animation": "cursor/fractal-trail/preview.gif"
+      },
+      "readme": "cursor/fractal-trail/README.md",
+      "config_example": "cursor/fractal-trail/config.toml",
+      "activation": {
+        "include": [
+          "cursor/fractal-trail/effect.toml"
+        ],
+        "settings": {
+          "effects.cursor": "psychedelic.fractal-trail"
+        }
+      }
+    },
+    {
       "id": "cursor/frayed-veil",
       "path": "cursor/frayed-veil",
       "name": "Frayed Veil",
@@ -4300,6 +4890,122 @@
       }
     },
     {
+      "id": "cursor/ink-drip",
+      "path": "cursor/ink-drip",
+      "name": "Ink Drip",
+      "description": "A short wet-ink stroke sheds falling droplets that spread into ragged splotches and tiny satellite spots.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "LICENSES/Noctalia-MIT.txt",
+        "cursor/ink-drip/README.md"
+      ],
+      "tags": [
+        "texture",
+        "particles"
+      ],
+      "role": "effect",
+      "kind": "cursor",
+      "preset": "paper.ink-drip",
+      "uses": [
+        "effects.cursor"
+      ],
+      "dependencies": [],
+      "families": [
+        "paper"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects",
+          "cursor-pointer-history"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [
+        "0.1.0 (a37ae93)"
+      ],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "LICENSES/Noctalia-MIT.txt",
+        "cursor/ink-drip/README.md",
+        "cursor/ink-drip/effect.toml",
+        "cursor/ink-drip/shader.glsl"
+      ],
+      "preview": {
+        "image": "cursor/ink-drip/preview.png",
+        "animation": "cursor/ink-drip/preview.gif"
+      },
+      "readme": "cursor/ink-drip/README.md",
+      "config_example": "cursor/ink-drip/config.toml",
+      "activation": {
+        "include": [
+          "cursor/ink-drip/effect.toml"
+        ],
+        "settings": {
+          "effects.cursor": "paper.ink-drip"
+        }
+      }
+    },
+    {
+      "id": "cursor/kzzzt-trail",
+      "path": "cursor/kzzzt-trail",
+      "name": "kzzzt Trail",
+      "description": "A short circuit-board trail with angular branches, terminal pads and brief electric zap sparks.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "LICENSES/Noctalia-MIT.txt",
+        "cursor/kzzzt-trail/README.md"
+      ],
+      "tags": [
+        "circuit",
+        "glitch"
+      ],
+      "role": "effect",
+      "kind": "cursor",
+      "preset": "kzzzt-trail",
+      "uses": [
+        "effects.cursor"
+      ],
+      "dependencies": [],
+      "families": [
+        "kzzzt"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects",
+          "cursor-pointer-history"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [
+        "0.1.0 (a37ae93)"
+      ],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "LICENSES/Noctalia-MIT.txt",
+        "cursor/kzzzt-trail/README.md",
+        "cursor/kzzzt-trail/effect.toml",
+        "cursor/kzzzt-trail/shader.glsl"
+      ],
+      "preview": {
+        "image": "cursor/kzzzt-trail/preview.png",
+        "animation": "cursor/kzzzt-trail/preview.gif"
+      },
+      "readme": "cursor/kzzzt-trail/README.md",
+      "config_example": "cursor/kzzzt-trail/config.toml",
+      "activation": {
+        "include": [
+          "cursor/kzzzt-trail/effect.toml"
+        ],
+        "settings": {
+          "effects.cursor": "kzzzt-trail"
+        }
+      }
+    },
+    {
       "id": "cursor/music-radiance",
       "path": "cursor/music-radiance",
       "name": "Music Radiance",
@@ -4424,7 +5130,9 @@
         "effects.cursor"
       ],
       "dependencies": [],
-      "families": [],
+      "families": [
+        "beach-surf"
+      ],
       "requirements": {
         "features": [
           "preset-effects",
@@ -5502,6 +6210,61 @@
       }
     },
     {
+      "id": "window/dappled-light",
+      "path": "window/dappled-light",
+      "name": "Dappled Light",
+      "description": "Faint leaf shadows sway across window content, with soft warm light filtering through the gaps.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "window/dappled-light/README.md"
+      ],
+      "tags": [
+        "nature",
+        "minimal"
+      ],
+      "role": "effect",
+      "kind": "window",
+      "preset": "flowering-vine.dappled-light",
+      "uses": [
+        "effects.window"
+      ],
+      "dependencies": [],
+      "families": [
+        "flowering-vine"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [
+        "0.1.0 (a37ae93)"
+      ],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "window/dappled-light/README.md",
+        "window/dappled-light/effect.toml",
+        "window/dappled-light/shader.glsl"
+      ],
+      "preview": {
+        "image": "window/dappled-light/preview.png",
+        "animation": "window/dappled-light/preview.gif"
+      },
+      "readme": "window/dappled-light/README.md",
+      "config_example": "window/dappled-light/config.toml",
+      "activation": {
+        "include": [
+          "window/dappled-light/effect.toml"
+        ],
+        "settings": {
+          "effects.window": "flowering-vine.dappled-light"
+        }
+      }
+    },
+    {
       "id": "window/diya-glow-overlay",
       "path": "window/diya-glow-overlay",
       "name": "Diya Glow Overlay",
@@ -5895,6 +6658,110 @@
         ],
         "settings": {
           "effects.window": "psychedelic.fractal-veil"
+        }
+      }
+    },
+    {
+      "id": "window/ghostly-tear-overlay",
+      "path": "window/ghostly-tear-overlay",
+      "name": "Ghostly Tear Overlay",
+      "description": "Shallow pearl, mint and lavender wisps curl into the window from its edges.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "window/ghostly-tear-overlay/README.md"
+      ],
+      "tags": [
+        "horror"
+      ],
+      "role": "companion",
+      "kind": "window",
+      "preset": "ghostly-tear-overlay",
+      "uses": [
+        "effects.window"
+      ],
+      "dependencies": [],
+      "families": [
+        "ghostly-tear"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "window/ghostly-tear-overlay/README.md",
+        "window/ghostly-tear-overlay/effect.toml",
+        "window/ghostly-tear-overlay/shader.glsl"
+      ],
+      "preview": {
+        "image": "window/ghostly-tear-overlay/preview.png",
+        "animation": null
+      },
+      "readme": "window/ghostly-tear-overlay/README.md",
+      "config_example": "window/ghostly-tear-overlay/config.toml",
+      "activation": {
+        "include": [
+          "window/ghostly-tear-overlay/effect.toml"
+        ],
+        "settings": {
+          "effects.window": "ghostly-tear-overlay"
+        }
+      }
+    },
+    {
+      "id": "window/haunted-glass",
+      "path": "window/haunted-glass",
+      "name": "Haunted Glass — Claw Strike",
+      "description": "Three hooked talons press against the inside of the pane, denting the window content around their tips.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "window/haunted-glass/README.md"
+      ],
+      "tags": [
+        "horror"
+      ],
+      "role": "effect",
+      "kind": "window",
+      "preset": "after-dark.haunted-glass",
+      "uses": [
+        "effects.window"
+      ],
+      "dependencies": [],
+      "families": [
+        "after-dark"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "window/haunted-glass/README.md",
+        "window/haunted-glass/effect.toml",
+        "window/haunted-glass/shader.glsl"
+      ],
+      "preview": {
+        "image": "window/haunted-glass/preview.png",
+        "animation": "window/haunted-glass/preview.gif"
+      },
+      "readme": "window/haunted-glass/README.md",
+      "config_example": "window/haunted-glass/config.toml",
+      "activation": {
+        "include": [
+          "window/haunted-glass/effect.toml"
+        ],
+        "settings": {
+          "effects.window": "after-dark.haunted-glass"
         }
       }
     },
@@ -7367,12 +8234,17 @@
     {
       "id": "after-dark",
       "name": "After Dark",
-      "description": "Pumpkin borders, witchfire cursor trails and low fog for a Halloween desktop.",
+      "description": "Pumpkin vines, witchfire, haunted glass and fog for a Halloween desktop.",
       "members": [
         "cursor/witchfire",
         "border/somethings-watching",
         "window/somethings-watching-overlay",
-        "screen/midnight-fog"
+        "window/haunted-glass",
+        "screen/midnight-fog",
+        "animation/crescent-reveal",
+        "animation/candle-snuff",
+        "animation/witching-hour",
+        "animation/spooky-move"
       ],
       "tags": [
         "horror",
@@ -7389,25 +8261,50 @@
       "config_example": null,
       "activation": {
         "include": [
+          "animation/candle-snuff/effect.toml",
+          "animation/crescent-reveal/effect.toml",
+          "animation/spooky-move/effect.toml",
+          "animation/witching-hour/effect.toml",
           "border/somethings-watching/effect.toml",
           "cursor/witchfire/effect.toml",
-          "screen/midnight-fog/effect.toml"
+          "screen/midnight-fog/effect.toml",
+          "window/haunted-glass/effect.toml"
         ],
         "settings": {
+          "animation.enabled": true,
+          "animation.windows_in.curve": "linear",
+          "animation.windows_in.duration_ms": 1300,
+          "animation.windows_in.effect": "after-dark.crescent-reveal",
+          "animation.windows_in.enabled": true,
+          "animation.windows_move.curve": "easeout",
+          "animation.windows_move.duration_ms": 1400,
+          "animation.windows_move.effect": "after-dark.spooky-move",
+          "animation.windows_move.enabled": true,
+          "animation.windows_out.curve": "linear",
+          "animation.windows_out.duration_ms": 240,
+          "animation.windows_out.effect": "after-dark.candle-snuff",
+          "animation.windows_out.enabled": true,
+          "animation.workspaces.curve": "linear",
+          "animation.workspaces.duration_ms": 1100,
+          "animation.workspaces.effect": "witching-hour",
+          "animation.workspaces.enabled": true,
+          "animation.workspaces.style": "reveal",
           "effects.border": "after-dark.somethings-watching",
           "effects.cursor": "after-dark.witchfire",
-          "effects.screen": "after-dark.midnight-fog"
+          "effects.screen": "after-dark.midnight-fog",
+          "effects.window": "after-dark.haunted-glass"
         }
       }
     },
     {
       "id": "beach-surf",
       "name": "Beach Surf",
-      "description": "Coordinated surf and foam around windows and through their transitions.",
+      "description": "Coordinated surf and foam around windows and through their transitions, with a bioluminescent Pond Wake cursor trail.",
       "members": [
         "animation/beach-surf-animation",
         "border/beach-surf",
-        "window/beach-surf-overlay"
+        "window/beach-surf-overlay",
+        "cursor/pond-wake"
       ],
       "tags": [
         "water",
@@ -7422,18 +8319,38 @@
       },
       "readme": null,
       "config_example": null,
-      "activation": null
+      "activation": {
+        "include": [
+          "animation/beach-surf-animation/effect.toml",
+          "border/beach-surf/effect.toml",
+          "cursor/pond-wake/effect.toml"
+        ],
+        "settings": {
+          "animation.enabled": true,
+          "animation.windows_in.curve": "linear",
+          "animation.windows_in.duration_ms": 2450,
+          "animation.windows_in.effect": "beach-surf-animation",
+          "animation.windows_in.enabled": true,
+          "animation.windows_out.curve": "linear",
+          "animation.windows_out.duration_ms": 2450,
+          "animation.windows_out.effect": "beach-surf-animation",
+          "animation.windows_out.enabled": true,
+          "effects.border": "beach-surf",
+          "effects.cursor": "cursor.pond-wake"
+        }
+      }
     },
     {
       "id": "diwali",
       "name": "Diwali",
-      "description": "Oil lamps, sparkling lights, festival trails and a rangoli workspace reveal.",
+      "description": "Oil lamps, sparkling lights, festival trails, cloud-puff window transitions and a rangoli workspace reveal.",
       "members": [
         "border/diya-lights",
         "window/diya-glow-overlay",
         "cursor/festival-sparks",
         "window/firelit-clouds",
-        "animation/rangoli-iris"
+        "animation/rangoli-iris",
+        "animation/cloud-puff"
       ],
       "tags": [
         "festival",
@@ -7448,15 +8365,47 @@
       },
       "readme": null,
       "config_example": null,
-      "activation": null
+      "activation": {
+        "include": [
+          "animation/cloud-puff/effect.toml",
+          "animation/rangoli-iris/effect.toml",
+          "border/diya-lights/effect.toml",
+          "cursor/festival-sparks/effect.toml",
+          "window/firelit-clouds/effect.toml"
+        ],
+        "settings": {
+          "animation.enabled": true,
+          "animation.windows_in.curve": "linear",
+          "animation.windows_in.duration_ms": 650,
+          "animation.windows_in.effect": "diwali.cloud-puff",
+          "animation.windows_in.enabled": true,
+          "animation.windows_out.curve": "linear",
+          "animation.windows_out.duration_ms": 550,
+          "animation.windows_out.effect": "diwali.cloud-puff",
+          "animation.windows_out.enabled": true,
+          "animation.workspaces.curve": "linear",
+          "animation.workspaces.duration_ms": 1200,
+          "animation.workspaces.effect": "diwali.rangoli-iris",
+          "animation.workspaces.enabled": true,
+          "animation.workspaces.style": "reveal",
+          "effects.border": "diwali.diya-lights",
+          "effects.cursor": "diwali.festival-sparks",
+          "effects.window": "diwali.firelit-clouds"
+        }
+      }
     },
     {
       "id": "flowering-vine",
       "name": "Flowering Vine",
-      "description": "A flowering vine border and its matching inward decoration.",
+      "description": "Flowering borders, a blossom cursor trail, dappled window light and windborne petal transitions, with a rolling vine workspace plait.",
       "members": [
         "border/flowering-vine",
-        "window/flowering-vine-overlay"
+        "window/flowering-vine-overlay",
+        "cursor/blossom-trail",
+        "window/dappled-light",
+        "animation/vine-plait",
+        "animation/petal-gather",
+        "animation/petal-scatter"
       ],
       "tags": [
         "nature"
@@ -7470,17 +8419,49 @@
       },
       "readme": null,
       "config_example": null,
-      "activation": null
+      "activation": {
+        "include": [
+          "animation/petal-gather/effect.toml",
+          "animation/petal-scatter/effect.toml",
+          "animation/vine-plait/effect.toml",
+          "border/flowering-vine/effect.toml",
+          "cursor/blossom-trail/effect.toml",
+          "window/dappled-light/effect.toml"
+        ],
+        "settings": {
+          "animation.enabled": true,
+          "animation.windows_in.curve": "linear",
+          "animation.windows_in.duration_ms": 950,
+          "animation.windows_in.effect": "flowering-vine.petal-gather",
+          "animation.windows_in.enabled": true,
+          "animation.windows_out.curve": "linear",
+          "animation.windows_out.duration_ms": 850,
+          "animation.windows_out.effect": "flowering-vine.petal-scatter",
+          "animation.windows_out.enabled": true,
+          "animation.workspaces.curve": "linear",
+          "animation.workspaces.duration_ms": 2600,
+          "animation.workspaces.effect": "flowering-vine.vine-plait",
+          "animation.workspaces.enabled": true,
+          "animation.workspaces.style": "reveal",
+          "effects.border": "flowering-vine",
+          "effects.cursor": "flowering-vine.blossom-trail",
+          "effects.window": "flowering-vine.dappled-light"
+        }
+      }
     },
     {
       "id": "ghostly-tear",
       "name": "Ghostly Tear",
-      "description": "A ghostly window reveal with three alternative spectral cursor trails.",
+      "description": "Pearl, mint and lavender fabric, wisps and ghostly reveals, with Spectral Wake by default, two alternative cursor trails and stretchy Spooky Move motion.",
       "members": [
         "animation/ghostly-tear",
+        "animation/ghostly-tear-wave",
+        "border/ghostly-tear-border",
+        "window/ghostly-tear-overlay",
         "cursor/ghost-thread",
         "cursor/frayed-veil",
-        "cursor/spectral-wake"
+        "cursor/spectral-wake",
+        "animation/spooky-move"
       ],
       "tags": [
         "horror",
@@ -7495,23 +8476,55 @@
       },
       "readme": null,
       "config_example": null,
-      "activation": null
+      "activation": {
+        "include": [
+          "animation/ghostly-tear/effect.toml",
+          "animation/ghostly-tear-wave/effect.toml",
+          "animation/spooky-move/effect.toml",
+          "border/ghostly-tear-border/effect.toml",
+          "cursor/spectral-wake/effect.toml"
+        ],
+        "settings": {
+          "animation.enabled": true,
+          "animation.windows_in.curve": "linear",
+          "animation.windows_in.duration_ms": 1100,
+          "animation.windows_in.effect": "ghostly-tear-wave",
+          "animation.windows_in.enabled": true,
+          "animation.windows_move.curve": "easeout",
+          "animation.windows_move.duration_ms": 1400,
+          "animation.windows_move.effect": "after-dark.spooky-move",
+          "animation.windows_move.enabled": true,
+          "animation.windows_out.curve": "linear",
+          "animation.windows_out.duration_ms": 950,
+          "animation.windows_out.effect": "ghostly-tear-wave",
+          "animation.windows_out.enabled": true,
+          "animation.workspaces.curve": "linear",
+          "animation.workspaces.duration_ms": 1200,
+          "animation.workspaces.effect": "ghostly-tear",
+          "animation.workspaces.enabled": true,
+          "animation.workspaces.style": "reveal",
+          "effects.border": "ghostly-tear-border",
+          "effects.cursor": "spectral-wake"
+        }
+      }
     },
     {
       "id": "kzzzt",
       "name": "kzzzt",
-      "description": "Circuit traces and phosphor glitches across opening, closing, borders and windows.",
+      "description": "Circuit traces and phosphor glitches across opening, closing, borders and windows, with a compact sparking circuit cursor trail.",
       "members": [
         "animation/kzzzt-open",
         "animation/kzzzt-close",
         "border/kzzzt-ring",
-        "window/kzzzt"
+        "window/kzzzt",
+        "cursor/kzzzt-trail"
       ],
       "tags": [
         "glitch",
         "circuit"
       ],
       "authors": [
+        "Barrulus",
         "weegs710"
       ],
       "preview": {
@@ -7520,17 +8533,40 @@
       },
       "readme": null,
       "config_example": null,
-      "activation": null
+      "activation": {
+        "include": [
+          "animation/kzzzt-close/effect.toml",
+          "animation/kzzzt-open/effect.toml",
+          "border/kzzzt-ring/effect.toml",
+          "cursor/kzzzt-trail/effect.toml",
+          "window/kzzzt/effect.toml"
+        ],
+        "settings": {
+          "animation.enabled": true,
+          "animation.windows_in.curve": "linear",
+          "animation.windows_in.duration_ms": 900,
+          "animation.windows_in.effect": "kzzzt-open",
+          "animation.windows_in.enabled": true,
+          "animation.windows_out.curve": "linear",
+          "animation.windows_out.duration_ms": 700,
+          "animation.windows_out.effect": "kzzzt-close",
+          "animation.windows_out.enabled": true,
+          "effects.border": "kzzzt-ring",
+          "effects.cursor": "kzzzt-trail",
+          "effects.window": "kzzzt"
+        }
+      }
     },
     {
       "id": "paper",
       "name": "Paper",
-      "description": "Paper edges and crumpled stationery with a matching opening and closing transition.",
+      "description": "Paper edges and crumpled stationery with a matching opening and closing transition, plus a short dripping-ink cursor with ragged splotches.",
       "members": [
         "animation/paper-animation",
         "border/paper",
         "window/paper-overlay",
-        "window/paper-content"
+        "window/paper-content",
+        "cursor/ink-drip"
       ],
       "tags": [
         "texture"
@@ -7544,18 +8580,40 @@
       },
       "readme": null,
       "config_example": null,
-      "activation": null
+      "activation": {
+        "include": [
+          "animation/paper-animation/effect.toml",
+          "border/paper/effect.toml",
+          "cursor/ink-drip/effect.toml",
+          "window/paper-content/effect.toml"
+        ],
+        "settings": {
+          "animation.enabled": true,
+          "animation.windows_in.curve": "linear",
+          "animation.windows_in.duration_ms": 1350,
+          "animation.windows_in.effect": "paper-animation",
+          "animation.windows_in.enabled": true,
+          "animation.windows_out.curve": "linear",
+          "animation.windows_out.duration_ms": 1150,
+          "animation.windows_out.effect": "paper-animation",
+          "animation.windows_out.enabled": true,
+          "effects.border": "paper",
+          "effects.cursor": "paper.ink-drip",
+          "effects.window": "paper-content"
+        }
+      }
     },
     {
       "id": "psychedelic",
       "name": "Psychedelic",
-      "description": "Coordinated kaleidoscopic borders, window patterns and fractal transitions.",
+      "description": "Coordinated kaleidoscopic borders, window patterns and fractal transitions, with a sharp, short-lived fractal cursor trail.",
       "members": [
         "animation/fractal-iris",
         "border/fractal-flow",
         "window/fractal-flow-overlay",
         "window/fractal-veil",
-        "animation/fractal-bloom"
+        "animation/fractal-bloom",
+        "cursor/fractal-trail"
       ],
       "tags": [
         "psychedelic",
@@ -7576,6 +8634,7 @@
           "animation/fractal-bloom/effect.toml",
           "animation/fractal-iris/effect.toml",
           "border/fractal-flow/effect.toml",
+          "cursor/fractal-trail/effect.toml",
           "window/fractal-veil/effect.toml"
         ],
         "settings": {
@@ -7594,6 +8653,7 @@
           "animation.workspaces.enabled": true,
           "animation.workspaces.style": "reveal",
           "effects.border": "psychedelic.fractal-flow",
+          "effects.cursor": "psychedelic.fractal-trail",
           "effects.window": "psychedelic.fractal-veil"
         }
       }
@@ -7624,7 +8684,33 @@
       },
       "readme": null,
       "config_example": null,
-      "activation": null
+      "activation": {
+        "include": [
+          "animation/blood-in/effect.toml",
+          "animation/blood-out/effect.toml",
+          "animation/vampire-blood-wash/effect.toml",
+          "border/heartbeat/effect.toml",
+          "cursor/vampire-wake/effect.toml"
+        ],
+        "settings": {
+          "animation.enabled": true,
+          "animation.windows_in.curve": "linear",
+          "animation.windows_in.duration_ms": 700,
+          "animation.windows_in.effect": "blood-drip-in",
+          "animation.windows_in.enabled": true,
+          "animation.windows_out.curve": "linear",
+          "animation.windows_out.duration_ms": 700,
+          "animation.windows_out.effect": "blood-drain-out",
+          "animation.windows_out.enabled": true,
+          "animation.workspaces.curve": "linear",
+          "animation.workspaces.duration_ms": 1400,
+          "animation.workspaces.effect": "vampire-blood-wash",
+          "animation.workspaces.enabled": true,
+          "animation.workspaces.style": "reveal",
+          "effects.border": "heartbeat",
+          "effects.cursor": "vampire-wake"
+        }
+      }
     },
     {
       "id": "wobbly",
@@ -7646,7 +8732,27 @@
       },
       "readme": null,
       "config_example": null,
-      "activation": null
+      "activation": {
+        "include": [
+          "animation/wobbly-lifecycle/effect.toml",
+          "animation/wobbly-move/effect.toml"
+        ],
+        "settings": {
+          "animation.enabled": true,
+          "animation.windows_in.curve": "linear",
+          "animation.windows_in.duration_ms": 620,
+          "animation.windows_in.effect": "wobbly-lifecycle",
+          "animation.windows_in.enabled": true,
+          "animation.windows_move.curve": "easeout",
+          "animation.windows_move.duration_ms": 650,
+          "animation.windows_move.effect": "wobbly-move",
+          "animation.windows_move.enabled": true,
+          "animation.windows_out.curve": "linear",
+          "animation.windows_out.duration_ms": 460,
+          "animation.windows_out.effect": "wobbly-lifecycle",
+          "animation.windows_out.enabled": true
+        }
+      }
     }
   ],
   "files": {
@@ -7750,9 +8856,33 @@
       "bytes": 2846,
       "sha256": "24be3bff0764e2ce87148d125a24631dbb4bc9b423ab5b1e63acbb57c5f13007"
     },
+    "animation/candle-snuff/README.md": {
+      "bytes": 1998,
+      "sha256": "344628ed12f2b62861e76de571a7d1fb7219f854743c50c3f95a5a535cf60b51"
+    },
+    "animation/candle-snuff/config.toml": {
+      "bytes": 300,
+      "sha256": "eb3166bff252c3aa2556b0156c8d62ce263024ae0f26f170fb579ae84543af10"
+    },
+    "animation/candle-snuff/effect.toml": {
+      "bytes": 85,
+      "sha256": "ada0d922f8e68c56a952001e0ac939bf7e3e6fd8cc40306a2fdb2e2d5ea3724a"
+    },
+    "animation/candle-snuff/preview.gif": {
+      "bytes": 58137,
+      "sha256": "ca239890b07092c22500e2334368ae1633c1814f5120d4be30b6eb771b215f70"
+    },
+    "animation/candle-snuff/preview.png": {
+      "bytes": 10895,
+      "sha256": "94081925138c9fe40a91680c5be0609c6a2b019aeeffc62685f0eaae1d3fc474"
+    },
+    "animation/candle-snuff/shader.glsl": {
+      "bytes": 1853,
+      "sha256": "4d72dfd073d24deaaa165804e943487a4375205fd8bbb7150c59efb4ae75e706"
+    },
     "animation/cells/README.md": {
-      "bytes": 4993,
-      "sha256": "0c85add3b6436d844e5201f9f588bd35134bc8819f59d1df082ca2eb8e8b97bf"
+      "bytes": 4970,
+      "sha256": "088f45b46cba7466dcb8638b07244b1140984d97050a5a98f771ccceac7ad8e0"
     },
     "animation/cells/config.toml": {
       "bytes": 368,
@@ -7771,8 +8901,8 @@
       "sha256": "95b8d3346c4cf422f1225de84c9cb26ec4fb560f99d4b807aa6ea06d46fccc5f"
     },
     "animation/cloud-puff/README.md": {
-      "bytes": 3343,
-      "sha256": "4f780184de2684cbb79812885704a189042ae374139dd98765c4a245154a273d"
+      "bytes": 3321,
+      "sha256": "858a5147bda1e14d43ab7b83b24a9a03e65da231b71c2fec8ac89e62b4512990"
     },
     "animation/cloud-puff/config.toml": {
       "bytes": 366,
@@ -7787,12 +8917,36 @@
       "sha256": "686dd3219899c0dd46540f05d30b10812a6f2bfd341b660af493423169459ad0"
     },
     "animation/cloud-puff/shader.glsl": {
-      "bytes": 3765,
-      "sha256": "059849a6e50ce55bf3f5d8acb22d278974f92f7c15f06f4cf2e0d7f9fddd501e"
+      "bytes": 3743,
+      "sha256": "bc6c71fa7d63fd2982a483fc1ab564fc9d3bd04fc3ab92636c8c888f66a72634"
+    },
+    "animation/crescent-reveal/README.md": {
+      "bytes": 1632,
+      "sha256": "e0b485e04a9b392c5d38668fd10846cd7fb25ab9cb401fa4cb46afc30cb19ba9"
+    },
+    "animation/crescent-reveal/config.toml": {
+      "bytes": 306,
+      "sha256": "8343a6782684a89af9042ddebb92341659628a57332f095c31e940515437e422"
+    },
+    "animation/crescent-reveal/effect.toml": {
+      "bytes": 88,
+      "sha256": "526de44e581535432f592d9a222ad1beb8bcc9f0a3159780544e6dd07f204d13"
+    },
+    "animation/crescent-reveal/preview.gif": {
+      "bytes": 441233,
+      "sha256": "7fd45e55aa6c3fbda39720b01f8f3f46a157e850916f0cd129228cb94fad6c5c"
+    },
+    "animation/crescent-reveal/preview.png": {
+      "bytes": 48988,
+      "sha256": "6e2fa31d3729c64032fda6dd985c7de6aa3fa21461a04597487c1e328feb364f"
+    },
+    "animation/crescent-reveal/shader.glsl": {
+      "bytes": 2895,
+      "sha256": "9a1e878ecca4923bae7b6890d6f626deb5b6b5f7a699f904fd65143e0791d256"
     },
     "animation/flame-grilled/README.md": {
-      "bytes": 4955,
-      "sha256": "2de1c9a6423720501c7881408582d13c7f9a1042ff245e73d2eaf32e7d4987f7"
+      "bytes": 4932,
+      "sha256": "4070f1c26638912eeec8945b571c5827f8a3acab0220dd86eeefa5a4e09597e9"
     },
     "animation/flame-grilled/config.toml": {
       "bytes": 392,
@@ -7831,8 +8985,8 @@
       "sha256": "0d107cfe9736d3f19d5d7dd35c7872fb29692851ade8cfe009eb34c9ac119826"
     },
     "animation/fractal-bloom/shader.glsl": {
-      "bytes": 3160,
-      "sha256": "7b0f84c783b27e73d3c79fa463bd077a71f313539231c985b02c806fbd3df418"
+      "bytes": 3161,
+      "sha256": "60399e0fa89260a3f911436053d7d8163d47a3cd0fc609c0a86552ac6ec5efc7"
     },
     "animation/fractal-iris/README.md": {
       "bytes": 3115,
@@ -7858,9 +9012,33 @@
       "bytes": 4867,
       "sha256": "264849baa672169f9b80218ba4fbca8b1b891a867ce828ec6727772ff70440e1"
     },
+    "animation/ghostly-tear-wave/README.md": {
+      "bytes": 3752,
+      "sha256": "b5f650f7c5bd4c2e0a67a1ed06e9822b6b09d9283a8a5ef6d0d2761a438fdbbb"
+    },
+    "animation/ghostly-tear-wave/config.toml": {
+      "bytes": 378,
+      "sha256": "54314a6f2242a66220b78861017032df2d26e124ff553196138a2103a8a3a76d"
+    },
+    "animation/ghostly-tear-wave/effect.toml": {
+      "bytes": 77,
+      "sha256": "421f160e9457a8a1cab3e6bd31023ef073210bc04f160b7ff13cedf149f2c842"
+    },
+    "animation/ghostly-tear-wave/preview.gif": {
+      "bytes": 711095,
+      "sha256": "d67a89958a27f66c2b59e351cae4d81c04d0c32ef4750611f287e822ecb41df8"
+    },
+    "animation/ghostly-tear-wave/preview.png": {
+      "bytes": 63577,
+      "sha256": "8fa2defaa46a13b7bf21e6cb59eafb4668184c4c924f6145fc58f6360780a1d0"
+    },
+    "animation/ghostly-tear-wave/shader.glsl": {
+      "bytes": 4038,
+      "sha256": "0f461c19de45866e44ad663793db19ad0c8c51db78be4c929a6f09dc0d77a028"
+    },
     "animation/ghostly-tear/README.md": {
-      "bytes": 3106,
-      "sha256": "9d9804c3323770bd460b4a24aa072fc2293f88d8d39c356ca130bb2cebdc4c23"
+      "bytes": 3084,
+      "sha256": "db508a4d3979d33ac6d6ac56914b0f1b8b196830eb2dd8ffbb90ebdcc31945af"
     },
     "animation/ghostly-tear/config.toml": {
       "bytes": 281,
@@ -7883,8 +9061,8 @@
       "sha256": "7f14464e0119c71b6edc46d60dd15014c626032b96b5a91a841ffa3632feb4fd"
     },
     "animation/glitch/README.md": {
-      "bytes": 4629,
-      "sha256": "7d52566e019f0612bb2c19d64cd3b408fc47a8683ca2dd7f4bf7d1a9e5c6417a"
+      "bytes": 4606,
+      "sha256": "87e13eca2cc411aa695b7115f6eca3bdb892054e8dbecb4846176d7536ff65a6"
     },
     "animation/glitch/config.toml": {
       "bytes": 369,
@@ -7943,8 +9121,8 @@
       "sha256": "6881221b55450ee00e0f75a5ec9c5f6b75d83f822de21e22d799e73a757171ee"
     },
     "animation/magic/README.md": {
-      "bytes": 4635,
-      "sha256": "41d64a71ffa9063be811d1785ddbefce0e8febdbe766aac7ff6db718ed2b95cb"
+      "bytes": 4612,
+      "sha256": "ec5f0a60b04ff40fc356c4c71044400d8fb5b699869391d180c35f9350f6284b"
     },
     "animation/magic/config.toml": {
       "bytes": 366,
@@ -7963,8 +9141,8 @@
       "sha256": "6fa49f8d6041bcc10e83947f66391bb6f82428e10ebd9edc0b5418a4105c2515"
     },
     "animation/old-tv/README.md": {
-      "bytes": 4922,
-      "sha256": "8f9c482a4e44435c43ccb62f805c2ee8b1ec4392c4a2eafda70026459fbe2225"
+      "bytes": 4899,
+      "sha256": "7d32f2be7b54a75cd84b71b6eea0a38d9b431061481f4527457210a559fa611d"
     },
     "animation/old-tv/config.toml": {
       "bytes": 369,
@@ -8002,9 +9180,57 @@
       "bytes": 5960,
       "sha256": "a21422d41723853bd35f2152ded06a886fae8a916c652b2842409edecf51f191"
     },
+    "animation/petal-gather/README.md": {
+      "bytes": 2913,
+      "sha256": "1ebcea4c9c2ca719cef9490a6049759d214aab986e13bcb3f994071887dc72d3"
+    },
+    "animation/petal-gather/config.toml": {
+      "bytes": 278,
+      "sha256": "4211a3e35fbe39319400a48aff0f74a4c68745764faee164ac80289bbd2a8578"
+    },
+    "animation/petal-gather/effect.toml": {
+      "bytes": 104,
+      "sha256": "39e1be7fb2e39b759287b8c590e1e5095c940853c79b32399672c49d22dcfb14"
+    },
+    "animation/petal-gather/preview.gif": {
+      "bytes": 208097,
+      "sha256": "fba35d8921b56375fc95626de51d8c610ff140696f2a441a81e529c09e8e7bcd"
+    },
+    "animation/petal-gather/preview.png": {
+      "bytes": 19555,
+      "sha256": "44085e8d18bd53d33adf7dca8f7ef1e9ff90b0f3f4cd628bd0a519f41523f09e"
+    },
+    "animation/petal-gather/shader.glsl": {
+      "bytes": 4614,
+      "sha256": "359860561c4e5144e63232af570ef5a2efa7072327d6d27e2035d27bcf953612"
+    },
+    "animation/petal-scatter/README.md": {
+      "bytes": 2929,
+      "sha256": "d0fb287899c78cb30031579fe3ce6316e6a928841a0e233c1b51446c338bcae1"
+    },
+    "animation/petal-scatter/config.toml": {
+      "bytes": 281,
+      "sha256": "5bc6c6d8e53ca439971b5377270934b14f524d71b9c33e4810e3e78e67dd2340"
+    },
+    "animation/petal-scatter/effect.toml": {
+      "bytes": 105,
+      "sha256": "b7f89e9cb3c4f0508c1b9642c6c28bfe705e5d3f94fed8e77e073bf5d90919cb"
+    },
+    "animation/petal-scatter/preview.gif": {
+      "bytes": 197381,
+      "sha256": "0e18813d39469ecb960471e7b81c7ee026e0294bba67e6f02f8bc7efd439c1b3"
+    },
+    "animation/petal-scatter/preview.png": {
+      "bytes": 17701,
+      "sha256": "ddcfb15f86b1cdff41bd85f2fed8ccfb37cd9d141d32969571c7e2f9b390abb7"
+    },
+    "animation/petal-scatter/shader.glsl": {
+      "bytes": 4615,
+      "sha256": "1ebd8f1e43c007f4b938c5b0af916ae9f0ada55430569593513483d11c8e2d15"
+    },
     "animation/rangoli-iris/README.md": {
-      "bytes": 3799,
-      "sha256": "dd26ec73592b11a587f6779e0a4c41d0d3ba4a51d2d126e8330ed61fc034b74b"
+      "bytes": 3777,
+      "sha256": "9f124370c17e1914e2914b275165753cec79561ccc3048b8d637c53f520026bc"
     },
     "animation/rangoli-iris/config.toml": {
       "bytes": 281,
@@ -8023,8 +9249,8 @@
       "sha256": "bd8ce299fa3236bda0a20382123c2c6389c735968e7914b4b1035e7f8f3f6fc8"
     },
     "animation/rangoli-iris/shader.glsl": {
-      "bytes": 4796,
-      "sha256": "b469cb73837ccb98580b69f2496b3df11f08b5f1abbf747beef1087423d37c92"
+      "bytes": 4774,
+      "sha256": "40e1a9450ca7b6603e103fbcc541db6be5061256b7de37a7ce716ae41f78e5a8"
     },
     "animation/reveal/README.md": {
       "bytes": 4088,
@@ -8047,8 +9273,8 @@
       "sha256": "c76b61c4ef5d4aad7154592851305c256bfc0a11050b971dee20939d2c0b18b9"
     },
     "animation/shattered-glass/README.md": {
-      "bytes": 5281,
-      "sha256": "4d21b187dd9a48ec58370c9998158d24172a5bdb3cf82c962db23dc7a89387e2"
+      "bytes": 5258,
+      "sha256": "aa55fc12742b46e520d3e20e0bf7adc40efd6eb39b6d9d76e7a39bce35d1ab75"
     },
     "animation/shattered-glass/config.toml": {
       "bytes": 396,
@@ -8065,6 +9291,30 @@
     "animation/shattered-glass/shader.glsl": {
       "bytes": 24093,
       "sha256": "5011522e270b541d8ffeacb16fdee592dc7d122bb49dbc6e402b0e9f55dd4e4f"
+    },
+    "animation/spooky-move/README.md": {
+      "bytes": 3362,
+      "sha256": "77fb4c50c3c40ad2fb4c11f85b1e2ba9ecbf24797f97d2f91bbe19580d3e6f7c"
+    },
+    "animation/spooky-move/config.toml": {
+      "bytes": 276,
+      "sha256": "5805cfee05b8715058e365edc92cf028aa5bb820aba0ba8a8e9ef25e62f74765"
+    },
+    "animation/spooky-move/effect.toml": {
+      "bytes": 84,
+      "sha256": "cb1e13ecc6417a4c984ea29b196171331cc82e8830c540b81fa0f75ad22f89f2"
+    },
+    "animation/spooky-move/preview.gif": {
+      "bytes": 804904,
+      "sha256": "c945f4b2a003e3d9991603ee876f7b62c7efde86ea36c1a8e01e32e9114e55ff"
+    },
+    "animation/spooky-move/preview.png": {
+      "bytes": 35823,
+      "sha256": "e012f4855117b7ccaa297c6691a73afbcac00ed0030267828412e2010f795ce7"
+    },
+    "animation/spooky-move/shader.glsl": {
+      "bytes": 1281,
+      "sha256": "025089f4856c0be2eab1d26850cc26a352895aeea6f8a949d26856bb9f95e5bd"
     },
     "animation/squash/README.md": {
       "bytes": 3912,
@@ -8087,8 +9337,8 @@
       "sha256": "e349257cc8fb97a5fceb9a053682af24822b21e1459b9fed82dcdfd9a9e62d55"
     },
     "animation/triangle-flaps/README.md": {
-      "bytes": 5149,
-      "sha256": "35afebdcf4163a728cc7ed52ba8af7d2b85be672406e026299dfe700ffc9d96f"
+      "bytes": 5126,
+      "sha256": "4b6b369a9763ae8916e8df16bf0944da807d91295aacfc31b6752cc18fa094bd"
     },
     "animation/triangle-flaps/config.toml": {
       "bytes": 395,
@@ -8127,8 +9377,8 @@
       "sha256": "1806da20a72e9c103d0a5cc16de0f8002c40f19e7ff0cb5b4e72a53f57233ef2"
     },
     "animation/vampire-blood-wash/README.md": {
-      "bytes": 2952,
-      "sha256": "0216d1b5fc42011c8835a90d60aaf061be79c8c40ca257361cb1e979a2c94f0f"
+      "bytes": 2930,
+      "sha256": "5cf187d3fd595d75c4884387f44ee83dd3ef1faab9b92af762a38ec03647156c"
     },
     "animation/vampire-blood-wash/config.toml": {
       "bytes": 286,
@@ -8151,8 +9401,8 @@
       "sha256": "2c1b62c12efbff093923569a0f72ffee72eb0373f5da504a8b29ecb4e25220cb"
     },
     "animation/vhs/README.md": {
-      "bytes": 4379,
-      "sha256": "ab71c47edcf7d56d05fc8079b702ea2409b9ddc55ed0d76d9a640ec840ad593a"
+      "bytes": 4356,
+      "sha256": "7816317969bad9a6fc5df02a258b98d884f592beddbed31f4d4cf4801a01efca"
     },
     "animation/vhs/config.toml": {
       "bytes": 360,
@@ -8170,9 +9420,33 @@
       "bytes": 1775,
       "sha256": "3bf70f9bd6fa492f93332140e872499ea05ce08b707b75fd5323efc0b6eb4ebb"
     },
+    "animation/vine-plait/README.md": {
+      "bytes": 3962,
+      "sha256": "31ca81e5b1ab3156b32cf2410bea4d9730e9ae83791ed30145920b13daf05853"
+    },
+    "animation/vine-plait/config.toml": {
+      "bytes": 292,
+      "sha256": "46cd3e9304550ccba274bb7bf2e8d795be3f1634427e8e374a3a78502b8097d1"
+    },
+    "animation/vine-plait/effect.toml": {
+      "bytes": 102,
+      "sha256": "2d7bdc35a3ed1102c76632cf4e5d7b2fa8af7010f202c7de5b532058c6a88682"
+    },
+    "animation/vine-plait/preview.gif": {
+      "bytes": 652888,
+      "sha256": "0e46e97424041001742f7aba165128ce8385af58102687cad7df6d2b17f7e493"
+    },
+    "animation/vine-plait/preview.png": {
+      "bytes": 67506,
+      "sha256": "451a15efe37ddc262d039aeeecf435ca1b7f548c20cb6cb4b66bc3d35061d6d6"
+    },
+    "animation/vine-plait/shader.glsl": {
+      "bytes": 8165,
+      "sha256": "4dc5372bdc00a1262997aeda481338933a0c38435a39fa7e2036ac535fea92fd"
+    },
     "animation/void/README.md": {
-      "bytes": 4984,
-      "sha256": "0e96d45a485c6c86b39dcfa1c202c359c9583bf8bc86f0f6d7ac41cc35ed359e"
+      "bytes": 4961,
+      "sha256": "cc2bb25a2e96a52e76c1e9d31b57f4b63e1102192e8ac5da0b303628b71392af"
     },
     "animation/void/config.toml": {
       "bytes": 364,
@@ -8231,8 +9505,8 @@
       "sha256": "24a76e5ca210f83874ca0aeb62d0091e1340b6ffa4a1ece58b5873d444064758"
     },
     "animation/wet-paint/README.md": {
-      "bytes": 4952,
-      "sha256": "ebcd1c4e6eec2fc5313f711074ceebc33dbade1966ba8640d6c4a49f246b837f"
+      "bytes": 4929,
+      "sha256": "9a69894cd8fa3c79f79ed28230f97b330229d039dfa621e7ffa2b95fb64fa285"
     },
     "animation/wet-paint/config.toml": {
       "bytes": 380,
@@ -8251,8 +9525,8 @@
       "sha256": "9e6b04d252aae3cbcbb3576d2960e225ef8b14831c5dc576fff42a47106faef3"
     },
     "animation/witching-hour/README.md": {
-      "bytes": 3631,
-      "sha256": "a0d8c2e0b2649c0da0b8c29de900aeaccbeedbf3529d81d6cb46275d289900b2"
+      "bytes": 3609,
+      "sha256": "093d30f259f447a8a292d2e79361354aeb6997a5b859538cfb30dc1474ed574f"
     },
     "animation/witching-hour/config.toml": {
       "bytes": 283,
@@ -8315,8 +9589,8 @@
       "sha256": "597221f7469280f512b9df2a98f13d4dc04e9cba9b1bf447ab23e3465cb31a6f"
     },
     "animation/workspace-burn/README.md": {
-      "bytes": 3266,
-      "sha256": "1e6643ea08ea6261006e18b2a30a50ffb3e5bd8472914847a91b95a10563c985"
+      "bytes": 3244,
+      "sha256": "2c753b51ff87be2547773b48d30fc0aeba9f76a8b2b36c187ccd247da6fc5196"
     },
     "animation/workspace-burn/config.toml": {
       "bytes": 278,
@@ -8339,8 +9613,8 @@
       "sha256": "18c0a3202b58398aaee06080f17621eeb8cc120c181df70f5064dd44f30ad902"
     },
     "animation/workspace-crt-scanline/README.md": {
-      "bytes": 3260,
-      "sha256": "36809a1d40ecff5f63e1dbf78f92d72c2e60bdf6f449f39b07592dcca0afca70"
+      "bytes": 3238,
+      "sha256": "87fb9ab45beade5fa755e9843e594bbd964b671e02f872dbc03e26364cac13de"
     },
     "animation/workspace-crt-scanline/config.toml": {
       "bytes": 293,
@@ -8363,8 +9637,8 @@
       "sha256": "b3ec3b7c35e305cf4142e18f1b2802d8455f496adf7ce459a01a185323e1d5e4"
     },
     "animation/workspace-dust-cloud/README.md": {
-      "bytes": 3333,
-      "sha256": "e3ecd3063cb51c095637775d5277a1d2713e1f011d82b46af60a69e328e294e8"
+      "bytes": 3311,
+      "sha256": "079347bae4176d8916657c507978c2a9d665c244c4140594f4c59d68ab225be6"
     },
     "animation/workspace-dust-cloud/config.toml": {
       "bytes": 290,
@@ -8387,8 +9661,8 @@
       "sha256": "0fd65334faffe29e7c99ab2666c57f1d20e842ee218048fc09a0902d3af74e52"
     },
     "animation/workspace-glitch-phase/README.md": {
-      "bytes": 3341,
-      "sha256": "3055867e6d7223cd0640342f7ca3110a13abd249bbdd52547be3d1d7243a7870"
+      "bytes": 3319,
+      "sha256": "1755ab6be4a891da3e2ff14e4486bafad1e08e7abab744a97809b6605a86d4f9"
     },
     "animation/workspace-glitch-phase/config.toml": {
       "bytes": 294,
@@ -8411,8 +9685,8 @@
       "sha256": "00fb930f1fada4cba510cd23afecc1d1f9171ec0f45d686709433e31440bfd58"
     },
     "animation/workspace-iris/README.md": {
-      "bytes": 3279,
-      "sha256": "86b34eb32e5071fec6344af12267a7840aaa956516b6cfd85bf168dc4480e4cb"
+      "bytes": 3257,
+      "sha256": "ad907e439b99ba3a623341f63864bcd07a4275da49df13a00f428a965e5537c1"
     },
     "animation/workspace-iris/config.toml": {
       "bytes": 278,
@@ -8431,12 +9705,12 @@
       "sha256": "5cc279dd118758ac63f0c8d40f2e8a3dc3a2d7fc4883aa5f8aa6d4e011ed8507"
     },
     "animation/workspace-iris/shader.glsl": {
-      "bytes": 883,
-      "sha256": "8ce8c04aa8eb33241d5f6cdae3cbdd502fa5181c7f78fcadf6c5c59529dc6c15"
+      "bytes": 861,
+      "sha256": "542d2090df4fa45cf07e9b16496aa083611f0a8c1baf001162726d12dc492b98"
     },
     "animation/workspace-melt/README.md": {
-      "bytes": 3269,
-      "sha256": "3cee6d08efa1bf637ddee8f9214377013223fcc55f2d895c58dcb54979fc6c6a"
+      "bytes": 3247,
+      "sha256": "ce2d1fb67e5e2ec933e7e6843de3ecbc2b246c08dc1bbfac4aa901cd9b41e033"
     },
     "animation/workspace-melt/config.toml": {
       "bytes": 278,
@@ -8455,12 +9729,12 @@
       "sha256": "51a12092ed5e42bb39275b32a8bac89dd6fc4cba9c05ad625805df8732e06eb5"
     },
     "animation/workspace-melt/shader.glsl": {
-      "bytes": 1321,
-      "sha256": "5967dc95078cfa5b0a45a9377bf7b1ea6f1452cf8a54d256c326949086b54897"
+      "bytes": 1299,
+      "sha256": "fd5706354cb9396a856f09522f8e7e4fce39dd64dbaca79bb466fdf3a03f7cd4"
     },
     "animation/workspace-noctalia-wave/README.md": {
-      "bytes": 3366,
-      "sha256": "2c5bb0f86b48d45727fc22e2ae2232d59209ab08e6d41050e663d5b581bb7860"
+      "bytes": 3344,
+      "sha256": "e34ecc202c17b65388e9a5f8de0565b41b289df504c771aee3dfbc1780fbabb3"
     },
     "animation/workspace-noctalia-wave/config.toml": {
       "bytes": 296,
@@ -8483,8 +9757,8 @@
       "sha256": "5c48fa2265be680a829ea2449bdb839154aa94ef023675598456f9d62715dccb"
     },
     "animation/workspace-sand-collapse/README.md": {
-      "bytes": 3343,
-      "sha256": "8bcd6d1ef1bd9eb159d1927d6ab8984d7e66c3c89701c2708b4dfe7b54789350"
+      "bytes": 3321,
+      "sha256": "0fc425c7f6ea8ac796b826d45e5eb20dfc85bb43ad849c1bc13ec17d05d1a488"
     },
     "animation/workspace-sand-collapse/config.toml": {
       "bytes": 296,
@@ -8507,8 +9781,8 @@
       "sha256": "8a646f9a570e84d841dc1ea44376c9637c9578754ecd868323412d8181e38d42"
     },
     "animation/workspace-shatter/README.md": {
-      "bytes": 3333,
-      "sha256": "36d3ffc472140bea851c41eafb4e10033b8141403cc7aaeed15eae0debabe7bb"
+      "bytes": 3311,
+      "sha256": "4186f213d2f90637b37fe4011a08d26ce3d32b436fa3ce3c0b7def6aed3db940"
     },
     "animation/workspace-shatter/config.toml": {
       "bytes": 284,
@@ -8531,8 +9805,8 @@
       "sha256": "93124695675bc7f1c0ebf3adc21e19dcb2c1fb2885b331b352c9eea5af696377"
     },
     "animation/workspace-tile-gravity/README.md": {
-      "bytes": 3311,
-      "sha256": "225a1bc17c00e051f13e7a54db4e41eaab74da0c60db099ce24ae8e56c10396f"
+      "bytes": 3289,
+      "sha256": "6b78e63b4b2e4d7c13e4a9fc2832baab367be94e47c14fefe5316e8c34d88e17"
     },
     "animation/workspace-tile-gravity/config.toml": {
       "bytes": 294,
@@ -8555,8 +9829,8 @@
       "sha256": "d89b09e47eacacc9ec78e8632b793eee10638f0266928cfb4c9571fb0bac522c"
     },
     "animation/workspace-transation-vhs-ripple/README.md": {
-      "bytes": 5351,
-      "sha256": "70ce5e9e308e07f8afac77d1751e087d26ef49f6f629a52015220350704c93f3"
+      "bytes": 5328,
+      "sha256": "88245fbaf017a967c4b02107887b5e7fe76b67a6ee8a7d90bd2d1507cee4281f"
     },
     "animation/workspace-transation-vhs-ripple/config.toml": {
       "bytes": 311,
@@ -8575,8 +9849,8 @@
       "sha256": "adac1bf4440d71127436255c5924d618c2a4487c903d1583242c25c30b15b566"
     },
     "animation/workspace-transporter/README.md": {
-      "bytes": 3359,
-      "sha256": "96e94b75638be9959cedb84c906aa9fd0dcf88111269a116ed0dc3c8d4cab7ba"
+      "bytes": 3337,
+      "sha256": "1f28db2127c2d2efdc67f355fea1d712b6d160abd0153181b62e32aa283b6f4a"
     },
     "animation/workspace-transporter/config.toml": {
       "bytes": 292,
@@ -8599,8 +9873,8 @@
       "sha256": "462c789e9d3d740bbd0a7476d14db7ad3e58502fe1c4b37921d1518013ecbdc7"
     },
     "animation/workspace-venetian-blinds/README.md": {
-      "bytes": 3222,
-      "sha256": "452c0bdde7319e4e8f76b2daf751c9c4b79030973ea90b1941e9c3f40a4102b2"
+      "bytes": 3200,
+      "sha256": "9904674ef89764c4e0127c9eda568c21f22194dfc57a95132936b2518814ff03"
     },
     "animation/workspace-venetian-blinds/config.toml": {
       "bytes": 300,
@@ -8623,8 +9897,8 @@
       "sha256": "87fb6944749b8f584515c6deef38153707732f1ebf4e1dd64f4f581d6ca179d5"
     },
     "animation/workspace-wipe/README.md": {
-      "bytes": 3232,
-      "sha256": "8f15b2953df4aa4925f139de32d332c62176079c1c06f977cc2b493b9da69be8"
+      "bytes": 3210,
+      "sha256": "1ee3fa9224060baf6dc2268250556288aba8d3dad612fe5fe9ea48e4669abcbd"
     },
     "animation/workspace-wipe/config.toml": {
       "bytes": 277,
@@ -8643,12 +9917,12 @@
       "sha256": "500c5ff01e4ace20d4e47ace92c8505bf950defd413557a8bda31620711f8830"
     },
     "animation/workspace-wipe/shader.glsl": {
-      "bytes": 653,
-      "sha256": "b68e04b337243637edce2796c6dd002ed59027ef4b618d630f2645d8a274d1e7"
+      "bytes": 631,
+      "sha256": "be5bccb52f4a512805fbb4f17198640a00ca42a5d10e237c583b00752d11afa2"
     },
     "border/accent-pulse/README.md": {
-      "bytes": 4571,
-      "sha256": "2c4092ae0cae9af36fc5306ba98f0129598545449658daac2844da1214bf8bcd"
+      "bytes": 6952,
+      "sha256": "f6f5faccca84048a64c4ff66e198ee2af7eef9db6f81e9c851aa7e98f5f96aa6"
     },
     "border/accent-pulse/config.toml": {
       "bytes": 185,
@@ -8707,8 +9981,8 @@
       "sha256": "034ab6417a038ce2e2d2e92d65bd17bd575c7004ceee869f340fd82952b5d72c"
     },
     "border/diya-lights/README.md": {
-      "bytes": 3286,
-      "sha256": "c0330f77487ecb07cddcb7dc18108c75087fe1b2c6dcbd338ca28759a1ba0c0f"
+      "bytes": 3264,
+      "sha256": "0d994cb5c96149de6cca2bd1daadf2b75175cb6892df859a48107158884b8a0f"
     },
     "border/diya-lights/config.toml": {
       "bytes": 158,
@@ -8727,8 +10001,8 @@
       "sha256": "23c6e96c6e821d093704cf45c9b84ca65768fbc50032d3a0ca4304862bd763f9"
     },
     "border/diya-lights/shader.glsl": {
-      "bytes": 8893,
-      "sha256": "bb8554b3c881886ff7a626a8d0ade648123ddfb30a50d984f16f533ec70848d3"
+      "bytes": 8871,
+      "sha256": "3f3542d59acf16074ef467411735016d1fafec73a221325c75adb37077686a1f"
     },
     "border/dual-orbit/README.md": {
       "bytes": 2932,
@@ -8853,6 +10127,30 @@
     "border/fuse/shader.glsl": {
       "bytes": 7566,
       "sha256": "6eed7aab28393020f7b7d453617c43ba9a42ba9d7bd4d33e06319aebc4de2e5d"
+    },
+    "border/ghostly-tear-border/README.md": {
+      "bytes": 4666,
+      "sha256": "9b4677faaac2bc5d442e3a83a945510138abd0306c2ff4d9a880abfffa750016"
+    },
+    "border/ghostly-tear-border/config.toml": {
+      "bytes": 183,
+      "sha256": "6869dcb0c26c13665cac6e08ecd18b961c8e3470c73ad5eee8c36323ff101f1f"
+    },
+    "border/ghostly-tear-border/effect.toml": {
+      "bytes": 219,
+      "sha256": "67e09f8959c2529dd274315474778adfa9def1e4f9608714be2550d0fe90ad72"
+    },
+    "border/ghostly-tear-border/preview.gif": {
+      "bytes": 2202171,
+      "sha256": "2c4b2a648e595649ae8f62434ee7708af83e09ca6fcf23c86a8ad4f0af133fc6"
+    },
+    "border/ghostly-tear-border/preview.png": {
+      "bytes": 38666,
+      "sha256": "5d2fada9245e6f940b0757d274eaad4492a13bfaf33dc91ae7527486c7bc8b8f"
+    },
+    "border/ghostly-tear-border/shader.glsl": {
+      "bytes": 6819,
+      "sha256": "66e5f1babf6c6de87fee7b3b161c23c997517232b61771f9a4fc58207f42068a"
     },
     "border/heartbeat/README.md": {
       "bytes": 3015,
@@ -8995,8 +10293,8 @@
       "sha256": "9e3ff47dafb97e29dd060c706ed06b5c842ee3ddb74d3c2bc73e076d7e0b6350"
     },
     "border/pulse/README.md": {
-      "bytes": 4788,
-      "sha256": "968137a181dc93458b537cf16b44140e6c81aa19790288bacb2122054d3fbfd2"
+      "bytes": 5832,
+      "sha256": "54e828a8d31dd85feeb61c1d85f3f39ff403ade4fac2ac8450532a01555adaef"
     },
     "border/pulse/config.toml": {
       "bytes": 171,
@@ -9075,8 +10373,8 @@
       "sha256": "8edcb242f8688576f69344395a33421f78ad81bc7193892f257353d9c555f15f"
     },
     "border/somethings-watching/README.md": {
-      "bytes": 3251,
-      "sha256": "dd9adcc2ebfe41602efbdda0aea7aa7aa5e12872f285e759d57d2aad2651a1e4"
+      "bytes": 3256,
+      "sha256": "ceb6cada4e2b3246dd45599c65b59fc7ec2d9e8f1460db57a1b0c0be415dc713"
     },
     "border/somethings-watching/config.toml": {
       "bytes": 219,
@@ -9095,8 +10393,8 @@
       "sha256": "608c413cf3d1be30936a484de3996111586516f147a8896075bd645d18fd2ffb"
     },
     "border/somethings-watching/shader.glsl": {
-      "bytes": 10816,
-      "sha256": "be98cf698b062b2d6793920c2c9bd8b6eb2ca14e5b539b2007d9d52fbc646921"
+      "bytes": 10794,
+      "sha256": "fbd6946d6520022c1bdb044027230b7e2aef46c1d7b7be04680e0f49e4b44c87"
     },
     "border/spectrum/README.md": {
       "bytes": 4616,
@@ -9117,6 +10415,30 @@
     "border/spectrum/shader.glsl": {
       "bytes": 2493,
       "sha256": "edbde4fde75c9414fe63f7749d5b7c74f690d50abf7ca972dd25da621b30ed70"
+    },
+    "cursor/blossom-trail/README.md": {
+      "bytes": 3908,
+      "sha256": "4c7a09ef680e45a705e18a645c87d6a41511d6cf50c2f8f59788d398c1a91540"
+    },
+    "cursor/blossom-trail/config.toml": {
+      "bytes": 186,
+      "sha256": "54a8cc18a8f09ee5466871992def599ce6296fd4547bd710ab9482739bd8e0e1"
+    },
+    "cursor/blossom-trail/effect.toml": {
+      "bytes": 114,
+      "sha256": "63f78ee0d58233f76ecd8ca3275c7397e7a7ead644467489321e623698172bca"
+    },
+    "cursor/blossom-trail/preview.gif": {
+      "bytes": 155555,
+      "sha256": "3081ff8da16087c417cd0eabdada50339469ffabda586b1ddf6f8b4e9d4157e4"
+    },
+    "cursor/blossom-trail/preview.png": {
+      "bytes": 8497,
+      "sha256": "afafbc9da46188bf239c5bcb793fd3731e3e7437ae41f1ad6b9fd98547300dab"
+    },
+    "cursor/blossom-trail/shader.glsl": {
+      "bytes": 8518,
+      "sha256": "93708abdeb0fb688dbf329ff7594b0301622db2aa434e3310033df98b4da3218"
     },
     "cursor/comet/README.md": {
       "bytes": 2552,
@@ -9199,8 +10521,8 @@
       "sha256": "34258eb2149f5de6722363d958471cdf039ddb0918d85130ba3435fddc2f0be0"
     },
     "cursor/festival-sparks/README.md": {
-      "bytes": 2673,
-      "sha256": "bdefc7bf1c8361640c14b9f8248bfb45f99c423364444f1c6afa57a50a98ad7a"
+      "bytes": 2651,
+      "sha256": "3264c700bbd823f5097f3a58875b1ae7551b6038ad6aa367f37b35f0c6d626f1"
     },
     "cursor/festival-sparks/config.toml": {
       "bytes": 166,
@@ -9219,12 +10541,36 @@
       "sha256": "8d42e398d1d8a468fbac4af9b12402f32f223911fa1d5058c70d8dc12a7871f3"
     },
     "cursor/festival-sparks/shader.glsl": {
-      "bytes": 3066,
-      "sha256": "19547731e32906bd0b8e71c040292855c15793eae95eb1a251125cbf3439c4c7"
+      "bytes": 3044,
+      "sha256": "a35e3a9face3046e6f7e7e55de4e7818df222861f59eacf0a82688ef685a7a3b"
+    },
+    "cursor/fractal-trail/README.md": {
+      "bytes": 3501,
+      "sha256": "3dc410d8151d3f7c8e894fc43261f6a86482901824a35e3e4263a90cf85c2dc3"
+    },
+    "cursor/fractal-trail/config.toml": {
+      "bytes": 183,
+      "sha256": "3b3b862f01c1f558fc907b40b90520f093c42863c768114f1ceb8561263ac8bc"
+    },
+    "cursor/fractal-trail/effect.toml": {
+      "bytes": 111,
+      "sha256": "fd9a4708fafc4f933c4f93d1ffb38bb466c35e0341235e4ebf55eeee7fdf62b3"
+    },
+    "cursor/fractal-trail/preview.gif": {
+      "bytes": 275543,
+      "sha256": "664bc7803c818b30619326c78f615716668fd593dfd7407c94d25ba9ae33828b"
+    },
+    "cursor/fractal-trail/preview.png": {
+      "bytes": 12861,
+      "sha256": "91c5d03413d38ea6dca604f8d6c4af2220f0311c48527ed27f9130d9ccb0be0c"
+    },
+    "cursor/fractal-trail/shader.glsl": {
+      "bytes": 6295,
+      "sha256": "4d3628ce7ccb532cedc58a3ad135e5c6333f1cb2c77c39deff1b958660cdaac0"
     },
     "cursor/frayed-veil/README.md": {
-      "bytes": 3764,
-      "sha256": "04e247cb177fca417d681a6a09702b085b5787000a9bec7f26422b6dd097d899"
+      "bytes": 3742,
+      "sha256": "ccc8a3cc238b7bd4ae3e54bd06c74502c75b34e36398b6d9bb0c5fb2abb42fcf"
     },
     "cursor/frayed-veil/config.toml": {
       "bytes": 161,
@@ -9247,8 +10593,8 @@
       "sha256": "2f5784a925164707674ac45eaaaec9ef6b1864cd1dec5c7f880f657ccca48215"
     },
     "cursor/ghost-thread/README.md": {
-      "bytes": 3721,
-      "sha256": "eda8ef4c54c2be8ca24a89ba3881264abb5da76b2763589ba983282bef8c2985"
+      "bytes": 3699,
+      "sha256": "fc16cef25cdf4e65d2a0212738a085c458f8e3b4f154b36722733a0a3aa3b270"
     },
     "cursor/ghost-thread/config.toml": {
       "bytes": 163,
@@ -9289,6 +10635,54 @@
     "cursor/glow/shader.glsl": {
       "bytes": 359,
       "sha256": "72ec7c53998d1901e755b61c3339d1e56b393b9832dcbc18a8f41481d2e4b944"
+    },
+    "cursor/ink-drip/README.md": {
+      "bytes": 3733,
+      "sha256": "0456edf1445a90f86c2aba696a7465ceb7df9d0e745f67e7e584c0c807b37837"
+    },
+    "cursor/ink-drip/config.toml": {
+      "bytes": 167,
+      "sha256": "08b5c550c70af05b95bc7d59b2cf5397812c03b457e879fa6d654d140e27f0a8"
+    },
+    "cursor/ink-drip/effect.toml": {
+      "bytes": 100,
+      "sha256": "49724c148d8a0616133f747e97b2f35f6352bd0fc31042ce852078ec66939b8d"
+    },
+    "cursor/ink-drip/preview.gif": {
+      "bytes": 102213,
+      "sha256": "511534a29ce5d6080025901c8ff3f55e96dbc0061369b149d65be05f4daf94e0"
+    },
+    "cursor/ink-drip/preview.png": {
+      "bytes": 6163,
+      "sha256": "54b04384557f471732e94ae8c76a1b6d7059569cf05b32d460bfaeba87bdece4"
+    },
+    "cursor/ink-drip/shader.glsl": {
+      "bytes": 8939,
+      "sha256": "83102fb092ae9a720e85d4205476a201266eaf90afaed3003596fcf53bde8cbf"
+    },
+    "cursor/kzzzt-trail/README.md": {
+      "bytes": 3490,
+      "sha256": "1fb6b5b51679c3f06bdd81715200b39f4d6a239be5559be4b5fbd954eb5fc0ea"
+    },
+    "cursor/kzzzt-trail/config.toml": {
+      "bytes": 167,
+      "sha256": "2930d77bc9664e9f88d36e11a47c8c453b87adef6e06d59b25e43cf7ae1d7356"
+    },
+    "cursor/kzzzt-trail/effect.toml": {
+      "bytes": 97,
+      "sha256": "7f3ba91fdded133ed72390c433dcbb4bf0bf3a9c108309031e87c10bb9811fd3"
+    },
+    "cursor/kzzzt-trail/preview.gif": {
+      "bytes": 169627,
+      "sha256": "85e1c08afdbb1d58f38c542dc6537903a36c7da69ca5b25e85f2fa46ccc95bf3"
+    },
+    "cursor/kzzzt-trail/preview.png": {
+      "bytes": 8869,
+      "sha256": "786a72326c00bdd7d2cc183eb7628d5d9854d2bbd8eef0a431ef5bb4bebe5383"
+    },
+    "cursor/kzzzt-trail/shader.glsl": {
+      "bytes": 7602,
+      "sha256": "15a9b0f9c73eb0b8efc72b84a8522d437661b7c0eb8ea9bcac8d17c63c2dcb86"
     },
     "cursor/music-radiance/README.md": {
       "bytes": 3971,
@@ -9491,8 +10885,8 @@
       "sha256": "167154faf8b84748239a24c62799801c17a97cbf86a7a556468244116ee054af"
     },
     "cursor/spectral-wake/README.md": {
-      "bytes": 3717,
-      "sha256": "cd1c920f0a8c931bda45e843d11a22fbfd39089aa6e31fe9fc8b58b1d696be84"
+      "bytes": 3695,
+      "sha256": "f5c1dde81d4b4c5f00088e15cee4b4fbd2af26292bc6de6a41fac120aefcae8e"
     },
     "cursor/spectral-wake/config.toml": {
       "bytes": 165,
@@ -9579,8 +10973,8 @@
       "sha256": "89b599429704cf24e5de101cbf986531ff6a0d2bf522983130a75d673d22b86b"
     },
     "cursor/vampire-wake/README.md": {
-      "bytes": 2924,
-      "sha256": "04f51137e69b0a02bdd4680ba0dd0f1942fc830fbd94b2afdace23b01dd639e9"
+      "bytes": 2902,
+      "sha256": "e840557e113824a58835b9b5b98c11578dc19d04eb969da397108d48f3f97379"
     },
     "cursor/vampire-wake/config.toml": {
       "bytes": 173,
@@ -9599,12 +10993,12 @@
       "sha256": "c0e54efb11851b6cead135b1ed81681ea44f03902a794df028f0836fc576ec93"
     },
     "cursor/vampire-wake/shader.glsl": {
-      "bytes": 6088,
-      "sha256": "9a72c1520b9a64b219fae681aa24c9110302eba2e8394cfda316a0347e503b28"
+      "bytes": 6066,
+      "sha256": "67d6a5a8b2517a418e01bacd2184d5bcd283a540252c08bafe23f41aa19ce772"
     },
     "cursor/witchfire/README.md": {
-      "bytes": 1581,
-      "sha256": "9c9b9fe8bbd574be5faa6f027c3bb176f2855b4251f6c82c0b7bc9d8b1150973"
+      "bytes": 1644,
+      "sha256": "be2d7442a4888834880560a5d9de3602f5b5a05b643fec931490df2bec4536bb"
     },
     "cursor/witchfire/config.toml": {
       "bytes": 199,
@@ -9619,12 +11013,12 @@
       "sha256": "61af92c780a6ce72e7503c63adef8fcd49fb8deb9fdcf27e13a0f21583351b90"
     },
     "cursor/witchfire/shader.glsl": {
-      "bytes": 3908,
-      "sha256": "4106efe0e3edbd38f35686d9cd78a053bca972ed37810771a706de890ae25385"
+      "bytes": 3886,
+      "sha256": "cb794b6d6da420250f4157158f50665a730661a3281287b95b15d6c24a54e075"
     },
     "screen/midnight-fog/README.md": {
-      "bytes": 1510,
-      "sha256": "48da825c74d725df1359a12e1d99e772cac3a996073aa2944d89c5130d394102"
+      "bytes": 1625,
+      "sha256": "5b97a2306e7dd009b336e8f3508aa7804d13ac27bcbc685cc4f513050778585a"
     },
     "screen/midnight-fog/config.toml": {
       "bytes": 205,
@@ -9639,8 +11033,8 @@
       "sha256": "919f5a23a579cdb1636802cbd409157b23a902c5bcebbf6a258083ca0c8880f3"
     },
     "screen/midnight-fog/shader.glsl": {
-      "bytes": 1494,
-      "sha256": "098b2e03ae98b5731bc6c264b6d06df12e7f67bcd758ad73202dea0edcf025e1"
+      "bytes": 1472,
+      "sha256": "126b8985796ded0cafa877af68e8ee85b19c88820ec22b289c9a5ba8683a04da"
     },
     "screen/vignette/README.md": {
       "bytes": 3395,
@@ -9762,6 +11156,30 @@
       "bytes": 1950,
       "sha256": "ae954821a4660379848f4f8e79a0b60d6655b740615d97274bd46c84c6f29fb3"
     },
+    "window/dappled-light/README.md": {
+      "bytes": 2566,
+      "sha256": "f3fa5800adca3dc240e236b6d8cfbcf30d3483ca700461d07ed6c69c6cc0dc1c"
+    },
+    "window/dappled-light/config.toml": {
+      "bytes": 186,
+      "sha256": "36b0e312caf968fa256a9a85a71b6f26459ff5ba6b8b4c1e108b08d41e7783e4"
+    },
+    "window/dappled-light/effect.toml": {
+      "bytes": 87,
+      "sha256": "42d8e9701502782a5a1a2272fc5c000399bc39155155a782d57636e55883ac2c"
+    },
+    "window/dappled-light/preview.gif": {
+      "bytes": 558242,
+      "sha256": "f46b1a677f93f74542581955721986d4387bab26716f546bbff84a82ea64bd81"
+    },
+    "window/dappled-light/preview.png": {
+      "bytes": 35621,
+      "sha256": "210d0bdb58b9771c5c41d3a63899074a0dccec6e193d95cbe68b64bb2aaf1bd8"
+    },
+    "window/dappled-light/shader.glsl": {
+      "bytes": 1701,
+      "sha256": "a2bfb72cb5df71462021f387c3976ffa093367348abacd0ca6766476835f4405"
+    },
     "window/diya-glow-overlay/README.md": {
       "bytes": 1471,
       "sha256": "91c65c11b4783437d079a0a5d416ec3330cbda13641478805e2c73e502656db1"
@@ -9779,8 +11197,8 @@
       "sha256": "23c6e96c6e821d093704cf45c9b84ca65768fbc50032d3a0ca4304862bd763f9"
     },
     "window/diya-glow-overlay/shader.glsl": {
-      "bytes": 9254,
-      "sha256": "796bd36b0bf84207406aeeb0208b2d2aea12fd17f519986218fa79974a063668"
+      "bytes": 9232,
+      "sha256": "61db12ab7f7a05bd526138e169e2d1bbb1d2eb249960d98a826b758fe731bb44"
     },
     "window/faerie-magic-overlay/README.md": {
       "bytes": 5342,
@@ -9823,8 +11241,8 @@
       "sha256": "8c1534b1fc38929b9d4a8b7ce26c30536bae9a3d2bccabd2a15aef2495066ba8"
     },
     "window/firelit-clouds/README.md": {
-      "bytes": 3367,
-      "sha256": "038990f6c72e8f5650ab0a13ba803723bfdfa27274e3ae354cae2dac2acfdce7"
+      "bytes": 3345,
+      "sha256": "052450699a35b3d40ebe8dfb3678481418ab8cc5724d1446605786bd4a6e33fe"
     },
     "window/firelit-clouds/config.toml": {
       "bytes": 164,
@@ -9843,8 +11261,8 @@
       "sha256": "b40d0465c2083191e7bcea91f18489a5e1be8f08b22d35b95ceea9b7d97f12e9"
     },
     "window/firelit-clouds/shader.glsl": {
-      "bytes": 3923,
-      "sha256": "69bb3877ade0abe09aa2152849d31cec3aab95643292ab1ff5fa139fda7e7aeb"
+      "bytes": 3901,
+      "sha256": "65066018d9e9d3149df37f3964802bff107aaf46adcc5079861ab8984fbd53f5"
     },
     "window/flap-board/README.md": {
       "bytes": 3631,
@@ -9903,8 +11321,8 @@
       "sha256": "3fbca24d8107682467bd91f4a29835d8a521df0966c07c1d669a4c164ac9d9eb"
     },
     "window/fractal-flow-overlay/shader.glsl": {
-      "bytes": 6160,
-      "sha256": "455c265b3df611b390ff8de9a23cc1a4bf9099411872e310b841dbcb1be87c6f"
+      "bytes": 6161,
+      "sha256": "d6de7df3704ff563d21a48fc216adef3c6b66760d8020b19ef791fed855ce250"
     },
     "window/fractal-veil/README.md": {
       "bytes": 1987,
@@ -9929,6 +11347,50 @@
     "window/fractal-veil/shader.glsl": {
       "bytes": 3006,
       "sha256": "f799c816d1631fc6d0ae3162ec6b1c4eaa3160845124596b3f81ba2d350bc45a"
+    },
+    "window/ghostly-tear-overlay/README.md": {
+      "bytes": 2629,
+      "sha256": "e7ca98767c081e32cb848ccbe1072afadcaa5552e949d8c177970b7e5e494be2"
+    },
+    "window/ghostly-tear-overlay/config.toml": {
+      "bytes": 270,
+      "sha256": "e917f90255802a5d0526fdfe1bcb79b32e5a131f9e04b6e82171ce511d71328c"
+    },
+    "window/ghostly-tear-overlay/effect.toml": {
+      "bytes": 77,
+      "sha256": "491f9e25a94b4c36d32f8fe418c99daa39445719249778cf94ac3991c99f25f8"
+    },
+    "window/ghostly-tear-overlay/preview.png": {
+      "bytes": 14360,
+      "sha256": "7e4dae608cdbd35dbe562a26f5504661f19cc25c37736cec8a7b3411ffc3bec3"
+    },
+    "window/ghostly-tear-overlay/shader.glsl": {
+      "bytes": 5990,
+      "sha256": "8abac618a414ee79fe48ce21b935188b632fa283f041253271a7556264054b36"
+    },
+    "window/haunted-glass/README.md": {
+      "bytes": 2935,
+      "sha256": "2c3826c4413c47f63bbd9adb31f9f9dfc9c3b1cc088dd46f00e2dad243d28140"
+    },
+    "window/haunted-glass/config.toml": {
+      "bytes": 207,
+      "sha256": "24e816ef6e26cedd913981fbb73292303d309fadf6f09c5d0ea1913c96d3bb16"
+    },
+    "window/haunted-glass/effect.toml": {
+      "bytes": 83,
+      "sha256": "1ee00facf9321330431b64c6a8e256a06ba45ec6f43d39c84d95d607b1729b98"
+    },
+    "window/haunted-glass/preview.gif": {
+      "bytes": 710658,
+      "sha256": "13d4dbf5783eda2dd37bc2b37030dbd8af104ca1d8b043fb01557bf3c065c8fa"
+    },
+    "window/haunted-glass/preview.png": {
+      "bytes": 34288,
+      "sha256": "9299b5f8a99b6b5091c2b628782a0caed762a408d23aa0fe9ca858e1152ef189"
+    },
+    "window/haunted-glass/shader.glsl": {
+      "bytes": 5548,
+      "sha256": "0a17c1ab1b7c3a83eec4147f42261795d4e667d164ee341656b838cc51da38dc"
     },
     "window/kzzzt/README.md": {
       "bytes": 7070,
@@ -10471,8 +11933,8 @@
       "sha256": "b5199c81eafb0940d02f2096db0d203c3b9aa7410f264f12d4d944b73c2b690d"
     },
     "window/somethings-watching-overlay/README.md": {
-      "bytes": 1435,
-      "sha256": "3605cdddc2e3dff09856be12c46e7312bf151a179d80a52772d0f2abb6138f35"
+      "bytes": 1413,
+      "sha256": "42ce69f9f5f1e46f593f69eb8ce48d70a29d22f13d4039aa5c262e97ecfe4288"
     },
     "window/somethings-watching-overlay/config.toml": {
       "bytes": 200,
@@ -10487,8 +11949,8 @@
       "sha256": "26d1a3b22d34ea5bdbd8c42fc932c09914be6ffbb42c07604f43fb615bdc44da"
     },
     "window/somethings-watching-overlay/shader.glsl": {
-      "bytes": 10859,
-      "sha256": "c9f0cdb69de9055d653e7bc54645ee9a4870165f4de238e8bf94036d4383ce1e"
+      "bytes": 10837,
+      "sha256": "6fd86aaf26d264bfe903ee2394d592306f423a6c908341cbdcc0707219b059bf"
     },
     "window/speaker-ripple/README.md": {
       "bytes": 5117,

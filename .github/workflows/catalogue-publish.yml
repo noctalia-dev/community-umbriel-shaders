@@ -1,0 +1,43 @@
+name: Publish catalogue
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Serialise publications; the helper also checks main and rejects stale writes.
+concurrency:
+  group: publish-catalogue
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    if: github.repository == 'noctalia-dev/community-umbriel-shaders' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Test catalogue and publication
+        run: python3 -m unittest discover -s tools -p 'test*catalogue.py'
+      - name: Validate this source commit
+        run: python3 tools/catalogue.py --revision "$GITHUB_SHA" --output "$RUNNER_TEMP/catalogue.json"
+
+  publish:
+    needs: validate
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # Required to verify ancestry of the previously published source SHA.
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Generate and publish from the checked-out commit
+        run: python3 tools/publish_catalogue.py --revision "$GITHUB_SHA"

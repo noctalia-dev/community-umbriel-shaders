@@ -14,9 +14,10 @@ effects require published dependencies; published families require published
 members. To withdraw an entry, set it back to `false` and update any published
 dependants or families in the same change.
 
-The upstream migration marks 136 catalogue effects and ten families as eligible.
-This fork also includes fifteen additional effects and their family memberships.
-It does not publish a remote endpoint. Per-effect READMEs record their validation.
+The initial migration marked 136 catalogue effects and ten families as eligible.
+Fifteen additional effects bring the catalogue to 151, with updated family
+memberships and defaults. Publication does not claim new visual testing;
+per-effect READMEs record their validation.
 
 ## Contributor checks
 
@@ -39,10 +40,13 @@ and rejects `--include-unpublished`. The plugin's configured local-checkout mode
 deliberately includes experiments; its future online consumer must reject draft
 snapshots.
 
-## Required repository settings before publication
+## Repository review settings
 
 A contributor can propose `publish = true`; the field is not authorization.
-Before enabling an automatic publisher, repository administrators must:
+Publication is enabled before branch protection is configured, by maintainer
+decision. Until protection is added, any account with write access can change
+what reaches the catalogue; `publish = true` alone does not enforce review.
+The follow-up repository settings are:
 
 1. Assign the actual maintainer accounts/team as code owners for shader content,
    metadata, families, notices, catalogue tools and `.github/` (including the
@@ -57,27 +61,59 @@ Before enabling an automatic publisher, repository administrators must:
 GitHub documents [code-owner review enforcement](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)
 and [required reviews on protected branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches).
 These are remote repository settings; adding the generator and validation
-workflow does not enable them. No remote review rules have been changed by this
-implementation.
+workflow does not enable them. No remote review rules are changed by the publisher.
 
-## Online delivery plan
+## Online delivery
 
-The agreed delivery uses raw GitHub files, without GitHub Pages or a separate
-API server. After a reviewed source change merges and passes checks, a future
-publishing job will generate `catalogue.json` and commit it to a dedicated
-`catalogue` branch. Only that trusted job needs write permission.
+The catalogue is served directly from raw GitHub, without GitHub Pages or an API
+server:
 
-The plugin will fetch the branch's latest JSON. Shader and preview paths resolve
-against the registry's immutable `source.revision`, with downloaded bytes checked
-against the recorded sizes and hashes. That revision identifies the source
-commit, not the later generated-JSON commit. This is consistent downloading, not
-multiple installed shader versions.
+```text
+https://raw.githubusercontent.com/noctalia-dev/community-umbriel-shaders/catalogue/catalogue.json
+```
 
-Publishing must retain the last good registry on failure and prevent an older,
-slower run from replacing a newer result. The source repository identity in the
-registry must match the repository where that commit is publicly available;
-the current generator names the upstream Noctalia community repository, so a
-fork publisher must not publish that identity unchanged.
+The **Publish catalogue** workflow runs on pushes to upstream `main` and can also
+be started from **Actions → Publish catalogue → Run workflow**, selecting `main`.
+It does not run on pull requests, other branches or forks. A read-only job runs
+contract and publication tests and validates the exact source commit. Only after
+that succeeds does a separate job receive `contents: write`, regenerate from
+that immutable commit and push the JSON to the `catalogue` branch.
 
-The publishing job and remote plugin downloads are not implemented by this
-publication-flag change. Local filtering and validation are ready for that step.
+The publishing helper creates a tree containing only `catalogue.json`. It never
+checks out the generated branch, edits shaders or changes the source branch.
+Subsequent publications are ordinary fast-forward commits. Identical output is
+a no-op. Serialised runs, a current-main check and a source-ancestry check prevent
+stale reruns or source rollbacks from replacing a newer catalogue. A concurrent
+push is rejected rather than force-overwritten; rerun publication after checking
+the competing change. Generation failures leave the previous catalogue intact.
+
+The plugin will fetch the latest JSON and resolve shaders and previews against
+its immutable `source.revision`, checking downloaded byte lengths and hashes.
+That revision identifies the source commit, not the generated-JSON commit.
+Remote plugin downloads are separate work; publishing does not install or change
+the plugin automatically.
+
+## Manual publication and recovery
+
+For an initial publication or workflow recovery, maintainers can run the same
+helper from a trusted checkout with full source history and upstream Git write
+credentials:
+
+```sh
+git fetch upstream
+python3 -m unittest discover -s tools -p 'test*catalogue.py'
+python3 tools/publish_catalogue.py --remote upstream --revision FULL_UPSTREAM_MAIN_SHA
+```
+
+Use the full SHA returned by `git rev-parse upstream/main`. The remote must fetch
+from and push to `noctalia-dev/community-umbriel-shaders`. The helper rejects a
+fork remote because the generator records upstream's repository identity. It
+skips a revision that is no longer remote `main`. Do not use `--draft` output for
+publication or manually substitute another source revision in generated JSON.
+
+After publication, check that the public JSON has `draft: false`, the expected
+source SHA and effect/family counts. Confirm a pinned shader or preview download
+matches its recorded size and SHA-256. If the workflow cannot push, check the
+repository's Actions policy and generated-branch rules; do not force-push around
+a rejection. When branch protection is introduced, allow the intended publisher
+to update `catalogue` while protecting `main` through maintainer review.

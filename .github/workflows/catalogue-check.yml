@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-      - name: Test catalogue contract
-        run: python3 -m unittest discover -s tools -p test_catalogue.py
+      - name: Test catalogue and publication
+        run: python3 -m unittest discover -s tools -p 'test*catalogue.py'
       - name: Validate published entries from this commit
         run: python3 tools/catalogue.py --revision "$GITHUB_SHA" --output "$RUNNER_TEMP/catalogue.json"

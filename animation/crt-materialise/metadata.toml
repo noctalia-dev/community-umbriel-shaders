@@ -1,0 +1,8 @@
+publish = false
+name = "CRT materialise (experimental)"
+description = "Scratchpad content expands from a hot horizontal slit through bright scanlines."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/crt-materialise/README.md"]
+uses = ["animation.scratchpad"]
+tags = ["retro", "glow"]

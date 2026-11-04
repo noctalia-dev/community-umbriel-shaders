@@ -1,0 +1,8 @@
+publish = false
+name = "Accordion slam (experimental)"
+description = "Layer surfaces unfold in compressed bands behind a hot orange leading edge."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/accordion-slam/README.md"]
+uses = ["animation.layers"]
+tags = ["geometric", "glow"]

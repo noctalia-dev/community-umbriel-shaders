@@ -1,0 +1,8 @@
+publish = false
+name = "Signal break (experimental)"
+description = "The window losing focus fractures into coarse pixels, displaced strips and split colour; the incoming window stays clear."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/signal-break/README.md"]
+uses = ["animation.dim_unfocused"]
+tags = ["glitch", "retro"]

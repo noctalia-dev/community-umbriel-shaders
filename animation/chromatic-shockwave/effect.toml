@@ -1,0 +1,3 @@
+[effects.preset."chromatic-shockwave"]
+kind = "animation"
+shader = "shader.glsl"

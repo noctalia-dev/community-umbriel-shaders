@@ -1,0 +1,12 @@
+# Experimental. Merge into existing tables and append to existing include lists.
+[include]
+files = ["shaders/community/animation/warning-marquee/effect.toml"]
+
+[animation]
+enabled = true
+
+[animation.border]
+enabled = true
+effect = "warning-marquee"
+curve = "linear"
+duration_ms = 800

@@ -1,0 +1,3 @@
+[effects.preset."portal-spill"]
+kind = "animation"
+shader = "shader.glsl"

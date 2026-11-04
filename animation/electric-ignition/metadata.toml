@@ -1,0 +1,8 @@
+publish = false
+name = "Electric ignition (experimental)"
+description = "White-hot sparks race around the focus ring before cooling to the native border."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/electric-ignition/README.md"]
+uses = ["animation.border"]
+tags = ["glow", "particles"]

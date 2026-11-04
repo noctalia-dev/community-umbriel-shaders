@@ -1,0 +1,12 @@
+# Experimental. Merge into existing tables and append to existing include lists.
+[include]
+files = ["shaders/community/animation/portal-spill/effect.toml"]
+
+[animation]
+enabled = true
+
+[animation.scratchpad]
+enabled = true
+effect = "portal-spill"
+curve = "linear"
+duration_ms = 800

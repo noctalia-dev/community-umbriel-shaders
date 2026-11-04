@@ -1,0 +1,8 @@
+publish = false
+name = "Chromatic shockwave (experimental)"
+description = "A travelling radial wave tears overview previews into red and cyan fringes."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/chromatic-shockwave/README.md"]
+uses = ["animation.overview"]
+tags = ["glitch", "colourful"]

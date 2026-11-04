@@ -1,0 +1,8 @@
+publish = false
+name = "Warning marquee (experimental)"
+description = "Yellow and black hazard stripes highlight only the border gaining focus."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/warning-marquee/README.md"]
+uses = ["animation.border"]
+tags = ["geometric", "colourful"]

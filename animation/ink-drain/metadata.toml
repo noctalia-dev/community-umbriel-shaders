@@ -1,0 +1,8 @@
+publish = false
+name = "Ink drain (experimental)"
+description = "A dark desaturating diagonal sweep affects only the window losing focus."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/ink-drain/README.md"]
+uses = ["animation.dim_unfocused"]
+tags = ["minimal", "geometric"]

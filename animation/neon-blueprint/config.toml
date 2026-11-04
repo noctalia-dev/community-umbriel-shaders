@@ -1,0 +1,12 @@
+# Experimental. Merge into existing tables and append to existing include lists.
+[include]
+files = ["shaders/community/animation/neon-blueprint/effect.toml"]
+
+[animation]
+enabled = true
+
+[animation.overview]
+enabled = true
+effect = "neon-blueprint"
+curve = "linear"
+duration_ms = 650

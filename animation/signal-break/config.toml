@@ -1,0 +1,13 @@
+# Experimental. Merge into existing tables and append to existing include lists.
+[include]
+files = ["shaders/community/animation/signal-break/effect.toml"]
+
+[animation]
+enabled = true
+
+[animation.dim_unfocused]
+enabled = true
+effect = "signal-break"
+curve = "linear"
+duration_ms = 600
+dim = 0.45

@@ -2,8 +2,20 @@
 
 [Installation and configuration](../README.md#install)
 
+The ten bold slot experiments below are unpublished (`publish = false`). Use local-checkout mode to try them.
+
 | Preview | Effect | Description |
 | --- | --- | --- |
+| <img src="neon-blueprint/preview.png" width="160" alt="Neon blueprint experimental preview"> | [Neon blueprint (experimental)](neon-blueprint/) | `overview`: Cyan blueprint flashes and marching scan bands across overview previews. |
+| <img src="chromatic-shockwave/preview.png" width="160" alt="Chromatic shockwave experimental preview"> | [Chromatic shockwave (experimental)](chromatic-shockwave/) | `overview`: A travelling radial wave tears overview previews into red and cyan fringes. |
+| <img src="crt-materialise/preview.png" width="160" alt="CRT materialise experimental preview"> | [CRT materialise (experimental)](crt-materialise/) | `scratchpad`: Scratchpad content expands from a hot horizontal slit through bright scanlines. |
+| <img src="portal-spill/preview.png" width="160" alt="Portal spill experimental preview"> | [Portal spill (experimental)](portal-spill/) | `scratchpad`: A violet spiral front reveals scratchpad content with a thick luminous lip. |
+| <img src="electric-ignition/preview.png" width="160" alt="Electric ignition experimental preview"> | [Electric ignition (experimental)](electric-ignition/) | `border`: White-hot sparks race around the focus ring before cooling to the native border. |
+| <img src="warning-marquee/preview.png" width="160" alt="Warning marquee experimental preview"> | [Warning marquee (experimental)](warning-marquee/) | `border`: Yellow and black hazard stripes highlight only the border gaining focus. |
+| <img src="ink-drain/preview.png" width="160" alt="Ink drain experimental preview"> | [Ink drain (experimental)](ink-drain/) | `dim_unfocused`: A dark desaturating diagonal sweep affects only the window losing focus. |
+| <img src="signal-break/preview.png" width="160" alt="Signal break experimental preview"> | [Signal break (experimental)](signal-break/) | `dim_unfocused`: The window losing focus fractures into coarse pixels, displaced strips and split colour; the incoming window stays clear. |
+| <img src="accordion-slam/preview.png" width="160" alt="Accordion slam experimental preview"> | [Accordion slam (experimental)](accordion-slam/) | `layers`: Layer surfaces unfold in compressed bands behind a hot orange leading edge. |
+| <img src="hologram-boot/preview.png" width="160" alt="Hologram boot experimental preview"> | [Hologram boot (experimental)](hologram-boot/) | `layers`: Layer surfaces boot in staggered cyan strips with horizontal glitch offsets. |
 | <img src="overview-glow/preview.png" width="160" alt="Overview glow illustrative preview"> | [Overview glow](overview-glow/) | Introductory `animation.overview` effect. |
 | <img src="scratchpad-fade/preview.png" width="160" alt="Scratchpad fade illustrative preview"> | [Scratchpad fade](scratchpad-fade/) | Introductory `animation.scratchpad` effect. |
 | <img src="focus-ring-pulse/preview.png" width="160" alt="Focus ring pulse illustrative preview"> | [Focus ring pulse](focus-ring-pulse/) | Introductory `animation.border` effect. |

@@ -1,0 +1,8 @@
+publish = false
+name = "Hologram boot (experimental)"
+description = "Layer surfaces boot in staggered cyan strips with horizontal glitch offsets."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/hologram-boot/README.md"]
+uses = ["animation.layers"]
+tags = ["glitch", "glow"]

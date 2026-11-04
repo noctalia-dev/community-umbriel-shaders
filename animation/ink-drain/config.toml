@@ -1,0 +1,13 @@
+# Experimental. Merge into existing tables and append to existing include lists.
+[include]
+files = ["shaders/community/animation/ink-drain/effect.toml"]
+
+[animation]
+enabled = true
+
+[animation.dim_unfocused]
+enabled = true
+effect = "ink-drain"
+curve = "linear"
+duration_ms = 750
+dim = 0.45

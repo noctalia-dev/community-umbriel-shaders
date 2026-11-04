@@ -1,0 +1,8 @@
+publish = false
+name = "Neon blueprint (experimental)"
+description = "Cyan blueprint flashes and marching scan bands across overview previews."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/neon-blueprint/README.md"]
+uses = ["animation.overview"]
+tags = ["glow", "geometric"]

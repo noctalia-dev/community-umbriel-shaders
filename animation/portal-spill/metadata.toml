@@ -1,0 +1,8 @@
+publish = false
+name = "Portal spill (experimental)"
+description = "A violet spiral front reveals scratchpad content with a thick luminous lip."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/portal-spill/README.md"]
+uses = ["animation.scratchpad"]
+tags = ["psychedelic", "glow"]

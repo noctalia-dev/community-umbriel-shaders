@@ -1,0 +1,8 @@
+publish = true
+name = "Scratchpad fade"
+description = "A gentle fade as scratchpad windows and their backdrops appear or disappear."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/scratchpad-fade/README.md"]
+uses = ["animation.scratchpad"]
+tags = ["example", "minimal"]

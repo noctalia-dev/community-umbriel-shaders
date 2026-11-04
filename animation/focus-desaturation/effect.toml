@@ -1,0 +1,3 @@
+[effects.preset."focus-desaturation"]
+kind = "animation"
+shader = "shader.glsl"

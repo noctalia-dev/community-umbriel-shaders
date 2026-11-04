@@ -1,0 +1,12 @@
+# Merge into your Umbriel configuration; do not duplicate existing tables.
+[include]
+files = ["shaders/community/animation/scratchpad-fade/effect.toml"]
+
+[animation]
+enabled = true
+
+[animation.scratchpad]
+enabled = true
+effect = "scratchpad-fade"
+curve = "easeoutcubic"
+duration_ms = 280

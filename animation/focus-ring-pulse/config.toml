@@ -1,0 +1,12 @@
+# Merge into your Umbriel configuration; do not duplicate existing tables.
+[include]
+files = ["shaders/community/animation/focus-ring-pulse/effect.toml"]
+
+[animation]
+enabled = true
+
+[animation.border]
+enabled = true
+effect = "focus-ring-pulse"
+curve = "easeoutcubic"
+duration_ms = 300

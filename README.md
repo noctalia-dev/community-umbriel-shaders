@@ -6,7 +6,7 @@ This collection includes community presets by Barrulus, Dual Orbit by neonvoidx,
 
 | Kind | What it affects |
 | --- | --- |
-| [Animation](animation/) | Opening, closing, moving, and resizing windows; workspace transitions |
+| [Animation](animation/) | Window lifecycle and movement; workspace, overview, scratchpad, focus and layer transitions |
 | [Border](border/) | The focused window’s decoration, with optional inner overlays and light |
 | [Window](window/) | Window content, including companion border overlays |
 | [Screen](screen/) | A whole output |

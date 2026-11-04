@@ -1,0 +1,8 @@
+publish = true
+name = "Panel glide"
+description = "A short vertical glide and fade for layer-shell surfaces as they appear or disappear."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/panel-glide/README.md"]
+uses = ["animation.layers"]
+tags = ["example", "minimal"]

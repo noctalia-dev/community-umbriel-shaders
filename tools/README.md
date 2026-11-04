@@ -162,3 +162,12 @@ Run only the checks relevant to the changed tool, and include the commands and
 results in the PR description. Shader READMEs should retain relevant limitations.
 Local development logs, browser tooling and audio-analyser tests are excluded
 from the tracked repository and checked by CI.
+
+
+## Introductory animation previews
+
+`python3 tools/render-slot-examples.py` regenerates the five introductory
+overview, scratchpad, border-focus, unfocused-dimming and layer previews. It uses
+Python's standard library only. These are labelled CPU
+evaluations over synthetic targets, not compositor captures; the corresponding
+READMEs record that limitation. Inspect every regenerated PNG before submission.

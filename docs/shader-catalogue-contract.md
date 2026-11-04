@@ -156,7 +156,10 @@ are full configuration leaf names with validated typed values. Consumers must
 not execute downloaded example configs or append arbitrary downloaded TOML.
 
 Recipes support the declared effect slots and reviewed animation settings such
-as enabled, duration, curve and style. Unsupported configuration is rejected.
+as enabled, duration, curve and style. The `dim` parameter is supported for
+`animation.dim_unfocused` and `animation.scratchpad` only, with values from 0 to 1.
+The descriptive `example` tag identifies introductory effects; slot selection
+always follows `uses`, not tags. Unsupported configuration is rejected.
 The explicitly recognised manual-only settings `effects.max_fps` and
 `effects.in_capture` produce a warning and `activation: null`.
 

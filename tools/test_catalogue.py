@@ -21,6 +21,19 @@ import catalogue as c
 ROOT = Path(__file__).resolve().parents[1]
 
 
+class AnimationSettingTests(unittest.TestCase):
+    def test_dim_settings_are_bounded_and_targeted(self):
+        c.validate_setting("animation.dim_unfocused.dim", 0.2)
+        c.validate_setting("animation.scratchpad.dim", 0.8)
+        for key, value in [("animation.border.dim", 0.2), ("animation.dim_unfocused.dim", -0.1),
+                           ("animation.scratchpad.dim", 1.1), ("animation.dim_unfocused.dim", True)]:
+            with self.subTest(key=key, value=value), self.assertRaises(c.CatalogueError):
+                c.validate_setting(key, value)
+
+    def test_example_tag_is_supported(self):
+        self.assertIn("example", c.TAGS)
+
+
 class TreeTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory(prefix="shader catalogue ")

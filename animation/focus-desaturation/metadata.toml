@@ -1,0 +1,8 @@
+publish = true
+name = "Focus desaturation"
+description = "A brief loss of colour during focus changes, with 20% native unfocused dimming."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/focus-desaturation/README.md"]
+uses = ["animation.dim_unfocused"]
+tags = ["example", "minimal"]

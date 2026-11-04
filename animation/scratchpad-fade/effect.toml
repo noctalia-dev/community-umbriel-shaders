@@ -1,0 +1,3 @@
+[effects.preset."scratchpad-fade"]
+kind = "animation"
+shader = "shader.glsl"

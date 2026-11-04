@@ -1,0 +1,8 @@
+publish = true
+name = "Overview glow"
+description = "A soft blue pulse across overview trees during navigation and overview transitions."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/overview-glow/README.md"]
+uses = ["animation.overview"]
+tags = ["example", "minimal", "glow"]

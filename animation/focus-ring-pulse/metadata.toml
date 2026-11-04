@@ -1,0 +1,8 @@
+publish = true
+name = "Focus ring pulse"
+description = "A brief blue highlight on the border ring when focus changes."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/focus-ring-pulse/README.md"]
+uses = ["animation.border"]
+tags = ["example", "minimal", "glow"]

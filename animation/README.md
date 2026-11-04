@@ -4,6 +4,11 @@
 
 | Preview | Effect | Description |
 | --- | --- | --- |
+| <img src="overview-glow/preview.png" width="160" alt="Overview glow illustrative preview"> | [Overview glow](overview-glow/) | Introductory `animation.overview` effect. |
+| <img src="scratchpad-fade/preview.png" width="160" alt="Scratchpad fade illustrative preview"> | [Scratchpad fade](scratchpad-fade/) | Introductory `animation.scratchpad` effect. |
+| <img src="focus-ring-pulse/preview.png" width="160" alt="Focus ring pulse illustrative preview"> | [Focus ring pulse](focus-ring-pulse/) | Introductory `animation.border` effect. |
+| <img src="focus-desaturation/preview.png" width="160" alt="Focus desaturation illustrative preview"> | [Focus desaturation](focus-desaturation/) | Introductory `animation.dim_unfocused` effect. |
+| <img src="panel-glide/preview.png" width="160" alt="Panel glide illustrative preview"> | [Panel glide](panel-glide/) | Introductory `animation.layers` effect. |
 | <img src="petal-scatter/preview.png" width="160" alt="Petal Scatter preview"> | [Petal Scatter](petal-scatter/) | A gust peels flower petals away as the window clears. |
 | <img src="petal-gather/preview.png" width="160" alt="Petal Gather preview"> | [Petal Gather](petal-gather/) | A curling breeze gathers flower petals along the opening window edge. |
 | <img src="vine-plait/preview.png" width="160" alt="Vine Plait preview"> | [Vine Plait](vine-plait/) | A horizontal plait of flowering vines rolls up or down across two complete workspace scenes. |

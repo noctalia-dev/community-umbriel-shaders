@@ -33,7 +33,7 @@ USES = {f"animation.{event}" for event in EVENTS} | {
 TAGS = {
     "minimal", "glow", "geometric", "horror", "blood", "nature", "water", "fire",
     "glitch", "retro", "psychedelic", "colourful", "audio-reactive", "space",
-    "playful", "fantasy", "texture", "circuit", "festival", "particles", "romantic",
+    "playful", "fantasy", "texture", "circuit", "festival", "particles", "romantic", "example",
 }
 FEATURES = {
     "preset-effects": "Umbriel named effect presets and selectors; the original preset API was introduced at 512e2fb3.",
@@ -235,6 +235,8 @@ def validate_setting(key, value):
         string(value, key)
     elif field == "duration_ms":
         number(value, 1, 10000, key, integer=True)
+    elif field == "dim" and event in {"dim_unfocused", "scratchpad"}:
+        number(value, 0, 1, key)
     elif field == "curve":
         require(isinstance(value, str) and value in CURVES, f"{key}: unsupported built-in curve")
     elif field == "style":

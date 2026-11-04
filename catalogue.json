@@ -3,7 +3,7 @@
   "draft": false,
   "source": {
     "repository": "https://github.com/noctalia-dev/community-umbriel-shaders",
-    "revision": "f3261171466b86ac4876916266e53130afc3bae3"
+    "revision": "a4fa2a5a8ba9b289ae2cb538a2e83c31bcea2f24"
   },
   "feature_definitions": {
     "preset-effects": "Umbriel named effect presets and selectors; the original preset API was introduced at 512e2fb3.",
@@ -539,6 +539,118 @@
           "animation.windows_out.duration_ms": 1100,
           "animation.windows_out.effect": "flame-grilled",
           "animation.windows_out.enabled": true
+        }
+      }
+    },
+    {
+      "id": "animation/focus-desaturation",
+      "path": "animation/focus-desaturation",
+      "name": "Focus desaturation",
+      "description": "A brief loss of colour during focus changes, with 20% native unfocused dimming.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/focus-desaturation/README.md"
+      ],
+      "tags": [
+        "example",
+        "minimal"
+      ],
+      "role": "effect",
+      "kind": "animation",
+      "preset": "focus-desaturation",
+      "uses": [
+        "animation.dim_unfocused"
+      ],
+      "dependencies": [],
+      "families": [],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/focus-desaturation/README.md",
+        "animation/focus-desaturation/effect.toml",
+        "animation/focus-desaturation/shader.glsl"
+      ],
+      "preview": {
+        "image": "animation/focus-desaturation/preview.png",
+        "animation": null
+      },
+      "readme": "animation/focus-desaturation/README.md",
+      "config_example": "animation/focus-desaturation/config.toml",
+      "activation": {
+        "include": [
+          "animation/focus-desaturation/effect.toml"
+        ],
+        "settings": {
+          "animation.dim_unfocused.curve": "easeoutcubic",
+          "animation.dim_unfocused.dim": 0.2,
+          "animation.dim_unfocused.duration_ms": 250,
+          "animation.dim_unfocused.effect": "focus-desaturation",
+          "animation.dim_unfocused.enabled": true,
+          "animation.enabled": true
+        }
+      }
+    },
+    {
+      "id": "animation/focus-ring-pulse",
+      "path": "animation/focus-ring-pulse",
+      "name": "Focus ring pulse",
+      "description": "A brief blue highlight on the border ring when focus changes.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/focus-ring-pulse/README.md"
+      ],
+      "tags": [
+        "example",
+        "minimal",
+        "glow"
+      ],
+      "role": "effect",
+      "kind": "animation",
+      "preset": "focus-ring-pulse",
+      "uses": [
+        "animation.border"
+      ],
+      "dependencies": [],
+      "families": [],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/focus-ring-pulse/README.md",
+        "animation/focus-ring-pulse/effect.toml",
+        "animation/focus-ring-pulse/shader.glsl"
+      ],
+      "preview": {
+        "image": "animation/focus-ring-pulse/preview.png",
+        "animation": null
+      },
+      "readme": "animation/focus-ring-pulse/README.md",
+      "config_example": "animation/focus-ring-pulse/config.toml",
+      "activation": {
+        "include": [
+          "animation/focus-ring-pulse/effect.toml"
+        ],
+        "settings": {
+          "animation.border.curve": "easeoutcubic",
+          "animation.border.duration_ms": 300,
+          "animation.border.effect": "focus-ring-pulse",
+          "animation.border.enabled": true,
+          "animation.enabled": true
         }
       }
     },
@@ -1081,6 +1193,117 @@
       }
     },
     {
+      "id": "animation/overview-glow",
+      "path": "animation/overview-glow",
+      "name": "Overview glow",
+      "description": "A soft blue pulse across overview trees during navigation and overview transitions.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/overview-glow/README.md"
+      ],
+      "tags": [
+        "example",
+        "minimal",
+        "glow"
+      ],
+      "role": "effect",
+      "kind": "animation",
+      "preset": "overview-glow",
+      "uses": [
+        "animation.overview"
+      ],
+      "dependencies": [],
+      "families": [],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/overview-glow/README.md",
+        "animation/overview-glow/effect.toml",
+        "animation/overview-glow/shader.glsl"
+      ],
+      "preview": {
+        "image": "animation/overview-glow/preview.png",
+        "animation": null
+      },
+      "readme": "animation/overview-glow/README.md",
+      "config_example": "animation/overview-glow/config.toml",
+      "activation": {
+        "include": [
+          "animation/overview-glow/effect.toml"
+        ],
+        "settings": {
+          "animation.enabled": true,
+          "animation.overview.curve": "easeoutcubic",
+          "animation.overview.duration_ms": 350,
+          "animation.overview.effect": "overview-glow",
+          "animation.overview.enabled": true
+        }
+      }
+    },
+    {
+      "id": "animation/panel-glide",
+      "path": "animation/panel-glide",
+      "name": "Panel glide",
+      "description": "A short vertical glide and fade for layer-shell surfaces as they appear or disappear.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/panel-glide/README.md"
+      ],
+      "tags": [
+        "example",
+        "minimal"
+      ],
+      "role": "effect",
+      "kind": "animation",
+      "preset": "panel-glide",
+      "uses": [
+        "animation.layers"
+      ],
+      "dependencies": [],
+      "families": [],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/panel-glide/README.md",
+        "animation/panel-glide/effect.toml",
+        "animation/panel-glide/shader.glsl"
+      ],
+      "preview": {
+        "image": "animation/panel-glide/preview.png",
+        "animation": null
+      },
+      "readme": "animation/panel-glide/README.md",
+      "config_example": "animation/panel-glide/config.toml",
+      "activation": {
+        "include": [
+          "animation/panel-glide/effect.toml"
+        ],
+        "settings": {
+          "animation.enabled": true,
+          "animation.layers.curve": "easeoutcubic",
+          "animation.layers.duration_ms": 220,
+          "animation.layers.effect": "panel-glide",
+          "animation.layers.enabled": true
+        }
+      }
+    },
+    {
       "id": "animation/paper-animation",
       "path": "animation/paper-animation",
       "name": "Paper Animation",
@@ -1376,6 +1599,61 @@
           "animation.windows_out.duration_ms": 400,
           "animation.windows_out.effect": "reveal",
           "animation.windows_out.enabled": true
+        }
+      }
+    },
+    {
+      "id": "animation/scratchpad-fade",
+      "path": "animation/scratchpad-fade",
+      "name": "Scratchpad fade",
+      "description": "A gentle fade as scratchpad windows and their backdrops appear or disappear.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/scratchpad-fade/README.md"
+      ],
+      "tags": [
+        "example",
+        "minimal"
+      ],
+      "role": "effect",
+      "kind": "animation",
+      "preset": "scratchpad-fade",
+      "uses": [
+        "animation.scratchpad"
+      ],
+      "dependencies": [],
+      "families": [],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/scratchpad-fade/README.md",
+        "animation/scratchpad-fade/effect.toml",
+        "animation/scratchpad-fade/shader.glsl"
+      ],
+      "preview": {
+        "image": "animation/scratchpad-fade/preview.png",
+        "animation": null
+      },
+      "readme": "animation/scratchpad-fade/README.md",
+      "config_example": "animation/scratchpad-fade/config.toml",
+      "activation": {
+        "include": [
+          "animation/scratchpad-fade/effect.toml"
+        ],
+        "settings": {
+          "animation.enabled": true,
+          "animation.scratchpad.curve": "easeoutcubic",
+          "animation.scratchpad.duration_ms": 280,
+          "animation.scratchpad.effect": "scratchpad-fade",
+          "animation.scratchpad.enabled": true
         }
       }
     },
@@ -8964,6 +9242,46 @@
       "bytes": 2656,
       "sha256": "35137304b979ec9d0620b38a4823b71a2b6f618b2be3b489f6502946f24b46a9"
     },
+    "animation/focus-desaturation/README.md": {
+      "bytes": 1723,
+      "sha256": "55f6935bb1ff302e5d7379c0319259d36fa08d680d10fc064a2cde8ee16df713"
+    },
+    "animation/focus-desaturation/config.toml": {
+      "bytes": 307,
+      "sha256": "4284a20566d4c35c055554b77e9fef34a699935de4486ec31c642ed4ed0d3181"
+    },
+    "animation/focus-desaturation/effect.toml": {
+      "bytes": 80,
+      "sha256": "8e39335d547bcec57b4afb26dfd64f1ccfc91d53cd16157a7f117bdc14043d2c"
+    },
+    "animation/focus-desaturation/preview.png": {
+      "bytes": 20811,
+      "sha256": "34bda9452b7f500c53eaec89981bf73c96c69aa15be2dcf3c208a5db59fe739e"
+    },
+    "animation/focus-desaturation/shader.glsl": {
+      "bytes": 305,
+      "sha256": "2fb7a945ed8b4e02cce62b244389fa6aa8fb88cf02c9a4b0329a60de29563c24"
+    },
+    "animation/focus-ring-pulse/README.md": {
+      "bytes": 1634,
+      "sha256": "483435c0a6493975c9cd582608098ffab9525e25ee568d8a00175e6d63115ecf"
+    },
+    "animation/focus-ring-pulse/config.toml": {
+      "bytes": 286,
+      "sha256": "ffcec2e57782eed8578283eda0fb97b7969a6bac95609647fd980ed82e026ba6"
+    },
+    "animation/focus-ring-pulse/effect.toml": {
+      "bytes": 78,
+      "sha256": "8ecb54fa2d434c42ebde7dd661c5aa495690bed8cf942863df14da8db6abd6a0"
+    },
+    "animation/focus-ring-pulse/preview.png": {
+      "bytes": 5496,
+      "sha256": "1eedeb386572aab4a56609c41039db2b5d0c0b593c8705fcd7fe2fa1f91826da"
+    },
+    "animation/focus-ring-pulse/shader.glsl": {
+      "bytes": 258,
+      "sha256": "dd999565738d86e0fae8f3295a76d324d9b7609ebfbb98f4aed533362b21cdf7"
+    },
     "animation/fractal-bloom/README.md": {
       "bytes": 2013,
       "sha256": "34513d26eb67b16daa8e5a94a79637e81db4ce76311f230a9c1123c3b0c472ee"
@@ -9160,6 +9478,46 @@
       "bytes": 2404,
       "sha256": "0dd846aa76a5cbd8e08755ae371e0098635d52126593941035b1001824987330"
     },
+    "animation/overview-glow/README.md": {
+      "bytes": 1682,
+      "sha256": "5cc04fc326242a2a403688f39e5e775a896ba41b94f81f353b76b195600a829f"
+    },
+    "animation/overview-glow/config.toml": {
+      "bytes": 282,
+      "sha256": "bbcce1d28546df53f9928ce2040713e4e1689d640cca70c79fdeda49752ac5b4"
+    },
+    "animation/overview-glow/effect.toml": {
+      "bytes": 75,
+      "sha256": "040c8e6f205d8581f10bf1a53e5defe8c13367b5da9974d824ad10c065755f6e"
+    },
+    "animation/overview-glow/preview.png": {
+      "bytes": 28463,
+      "sha256": "e5ac77e7afe0ef9de00f5a6278b3a5c73ce3ffbabaa0b55b10d51198ce2132c4"
+    },
+    "animation/overview-glow/shader.glsl": {
+      "bytes": 273,
+      "sha256": "51f8acdce6096bb0534048c6830ea542afcbe160bcf904b472b92df9f576f4ac"
+    },
+    "animation/panel-glide/README.md": {
+      "bytes": 1659,
+      "sha256": "47a13b300cf1d33e6b6b39fc30c84cf6a07dd8407898bc5efe688751a16d9872"
+    },
+    "animation/panel-glide/config.toml": {
+      "bytes": 276,
+      "sha256": "396273fa5c6f4ad2e6f690c81130d247bfad8f14d5d400b28a5427f5f45f065d"
+    },
+    "animation/panel-glide/effect.toml": {
+      "bytes": 73,
+      "sha256": "4b5b684411f316f76fc1490ca1608070f3f3b54e737dd56ab7dc83716011dead"
+    },
+    "animation/panel-glide/preview.png": {
+      "bytes": 3818,
+      "sha256": "c271b26f51903beb9e361650360555cf93a838bdb83f21fcf329b0df35736dfb"
+    },
+    "animation/panel-glide/shader.glsl": {
+      "bytes": 373,
+      "sha256": "af1b55a897f792797918746c3ca5964509e370e875e2e8d5cd1552303d127565"
+    },
     "animation/paper-animation/README.md": {
       "bytes": 4757,
       "sha256": "7c5a4cfbe43b982a591010bedc21e9964102554fddb687adfc067f8e184f9ed3"
@@ -9271,6 +9629,26 @@
     "animation/reveal/shader.glsl": {
       "bytes": 290,
       "sha256": "c76b61c4ef5d4aad7154592851305c256bfc0a11050b971dee20939d2c0b18b9"
+    },
+    "animation/scratchpad-fade/README.md": {
+      "bytes": 1670,
+      "sha256": "a5bcc0075ce8de224988286879f0f48e561eecc3799214c7cf0dbcd85eade56b"
+    },
+    "animation/scratchpad-fade/config.toml": {
+      "bytes": 288,
+      "sha256": "cd48e78b38c918a0e1aaa4148951faa5e5fa817c183629df51e8019a3d7978b9"
+    },
+    "animation/scratchpad-fade/effect.toml": {
+      "bytes": 77,
+      "sha256": "e8786d4512cac6b2a4bf8978af37a15ba822d24e96658a42ae957120ebf31f41"
+    },
+    "animation/scratchpad-fade/preview.png": {
+      "bytes": 12807,
+      "sha256": "49472394da028f634eebb3d3e2027fe5d2fcb1f5f76856c4bdb46b1169abca14"
+    },
+    "animation/scratchpad-fade/shader.glsl": {
+      "bytes": 231,
+      "sha256": "2a127ea7306a1b2c5ccaaacd74b0c8ebaf9cd8a7fd2b86a40d5d16c3fdbce9a4"
     },
     "animation/shattered-glass/README.md": {
       "bytes": 5258,

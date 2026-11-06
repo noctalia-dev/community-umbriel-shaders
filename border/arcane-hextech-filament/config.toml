@@ -1,0 +1,6 @@
+# Merge into existing tables and append the include path.
+[include]
+files = ["shaders/community/border/arcane-hextech-filament/effect.toml"]
+
+[effects]
+border = "arcane.hextech-filament"

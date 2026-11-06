@@ -1,0 +1,9 @@
+publish = false
+name = "Ink Recede"
+description = "A brush-textured cool desaturation briefly passes across the window losing focus."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/arcane-ink-recede/README.md"]
+uses = ["animation.dim_unfocused"]
+tags = ["geometric", "glow"]
+tested_on = ["0.1.0 (b6c4b7d)"]

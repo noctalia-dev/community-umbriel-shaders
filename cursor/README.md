@@ -32,3 +32,7 @@
 | <img src="train-tracks/preview.png" width="160" alt="Train Tracks preview"> | [train-tracks](train-tracks/) | A short railway trail, capped at 150 logical pixels and fading within 0.45 seconds. |
 | <img src="witchfire/preview.png" width="160" alt="Witchfire preview"> | [witchfire](witchfire/) | A long curved green fire ribbon, peeling wisps, drifting orange embers and a faint stationary glow. |
 | <img src="vampire-wake/preview.png" width="160" alt="Vampire Wake preview"> | [vampire-wake](vampire-wake/) | A curved crimson ribbon with burgundy wisps, falling red sparks and fluttering bats; a vampire companion to Witchfire. |
+
+## Arcane-inspired local experiments
+
+- [Powder Trail](arcane-powder-trail/): unpublished local family preset.

@@ -1,0 +1,9 @@
+publish = false
+name = "Hextech Filament"
+description = "Two chipped brass rails carry cyan circuit traces, terminal rings and occasional magenta slashes."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "border/arcane-hextech-filament/README.md"]
+uses = ["effects.border"]
+tags = ["geometric", "glow"]
+tested_on = ["0.1.0 (b6c4b7d)"]

@@ -1,0 +1,3 @@
+[effects.preset."arcane.blueprint-unfold"]
+kind = "animation"
+shader = "shader.glsl"

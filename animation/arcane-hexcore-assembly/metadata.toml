@@ -1,0 +1,9 @@
+publish = false
+name = "Hexcore Assembly"
+description = "Staggered crystal cells travel into place, with cyan and brass seams that vanish as the window assembles."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/arcane-hexcore-assembly/README.md"]
+uses = ["animation.windows_in"]
+tags = ["geometric", "glow"]
+tested_on = ["0.1.0 (b6c4b7d)"]

@@ -49,3 +49,7 @@
 | <img src="haunted-glass/preview.png" width="160" alt="Haunted Glass preview"> | [haunted-glass](haunted-glass/) | Three hooked talons dent and rake the glass, leaving grooves and branching fractures that heal. |
 | <img src="somethings-watching-overlay/preview.png" width="160" alt="Inward fire and eyes"> | [somethings-watching-overlay](somethings-watching-overlay/) | Inward vines, growing pumpkins, cat eyes and skeletons, selected by the After Dark border. |
 | <img src="music-smoke/preview.png" width="160" alt="Music Smoke preview"> | [music-smoke](music-smoke/) | Audio-reactive rising smoke; silence restores the sampled window. |
+
+## Arcane-inspired local experiments
+
+- [Painted Glass](arcane-painted-glass/): unpublished local family preset.

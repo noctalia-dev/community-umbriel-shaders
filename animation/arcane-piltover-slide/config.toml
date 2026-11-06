@@ -1,0 +1,12 @@
+# Merge into existing tables and append the include path.
+[include]
+files = ["shaders/community/animation/arcane-piltover-slide/effect.toml"]
+
+[animation]
+enabled = true
+
+[animation.layers]
+enabled = true
+effect = "arcane.piltover-slide"
+duration_ms = 260
+curve = "linear"

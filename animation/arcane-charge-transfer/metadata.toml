@@ -1,0 +1,9 @@
+publish = false
+name = "Charge Transfer"
+description = "A concentrated cyan charge travels around the newly focused border, leaving a brief brass trace."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/arcane-charge-transfer/README.md"]
+uses = ["animation.border"]
+tags = ["geometric", "glow"]
+tested_on = ["0.1.0 (b6c4b7d)"]

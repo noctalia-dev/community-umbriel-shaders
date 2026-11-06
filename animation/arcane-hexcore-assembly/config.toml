@@ -1,0 +1,12 @@
+# Merge into existing tables and append the include path.
+[include]
+files = ["shaders/community/animation/arcane-hexcore-assembly/effect.toml"]
+
+[animation]
+enabled = true
+
+[animation.windows_in]
+enabled = true
+effect = "arcane.hexcore-assembly"
+duration_ms = 650
+curve = "linear"

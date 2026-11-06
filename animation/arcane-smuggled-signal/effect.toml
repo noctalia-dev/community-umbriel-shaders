@@ -1,0 +1,3 @@
+[effects.preset."arcane.smuggled-signal"]
+kind = "animation"
+shader = "shader.glsl"

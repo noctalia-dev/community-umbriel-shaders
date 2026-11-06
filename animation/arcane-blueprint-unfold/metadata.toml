@@ -1,0 +1,9 @@
+publish = false
+name = "Blueprint Unfold"
+description = "Brass measurement brackets and ticks frame overview while a cyan geometric seal briefly appears."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/arcane-blueprint-unfold/README.md"]
+uses = ["animation.overview"]
+tags = ["geometric", "glow"]
+tested_on = ["0.1.0 (b6c4b7d)"]

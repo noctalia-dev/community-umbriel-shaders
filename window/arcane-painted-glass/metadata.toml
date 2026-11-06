@@ -1,0 +1,9 @@
+publish = false
+name = "Painted Glass"
+description = "Layered violet pigment, diagonal hatching and scattered cyan facets sit along window edges."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "window/arcane-painted-glass/README.md"]
+uses = ["effects.window"]
+tags = ["geometric", "glow"]
+tested_on = ["0.1.0 (b6c4b7d)"]

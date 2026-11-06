@@ -1,0 +1,12 @@
+# Merge into existing tables and append the include path.
+[include]
+files = ["shaders/community/animation/arcane-charge-transfer/effect.toml"]
+
+[animation]
+enabled = true
+
+[animation.border]
+enabled = true
+effect = "arcane.charge-transfer"
+duration_ms = 300
+curve = "linear"

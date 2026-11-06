@@ -1,0 +1,3 @@
+[effects.preset."arcane.hexcore-assembly"]
+kind = "animation"
+shader = "shader.glsl"

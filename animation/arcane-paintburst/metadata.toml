@@ -1,0 +1,9 @@
+publish = false
+name = "Paintburst"
+description = "A closing window breaks into diagonal dry-brush pigment islands with magenta and cyan edges."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/arcane-paintburst/README.md"]
+uses = ["animation.windows_out"]
+tags = ["geometric", "glow"]
+tested_on = ["0.1.0 (b6c4b7d)"]

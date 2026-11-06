@@ -1,0 +1,9 @@
+publish = false
+name = "Smuggled Signal"
+description = "A torn diagonal scratchpad reveal with a magenta front and an offset cyan scratch."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/arcane-smuggled-signal/README.md"]
+uses = ["animation.scratchpad"]
+tags = ["geometric", "glow"]
+tested_on = ["0.1.0 (b6c4b7d)"]

@@ -1,0 +1,9 @@
+publish = false
+name = "Undercity Atmosphere"
+description = "Slow teal-violet peripheral haze and sparse brass dust leave the desktop centre clear."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "screen/arcane-undercity-atmosphere/README.md"]
+uses = ["effects.screen"]
+tags = ["geometric", "glow"]
+tested_on = ["0.1.0 (b6c4b7d)"]

@@ -1,0 +1,4 @@
+[effects.preset."arcane.powder-trail"]
+kind = "cursor"
+shader = "shader.glsl"
+radius = 192

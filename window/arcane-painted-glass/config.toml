@@ -1,0 +1,6 @@
+# Merge into existing tables and append the include path.
+[include]
+files = ["shaders/community/window/arcane-painted-glass/effect.toml"]
+
+[effects]
+window = "arcane.painted-glass"

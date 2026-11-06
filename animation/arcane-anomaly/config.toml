@@ -1,0 +1,13 @@
+# Merge into existing tables and append the include path.
+[include]
+files = ["shaders/community/animation/arcane-anomaly/effect.toml"]
+
+[animation]
+enabled = true
+
+[animation.workspaces]
+enabled = true
+effect = "arcane.anomaly"
+duration_ms = 1050
+curve = "linear"
+style = "reveal"

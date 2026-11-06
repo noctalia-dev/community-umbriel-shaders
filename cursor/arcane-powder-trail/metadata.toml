@@ -1,0 +1,9 @@
+publish = false
+name = "Powder Trail"
+description = "A cyan pointer stroke trails broken magenta scribbles and scattered pale sparks."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "cursor/arcane-powder-trail/README.md"]
+uses = ["effects.cursor"]
+tags = ["geometric", "glow"]
+tested_on = ["0.1.0 (b6c4b7d)"]

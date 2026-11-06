@@ -1,0 +1,12 @@
+# Merge into existing tables and append the include path.
+[include]
+files = ["shaders/community/animation/arcane-paintburst/effect.toml"]
+
+[animation]
+enabled = true
+
+[animation.windows_out]
+enabled = true
+effect = "arcane.paintburst"
+duration_ms = 550
+curve = "linear"

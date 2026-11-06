@@ -144,3 +144,25 @@ tags = ["playful"]
 "animation.windows_in" = "animation/wobbly-lifecycle"
 "animation.windows_out" = "animation/wobbly-lifecycle"
 "animation.windows_move" = "animation/wobbly-move"
+
+[families.arcane]
+publish = false
+name = "Arcane Inspired"
+description = "Cyan Hextech filaments, magenta painted fractures and brass geometry across every effect slot."
+members = ["border/arcane-hextech-filament", "window/arcane-painted-glass", "screen/arcane-undercity-atmosphere", "cursor/arcane-powder-trail", "animation/arcane-hexcore-assembly", "animation/arcane-paintburst", "animation/arcane-anomaly", "animation/arcane-smuggled-signal", "animation/arcane-piltover-slide", "animation/arcane-ekko-echo", "animation/arcane-blueprint-unfold", "animation/arcane-charge-transfer", "animation/arcane-ink-recede"]
+tags = ["geometric", "glow"]
+
+[families.arcane.defaults]
+"effects.border" = "border/arcane-hextech-filament"
+"effects.window" = "window/arcane-painted-glass"
+"effects.screen" = "screen/arcane-undercity-atmosphere"
+"effects.cursor" = "cursor/arcane-powder-trail"
+"animation.windows_in" = "animation/arcane-hexcore-assembly"
+"animation.windows_out" = "animation/arcane-paintburst"
+"animation.workspaces" = "animation/arcane-anomaly"
+"animation.scratchpad" = "animation/arcane-smuggled-signal"
+"animation.layers" = "animation/arcane-piltover-slide"
+"animation.windows_move" = "animation/arcane-ekko-echo"
+"animation.overview" = "animation/arcane-blueprint-unfold"
+"animation.border" = "animation/arcane-charge-transfer"
+"animation.dim_unfocused" = "animation/arcane-ink-recede"

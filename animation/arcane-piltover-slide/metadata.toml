@@ -1,0 +1,9 @@
+publish = false
+name = "Piltover Slide"
+description = "Panels slide behind a crisp brass reveal bar punctuated by cyan teeth."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/arcane-piltover-slide/README.md"]
+uses = ["animation.layers"]
+tags = ["geometric", "glow"]
+tested_on = ["0.1.0 (b6c4b7d)"]

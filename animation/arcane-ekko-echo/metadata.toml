@@ -1,0 +1,9 @@
+publish = false
+name = "Ekko Echo"
+description = "Three cyan-green spatial echoes and a fading brass clock seal resolve as a window settles."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "animation/arcane-ekko-echo/README.md"]
+uses = ["animation.windows_move"]
+tags = ["geometric", "glow"]
+tested_on = ["0.1.0 (b6c4b7d)"]

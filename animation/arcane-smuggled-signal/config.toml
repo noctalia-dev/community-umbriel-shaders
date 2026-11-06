@@ -1,0 +1,12 @@
+# Merge into existing tables and append the include path.
+[include]
+files = ["shaders/community/animation/arcane-smuggled-signal/effect.toml"]
+
+[animation]
+enabled = true
+
+[animation.scratchpad]
+enabled = true
+effect = "arcane.smuggled-signal"
+duration_ms = 380
+curve = "linear"

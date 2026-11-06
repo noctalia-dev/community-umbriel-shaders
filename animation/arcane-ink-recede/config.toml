@@ -1,0 +1,12 @@
+# Merge into existing tables and append the include path.
+[include]
+files = ["shaders/community/animation/arcane-ink-recede/effect.toml"]
+
+[animation]
+enabled = true
+
+[animation.dim_unfocused]
+enabled = true
+effect = "arcane.ink-recede"
+duration_ms = 280
+curve = "linear"

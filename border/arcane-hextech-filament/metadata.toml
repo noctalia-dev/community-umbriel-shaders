@@ -1,4 +1,4 @@
-publish = false
+publish = true
 name = "Hextech Filament"
 description = "Two chipped brass rails carry cyan circuit traces, terminal rings and occasional magenta slashes."
 author = "Barrulus"

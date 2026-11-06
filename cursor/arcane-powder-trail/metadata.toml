@@ -1,4 +1,4 @@
-publish = false
+publish = true
 name = "Powder Trail"
 description = "A cyan pointer stroke trails broken magenta scribbles and scattered pale sparks."
 author = "Barrulus"

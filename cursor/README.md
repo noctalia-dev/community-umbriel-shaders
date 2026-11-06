@@ -33,6 +33,6 @@
 | <img src="witchfire/preview.png" width="160" alt="Witchfire preview"> | [witchfire](witchfire/) | A long curved green fire ribbon, peeling wisps, drifting orange embers and a faint stationary glow. |
 | <img src="vampire-wake/preview.png" width="160" alt="Vampire Wake preview"> | [vampire-wake](vampire-wake/) | A curved crimson ribbon with burgundy wisps, falling red sparks and fluttering bats; a vampire companion to Witchfire. |
 
-## Arcane-inspired local experiments
+## Arcane-inspired family
 
-- [Powder Trail](arcane-powder-trail/): unpublished local family preset.
+- [Powder Trail](arcane-powder-trail/): Arcane Inspired family preset.

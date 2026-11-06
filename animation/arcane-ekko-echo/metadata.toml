@@ -1,4 +1,4 @@
-publish = false
+publish = true
 name = "Ekko Echo"
 description = "Three cyan-green spatial echoes and a fading brass clock seal resolve as a window settles."
 author = "Barrulus"

@@ -1,4 +1,4 @@
-publish = false
+publish = true
 name = "Smuggled Signal"
 description = "A torn diagonal scratchpad reveal with a magenta front and an offset cyan scratch."
 author = "Barrulus"

@@ -4,7 +4,7 @@ A torn diagonal scratchpad reveal with a magenta front and an offset cyan scratc
 
 ![Native compositor capture over synthetic content](preview.png)
 
-An unpublished member of **Arcane Inspired**, for local testing. Original procedural artwork by Barrulus; no extracted show assets.
+A member of **Arcane Inspired**. Original procedural artwork by Barrulus; no extracted show assets.
 
 ## Use and tuning
 

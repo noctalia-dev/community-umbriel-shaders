@@ -1,4 +1,4 @@
-publish = false
+publish = true
 name = "Ink Recede"
 description = "A brush-textured cool desaturation briefly passes across the window losing focus."
 author = "Barrulus"

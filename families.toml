@@ -146,7 +146,7 @@ tags = ["playful"]
 "animation.windows_move" = "animation/wobbly-move"
 
 [families.arcane]
-publish = false
+publish = true
 name = "Arcane Inspired"
 description = "Cyan Hextech filaments, magenta painted fractures and brass geometry across every effect slot."
 members = ["border/arcane-hextech-filament", "window/arcane-painted-glass", "screen/arcane-undercity-atmosphere", "cursor/arcane-powder-trail", "animation/arcane-hexcore-assembly", "animation/arcane-paintburst", "animation/arcane-anomaly", "animation/arcane-smuggled-signal", "animation/arcane-piltover-slide", "animation/arcane-ekko-echo", "animation/arcane-blueprint-unfold", "animation/arcane-charge-transfer", "animation/arcane-ink-recede"]

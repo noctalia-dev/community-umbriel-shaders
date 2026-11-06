@@ -29,6 +29,6 @@
 | <img src="heartbeat/preview.png" width="160" alt="Heartbeat preview"> | [Heartbeat](heartbeat/) | Viscous red border with heartbeat. |
 | <img src="somethings-watching/preview.png" width="160" alt="Something’s Watching preview"> | [somethings-watching](somethings-watching/) | Twisting vines, growing jack-o’-lanterns, blinking cat eyes and three marching skeletons, spanning the frame and inward overlay. |
 
-## Arcane-inspired local experiments
+## Arcane-inspired family
 
-- [Hextech Filament](arcane-hextech-filament/): unpublished local family preset.
+- [Hextech Filament](arcane-hextech-filament/): Arcane Inspired family preset.

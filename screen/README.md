@@ -7,6 +7,6 @@
 | <img src="vignette/preview.png" width="160" alt="vignette preview"> | [vignette](vignette/) | Darkened edges around the whole output. |
 | <img src="midnight-fog/preview.png" width="160" alt="Midnight Fog preview"> | [midnight-fog](midnight-fog/) | Low, translucent purple mist drifts along the bottom of the output. |
 
-## Arcane-inspired local experiments
+## Arcane-inspired family
 
-- [Undercity Atmosphere](arcane-undercity-atmosphere/): unpublished local family preset.
+- [Undercity Atmosphere](arcane-undercity-atmosphere/): Arcane Inspired family preset.

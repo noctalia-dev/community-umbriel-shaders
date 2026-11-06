@@ -1,4 +1,4 @@
-publish = false
+publish = true
 name = "Blueprint Unfold"
 description = "Brass measurement brackets and ticks frame overview while a cyan geometric seal briefly appears."
 author = "Barrulus"

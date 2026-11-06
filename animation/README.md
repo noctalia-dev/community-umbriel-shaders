@@ -75,14 +75,14 @@ The ten bold slot experiments below are unpublished (`publish = false`). Use loc
 | <img src="vampire-blood-wash/preview.png" width="160" alt="Vampire Blood Wash preview"> | [vampire-blood-wash](vampire-blood-wash/) | Glossy crimson blood washes across the full scene: top-left to bottom-right downwards, bottom-left to top-right upwards. Requires workspace `style = "reveal"`. |
 | <img src="blood-sweep/preview.png" width="160" alt="Blood Sweep preview"> | [blood-sweep](blood-sweep/) | Wave of blood sweeps across the screen during a workspace switch. Requires workspace `style = "reveal"`. |
 
-## Arcane-inspired local experiments
+## Arcane-inspired family
 
-- [Hexcore Assembly](arcane-hexcore-assembly/): unpublished local family preset.
-- [Paintburst](arcane-paintburst/): unpublished local family preset.
-- [The Anomaly](arcane-anomaly/): unpublished local family preset.
-- [Smuggled Signal](arcane-smuggled-signal/): unpublished local family preset.
-- [Piltover Slide](arcane-piltover-slide/): unpublished local family preset.
-- [Ekko Echo](arcane-ekko-echo/): unpublished local family preset.
-- [Blueprint Unfold](arcane-blueprint-unfold/): unpublished local family preset.
-- [Charge Transfer](arcane-charge-transfer/): unpublished local family preset.
-- [Ink Recede](arcane-ink-recede/): unpublished local family preset.
+- [Hexcore Assembly](arcane-hexcore-assembly/): Arcane Inspired family preset.
+- [Paintburst](arcane-paintburst/): Arcane Inspired family preset.
+- [The Anomaly](arcane-anomaly/): Arcane Inspired family preset.
+- [Smuggled Signal](arcane-smuggled-signal/): Arcane Inspired family preset.
+- [Piltover Slide](arcane-piltover-slide/): Arcane Inspired family preset.
+- [Ekko Echo](arcane-ekko-echo/): Arcane Inspired family preset.
+- [Blueprint Unfold](arcane-blueprint-unfold/): Arcane Inspired family preset.
+- [Charge Transfer](arcane-charge-transfer/): Arcane Inspired family preset.
+- [Ink Recede](arcane-ink-recede/): Arcane Inspired family preset.

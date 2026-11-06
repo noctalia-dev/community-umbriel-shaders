@@ -1,4 +1,4 @@
-publish = false
+publish = true
 name = "Piltover Slide"
 description = "Panels slide behind a crisp brass reveal bar punctuated by cyan teeth."
 author = "Barrulus"

@@ -1,4 +1,4 @@
-publish = false
+publish = true
 name = "Hexcore Assembly"
 description = "Staggered crystal cells travel into place, with cyan and brass seams that vanish as the window assembles."
 author = "Barrulus"

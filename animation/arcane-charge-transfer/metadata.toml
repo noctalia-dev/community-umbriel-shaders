@@ -1,4 +1,4 @@
-publish = false
+publish = true
 name = "Charge Transfer"
 description = "A concentrated cyan charge travels around the newly focused border, leaving a brief brass trace."
 author = "Barrulus"

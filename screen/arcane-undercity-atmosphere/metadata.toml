@@ -1,4 +1,4 @@
-publish = false
+publish = true
 name = "Undercity Atmosphere"
 description = "Slow teal-violet peripheral haze and sparse brass dust leave the desktop centre clear."
 author = "Barrulus"

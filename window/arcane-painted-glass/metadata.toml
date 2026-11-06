@@ -1,4 +1,4 @@
-publish = false
+publish = true
 name = "Painted Glass"
 description = "Layered violet pigment, diagonal hatching and scattered cyan facets sit along window edges."
 author = "Barrulus"

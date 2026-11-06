@@ -4,7 +4,7 @@ Panels slide behind a crisp brass reveal bar punctuated by cyan teeth.
 
 ![Native compositor capture over synthetic content](preview.png)
 
-An unpublished member of **Arcane Inspired**, for local testing. Original procedural artwork by Barrulus; no extracted show assets.
+A member of **Arcane Inspired**. Original procedural artwork by Barrulus; no extracted show assets.
 
 ## Use and tuning
 

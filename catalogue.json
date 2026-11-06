@@ -3,7 +3,7 @@
   "draft": false,
   "source": {
     "repository": "https://github.com/noctalia-dev/community-umbriel-shaders",
-    "revision": "cf24a7db1c35b285ed314a3d3c22460078fb0b84"
+    "revision": "3ea82ac305f4b02d7a72ef6e67e6573d2ec91bcc"
   },
   "feature_definitions": {
     "preset-effects": "Umbriel named effect presets and selectors; the original preset API was introduced at 512e2fb3.",
@@ -11,6 +11,536 @@
     "cursor-pointer-history": "Cursor pointer history via umbriel_pointer_count and umbriel_pointer_path[64]."
   },
   "effects": [
+    {
+      "id": "animation/arcane-anomaly",
+      "path": "animation/arcane-anomaly",
+      "name": "The Anomaly",
+      "description": "An irregular centre-out portal tears open between workspaces, edged with writhing cyan and magenta rips, violet glow and sparks.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/arcane-anomaly/README.md"
+      ],
+      "tags": [
+        "geometric",
+        "glow"
+      ],
+      "role": "effect",
+      "kind": "animation",
+      "preset": "arcane.anomaly",
+      "uses": [
+        "animation.workspaces"
+      ],
+      "dependencies": [],
+      "families": [
+        "arcane"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/arcane-anomaly/README.md",
+        "animation/arcane-anomaly/effect.toml",
+        "animation/arcane-anomaly/shader.glsl"
+      ],
+      "preview": {
+        "image": "animation/arcane-anomaly/preview.png",
+        "animation": "animation/arcane-anomaly/preview.gif"
+      },
+      "readme": "animation/arcane-anomaly/README.md",
+      "config_example": "animation/arcane-anomaly/config.toml",
+      "activation": {
+        "include": [
+          "animation/arcane-anomaly/effect.toml"
+        ],
+        "settings": {
+          "animation.enabled": true,
+          "animation.workspaces.curve": "linear",
+          "animation.workspaces.duration_ms": 1050,
+          "animation.workspaces.effect": "arcane.anomaly",
+          "animation.workspaces.enabled": true,
+          "animation.workspaces.style": "reveal"
+        }
+      }
+    },
+    {
+      "id": "animation/arcane-blueprint-unfold",
+      "path": "animation/arcane-blueprint-unfold",
+      "name": "Blueprint Unfold",
+      "description": "Brass measurement brackets and ticks frame overview while a cyan geometric seal briefly appears.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/arcane-blueprint-unfold/README.md"
+      ],
+      "tags": [
+        "geometric",
+        "glow"
+      ],
+      "role": "effect",
+      "kind": "animation",
+      "preset": "arcane.blueprint-unfold",
+      "uses": [
+        "animation.overview"
+      ],
+      "dependencies": [],
+      "families": [
+        "arcane"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [
+        "0.1.0 (b6c4b7d)"
+      ],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/arcane-blueprint-unfold/README.md",
+        "animation/arcane-blueprint-unfold/effect.toml",
+        "animation/arcane-blueprint-unfold/shader.glsl"
+      ],
+      "preview": {
+        "image": "animation/arcane-blueprint-unfold/preview.png",
+        "animation": null
+      },
+      "readme": "animation/arcane-blueprint-unfold/README.md",
+      "config_example": "animation/arcane-blueprint-unfold/config.toml",
+      "activation": {
+        "include": [
+          "animation/arcane-blueprint-unfold/effect.toml"
+        ],
+        "settings": {
+          "animation.enabled": true,
+          "animation.overview.curve": "linear",
+          "animation.overview.duration_ms": 380,
+          "animation.overview.effect": "arcane.blueprint-unfold",
+          "animation.overview.enabled": true
+        }
+      }
+    },
+    {
+      "id": "animation/arcane-charge-transfer",
+      "path": "animation/arcane-charge-transfer",
+      "name": "Charge Transfer",
+      "description": "A concentrated cyan charge travels around the newly focused border, leaving a brief brass trace.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/arcane-charge-transfer/README.md"
+      ],
+      "tags": [
+        "geometric",
+        "glow"
+      ],
+      "role": "effect",
+      "kind": "animation",
+      "preset": "arcane.charge-transfer",
+      "uses": [
+        "animation.border"
+      ],
+      "dependencies": [],
+      "families": [
+        "arcane"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [
+        "0.1.0 (b6c4b7d)"
+      ],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/arcane-charge-transfer/README.md",
+        "animation/arcane-charge-transfer/effect.toml",
+        "animation/arcane-charge-transfer/shader.glsl"
+      ],
+      "preview": {
+        "image": "animation/arcane-charge-transfer/preview.png",
+        "animation": null
+      },
+      "readme": "animation/arcane-charge-transfer/README.md",
+      "config_example": "animation/arcane-charge-transfer/config.toml",
+      "activation": {
+        "include": [
+          "animation/arcane-charge-transfer/effect.toml"
+        ],
+        "settings": {
+          "animation.border.curve": "linear",
+          "animation.border.duration_ms": 300,
+          "animation.border.effect": "arcane.charge-transfer",
+          "animation.border.enabled": true,
+          "animation.enabled": true
+        }
+      }
+    },
+    {
+      "id": "animation/arcane-ekko-echo",
+      "path": "animation/arcane-ekko-echo",
+      "name": "Ekko Echo",
+      "description": "Three cyan-green spatial echoes and a fading brass clock seal resolve as a window settles.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/arcane-ekko-echo/README.md"
+      ],
+      "tags": [
+        "geometric",
+        "glow"
+      ],
+      "role": "effect",
+      "kind": "animation",
+      "preset": "arcane.ekko-echo",
+      "uses": [
+        "animation.windows_move"
+      ],
+      "dependencies": [],
+      "families": [
+        "arcane"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [
+        "0.1.0 (b6c4b7d)"
+      ],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/arcane-ekko-echo/README.md",
+        "animation/arcane-ekko-echo/effect.toml",
+        "animation/arcane-ekko-echo/shader.glsl"
+      ],
+      "preview": {
+        "image": "animation/arcane-ekko-echo/preview.png",
+        "animation": null
+      },
+      "readme": "animation/arcane-ekko-echo/README.md",
+      "config_example": "animation/arcane-ekko-echo/config.toml",
+      "activation": {
+        "include": [
+          "animation/arcane-ekko-echo/effect.toml"
+        ],
+        "settings": {
+          "animation.enabled": true,
+          "animation.windows_move.curve": "linear",
+          "animation.windows_move.duration_ms": 400,
+          "animation.windows_move.effect": "arcane.ekko-echo",
+          "animation.windows_move.enabled": true
+        }
+      }
+    },
+    {
+      "id": "animation/arcane-hexcore-assembly",
+      "path": "animation/arcane-hexcore-assembly",
+      "name": "Hexcore Assembly",
+      "description": "Staggered crystal cells travel into place, with cyan and brass seams that vanish as the window assembles.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/arcane-hexcore-assembly/README.md"
+      ],
+      "tags": [
+        "geometric",
+        "glow"
+      ],
+      "role": "effect",
+      "kind": "animation",
+      "preset": "arcane.hexcore-assembly",
+      "uses": [
+        "animation.windows_in"
+      ],
+      "dependencies": [],
+      "families": [
+        "arcane"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [
+        "0.1.0 (b6c4b7d)"
+      ],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/arcane-hexcore-assembly/README.md",
+        "animation/arcane-hexcore-assembly/effect.toml",
+        "animation/arcane-hexcore-assembly/shader.glsl"
+      ],
+      "preview": {
+        "image": "animation/arcane-hexcore-assembly/preview.png",
+        "animation": null
+      },
+      "readme": "animation/arcane-hexcore-assembly/README.md",
+      "config_example": "animation/arcane-hexcore-assembly/config.toml",
+      "activation": {
+        "include": [
+          "animation/arcane-hexcore-assembly/effect.toml"
+        ],
+        "settings": {
+          "animation.enabled": true,
+          "animation.windows_in.curve": "linear",
+          "animation.windows_in.duration_ms": 650,
+          "animation.windows_in.effect": "arcane.hexcore-assembly",
+          "animation.windows_in.enabled": true
+        }
+      }
+    },
+    {
+      "id": "animation/arcane-ink-recede",
+      "path": "animation/arcane-ink-recede",
+      "name": "Ink Recede",
+      "description": "A brush-textured cool desaturation briefly passes across the window losing focus.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/arcane-ink-recede/README.md"
+      ],
+      "tags": [
+        "geometric",
+        "glow"
+      ],
+      "role": "effect",
+      "kind": "animation",
+      "preset": "arcane.ink-recede",
+      "uses": [
+        "animation.dim_unfocused"
+      ],
+      "dependencies": [],
+      "families": [
+        "arcane"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [
+        "0.1.0 (b6c4b7d)"
+      ],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/arcane-ink-recede/README.md",
+        "animation/arcane-ink-recede/effect.toml",
+        "animation/arcane-ink-recede/shader.glsl"
+      ],
+      "preview": {
+        "image": "animation/arcane-ink-recede/preview.png",
+        "animation": null
+      },
+      "readme": "animation/arcane-ink-recede/README.md",
+      "config_example": "animation/arcane-ink-recede/config.toml",
+      "activation": {
+        "include": [
+          "animation/arcane-ink-recede/effect.toml"
+        ],
+        "settings": {
+          "animation.dim_unfocused.curve": "linear",
+          "animation.dim_unfocused.duration_ms": 280,
+          "animation.dim_unfocused.effect": "arcane.ink-recede",
+          "animation.dim_unfocused.enabled": true,
+          "animation.enabled": true
+        }
+      }
+    },
+    {
+      "id": "animation/arcane-paintburst",
+      "path": "animation/arcane-paintburst",
+      "name": "Paintburst",
+      "description": "A closing window breaks into diagonal dry-brush pigment islands with magenta and cyan edges.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/arcane-paintburst/README.md"
+      ],
+      "tags": [
+        "geometric",
+        "glow"
+      ],
+      "role": "effect",
+      "kind": "animation",
+      "preset": "arcane.paintburst",
+      "uses": [
+        "animation.windows_out"
+      ],
+      "dependencies": [],
+      "families": [
+        "arcane"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [
+        "0.1.0 (b6c4b7d)"
+      ],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/arcane-paintburst/README.md",
+        "animation/arcane-paintburst/effect.toml",
+        "animation/arcane-paintburst/shader.glsl"
+      ],
+      "preview": {
+        "image": "animation/arcane-paintburst/preview.png",
+        "animation": null
+      },
+      "readme": "animation/arcane-paintburst/README.md",
+      "config_example": "animation/arcane-paintburst/config.toml",
+      "activation": {
+        "include": [
+          "animation/arcane-paintburst/effect.toml"
+        ],
+        "settings": {
+          "animation.enabled": true,
+          "animation.windows_out.curve": "linear",
+          "animation.windows_out.duration_ms": 550,
+          "animation.windows_out.effect": "arcane.paintburst",
+          "animation.windows_out.enabled": true
+        }
+      }
+    },
+    {
+      "id": "animation/arcane-piltover-slide",
+      "path": "animation/arcane-piltover-slide",
+      "name": "Piltover Slide",
+      "description": "Panels slide behind a crisp brass reveal bar punctuated by cyan teeth.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/arcane-piltover-slide/README.md"
+      ],
+      "tags": [
+        "geometric",
+        "glow"
+      ],
+      "role": "effect",
+      "kind": "animation",
+      "preset": "arcane.piltover-slide",
+      "uses": [
+        "animation.layers"
+      ],
+      "dependencies": [],
+      "families": [
+        "arcane"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [
+        "0.1.0 (b6c4b7d)"
+      ],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/arcane-piltover-slide/README.md",
+        "animation/arcane-piltover-slide/effect.toml",
+        "animation/arcane-piltover-slide/shader.glsl"
+      ],
+      "preview": {
+        "image": "animation/arcane-piltover-slide/preview.png",
+        "animation": null
+      },
+      "readme": "animation/arcane-piltover-slide/README.md",
+      "config_example": "animation/arcane-piltover-slide/config.toml",
+      "activation": {
+        "include": [
+          "animation/arcane-piltover-slide/effect.toml"
+        ],
+        "settings": {
+          "animation.enabled": true,
+          "animation.layers.curve": "linear",
+          "animation.layers.duration_ms": 260,
+          "animation.layers.effect": "arcane.piltover-slide",
+          "animation.layers.enabled": true
+        }
+      }
+    },
+    {
+      "id": "animation/arcane-smuggled-signal",
+      "path": "animation/arcane-smuggled-signal",
+      "name": "Smuggled Signal",
+      "description": "A torn diagonal scratchpad reveal with a magenta front and an offset cyan scratch.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/arcane-smuggled-signal/README.md"
+      ],
+      "tags": [
+        "geometric",
+        "glow"
+      ],
+      "role": "effect",
+      "kind": "animation",
+      "preset": "arcane.smuggled-signal",
+      "uses": [
+        "animation.scratchpad"
+      ],
+      "dependencies": [],
+      "families": [
+        "arcane"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [
+        "0.1.0 (b6c4b7d)"
+      ],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "animation/arcane-smuggled-signal/README.md",
+        "animation/arcane-smuggled-signal/effect.toml",
+        "animation/arcane-smuggled-signal/shader.glsl"
+      ],
+      "preview": {
+        "image": "animation/arcane-smuggled-signal/preview.png",
+        "animation": null
+      },
+      "readme": "animation/arcane-smuggled-signal/README.md",
+      "config_example": "animation/arcane-smuggled-signal/config.toml",
+      "activation": {
+        "include": [
+          "animation/arcane-smuggled-signal/effect.toml"
+        ],
+        "settings": {
+          "animation.enabled": true,
+          "animation.scratchpad.curve": "linear",
+          "animation.scratchpad.duration_ms": 380,
+          "animation.scratchpad.effect": "arcane.smuggled-signal",
+          "animation.scratchpad.enabled": true
+        }
+      }
+    },
     {
       "id": "animation/beach-surf-animation",
       "path": "animation/beach-surf-animation",
@@ -3419,6 +3949,61 @@
       }
     },
     {
+      "id": "border/arcane-hextech-filament",
+      "path": "border/arcane-hextech-filament",
+      "name": "Hextech Filament",
+      "description": "Two chipped brass rails carry cyan circuit traces, terminal rings and occasional magenta slashes.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "border/arcane-hextech-filament/README.md"
+      ],
+      "tags": [
+        "geometric",
+        "glow"
+      ],
+      "role": "effect",
+      "kind": "border",
+      "preset": "arcane.hextech-filament",
+      "uses": [
+        "effects.border"
+      ],
+      "dependencies": [],
+      "families": [
+        "arcane"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [
+        "0.1.0 (b6c4b7d)"
+      ],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "border/arcane-hextech-filament/README.md",
+        "border/arcane-hextech-filament/effect.toml",
+        "border/arcane-hextech-filament/shader.glsl"
+      ],
+      "preview": {
+        "image": "border/arcane-hextech-filament/preview.png",
+        "animation": null
+      },
+      "readme": "border/arcane-hextech-filament/README.md",
+      "config_example": "border/arcane-hextech-filament/config.toml",
+      "activation": {
+        "include": [
+          "border/arcane-hextech-filament/effect.toml"
+        ],
+        "settings": {
+          "effects.border": "arcane.hextech-filament"
+        }
+      }
+    },
+    {
       "id": "border/beach-surf",
       "path": "border/beach-surf",
       "name": "Beach Surf",
@@ -4621,6 +5206,61 @@
         ],
         "settings": {
           "effects.border": "spectrum"
+        }
+      }
+    },
+    {
+      "id": "cursor/arcane-powder-trail",
+      "path": "cursor/arcane-powder-trail",
+      "name": "Powder Trail",
+      "description": "A cyan pointer stroke trails broken magenta scribbles and scattered pale sparks.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "cursor/arcane-powder-trail/README.md"
+      ],
+      "tags": [
+        "geometric",
+        "glow"
+      ],
+      "role": "effect",
+      "kind": "cursor",
+      "preset": "arcane.powder-trail",
+      "uses": [
+        "effects.cursor"
+      ],
+      "dependencies": [],
+      "families": [
+        "arcane"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [
+        "0.1.0 (b6c4b7d)"
+      ],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "cursor/arcane-powder-trail/README.md",
+        "cursor/arcane-powder-trail/effect.toml",
+        "cursor/arcane-powder-trail/shader.glsl"
+      ],
+      "preview": {
+        "image": "cursor/arcane-powder-trail/preview.png",
+        "animation": null
+      },
+      "readme": "cursor/arcane-powder-trail/README.md",
+      "config_example": "cursor/arcane-powder-trail/config.toml",
+      "activation": {
+        "include": [
+          "cursor/arcane-powder-trail/effect.toml"
+        ],
+        "settings": {
+          "effects.cursor": "arcane.powder-trail"
         }
       }
     },
@@ -6133,6 +6773,61 @@
       }
     },
     {
+      "id": "screen/arcane-undercity-atmosphere",
+      "path": "screen/arcane-undercity-atmosphere",
+      "name": "Undercity Atmosphere",
+      "description": "Slow teal-violet peripheral haze and sparse brass dust leave the desktop centre clear.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "screen/arcane-undercity-atmosphere/README.md"
+      ],
+      "tags": [
+        "geometric",
+        "glow"
+      ],
+      "role": "effect",
+      "kind": "screen",
+      "preset": "arcane.undercity-atmosphere",
+      "uses": [
+        "effects.screen"
+      ],
+      "dependencies": [],
+      "families": [
+        "arcane"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [
+        "0.1.0 (b6c4b7d)"
+      ],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "screen/arcane-undercity-atmosphere/README.md",
+        "screen/arcane-undercity-atmosphere/effect.toml",
+        "screen/arcane-undercity-atmosphere/shader.glsl"
+      ],
+      "preview": {
+        "image": "screen/arcane-undercity-atmosphere/preview.png",
+        "animation": null
+      },
+      "readme": "screen/arcane-undercity-atmosphere/README.md",
+      "config_example": "screen/arcane-undercity-atmosphere/config.toml",
+      "activation": {
+        "include": [
+          "screen/arcane-undercity-atmosphere/effect.toml"
+        ],
+        "settings": {
+          "effects.screen": "arcane.undercity-atmosphere"
+        }
+      }
+    },
+    {
       "id": "screen/midnight-fog",
       "path": "screen/midnight-fog",
       "name": "Midnight Fog",
@@ -6281,6 +6976,61 @@
         ],
         "settings": {
           "effects.window": "window.adaptive-text-v4"
+        }
+      }
+    },
+    {
+      "id": "window/arcane-painted-glass",
+      "path": "window/arcane-painted-glass",
+      "name": "Painted Glass",
+      "description": "Layered violet pigment, diagonal hatching and scattered cyan facets sit along window edges.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "window/arcane-painted-glass/README.md"
+      ],
+      "tags": [
+        "geometric",
+        "glow"
+      ],
+      "role": "effect",
+      "kind": "window",
+      "preset": "arcane.painted-glass",
+      "uses": [
+        "effects.window"
+      ],
+      "dependencies": [],
+      "families": [
+        "arcane"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [
+        "0.1.0 (b6c4b7d)"
+      ],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "window/arcane-painted-glass/README.md",
+        "window/arcane-painted-glass/effect.toml",
+        "window/arcane-painted-glass/shader.glsl"
+      ],
+      "preview": {
+        "image": "window/arcane-painted-glass/preview.png",
+        "animation": null
+      },
+      "readme": "window/arcane-painted-glass/README.md",
+      "config_example": "window/arcane-painted-glass/config.toml",
+      "activation": {
+        "include": [
+          "window/arcane-painted-glass/effect.toml"
+        ],
+        "settings": {
+          "effects.window": "arcane.painted-glass"
         }
       }
     },
@@ -8575,6 +9325,100 @@
       }
     },
     {
+      "id": "arcane",
+      "name": "Arcane Inspired",
+      "description": "Cyan Hextech filaments, magenta painted fractures and brass geometry across every effect slot.",
+      "members": [
+        "border/arcane-hextech-filament",
+        "window/arcane-painted-glass",
+        "screen/arcane-undercity-atmosphere",
+        "cursor/arcane-powder-trail",
+        "animation/arcane-hexcore-assembly",
+        "animation/arcane-paintburst",
+        "animation/arcane-anomaly",
+        "animation/arcane-smuggled-signal",
+        "animation/arcane-piltover-slide",
+        "animation/arcane-ekko-echo",
+        "animation/arcane-blueprint-unfold",
+        "animation/arcane-charge-transfer",
+        "animation/arcane-ink-recede"
+      ],
+      "tags": [
+        "geometric",
+        "glow"
+      ],
+      "authors": [
+        "Barrulus"
+      ],
+      "preview": {
+        "image": null,
+        "animation": null
+      },
+      "readme": null,
+      "config_example": null,
+      "activation": {
+        "include": [
+          "animation/arcane-anomaly/effect.toml",
+          "animation/arcane-blueprint-unfold/effect.toml",
+          "animation/arcane-charge-transfer/effect.toml",
+          "animation/arcane-ekko-echo/effect.toml",
+          "animation/arcane-hexcore-assembly/effect.toml",
+          "animation/arcane-ink-recede/effect.toml",
+          "animation/arcane-paintburst/effect.toml",
+          "animation/arcane-piltover-slide/effect.toml",
+          "animation/arcane-smuggled-signal/effect.toml",
+          "border/arcane-hextech-filament/effect.toml",
+          "cursor/arcane-powder-trail/effect.toml",
+          "screen/arcane-undercity-atmosphere/effect.toml",
+          "window/arcane-painted-glass/effect.toml"
+        ],
+        "settings": {
+          "animation.border.curve": "linear",
+          "animation.border.duration_ms": 300,
+          "animation.border.effect": "arcane.charge-transfer",
+          "animation.border.enabled": true,
+          "animation.dim_unfocused.curve": "linear",
+          "animation.dim_unfocused.duration_ms": 280,
+          "animation.dim_unfocused.effect": "arcane.ink-recede",
+          "animation.dim_unfocused.enabled": true,
+          "animation.enabled": true,
+          "animation.layers.curve": "linear",
+          "animation.layers.duration_ms": 260,
+          "animation.layers.effect": "arcane.piltover-slide",
+          "animation.layers.enabled": true,
+          "animation.overview.curve": "linear",
+          "animation.overview.duration_ms": 380,
+          "animation.overview.effect": "arcane.blueprint-unfold",
+          "animation.overview.enabled": true,
+          "animation.scratchpad.curve": "linear",
+          "animation.scratchpad.duration_ms": 380,
+          "animation.scratchpad.effect": "arcane.smuggled-signal",
+          "animation.scratchpad.enabled": true,
+          "animation.windows_in.curve": "linear",
+          "animation.windows_in.duration_ms": 650,
+          "animation.windows_in.effect": "arcane.hexcore-assembly",
+          "animation.windows_in.enabled": true,
+          "animation.windows_move.curve": "linear",
+          "animation.windows_move.duration_ms": 400,
+          "animation.windows_move.effect": "arcane.ekko-echo",
+          "animation.windows_move.enabled": true,
+          "animation.windows_out.curve": "linear",
+          "animation.windows_out.duration_ms": 550,
+          "animation.windows_out.effect": "arcane.paintburst",
+          "animation.windows_out.enabled": true,
+          "animation.workspaces.curve": "linear",
+          "animation.workspaces.duration_ms": 1050,
+          "animation.workspaces.effect": "arcane.anomaly",
+          "animation.workspaces.enabled": true,
+          "animation.workspaces.style": "reveal",
+          "effects.border": "arcane.hextech-filament",
+          "effects.cursor": "arcane.powder-trail",
+          "effects.screen": "arcane.undercity-atmosphere",
+          "effects.window": "arcane.painted-glass"
+        }
+      }
+    },
+    {
       "id": "beach-surf",
       "name": "Beach Surf",
       "description": "Coordinated surf and foam around windows and through their transitions, with a bioluminescent Pond Wake cursor trail.",
@@ -9053,6 +9897,190 @@
     "LICENSES/weegs710-MIT.txt": {
       "bytes": 1065,
       "sha256": "d9a71de8a2087481ee64ea6cf79d6fa2d96d36777e2e3e7c8f3d8dc8683b7a6d"
+    },
+    "animation/arcane-anomaly/README.md": {
+      "bytes": 3078,
+      "sha256": "042c6953ce781f95205574d5a3134ad0eaf198418fdacdf4fb9eff76b49c6b1a"
+    },
+    "animation/arcane-anomaly/config.toml": {
+      "bytes": 281,
+      "sha256": "8913596f623c57ac3edd6dd3c0bea6b70fea4ab5a59173f86d368c196801e243"
+    },
+    "animation/arcane-anomaly/effect.toml": {
+      "bytes": 76,
+      "sha256": "582773c1649464b04a78b1cd2ac544fe957b9934b196704e87c1f734b7d7dcfc"
+    },
+    "animation/arcane-anomaly/preview.gif": {
+      "bytes": 1073971,
+      "sha256": "62b799cdebdb9f3cee727064bb26b8af40f87c7fd22d04c87622619bf51d9bb6"
+    },
+    "animation/arcane-anomaly/preview.png": {
+      "bytes": 224242,
+      "sha256": "df8f6e6b01035f518b8e4d8cdafd019f242ee9d43fa48a6d3980661ed1841e5d"
+    },
+    "animation/arcane-anomaly/shader.glsl": {
+      "bytes": 5325,
+      "sha256": "0839346920a35b6832025eacfb5ba358e3cb06ac854088cff3084ccd96a6c59f"
+    },
+    "animation/arcane-blueprint-unfold/README.md": {
+      "bytes": 1437,
+      "sha256": "a124c881dd4c3eb126f209ccf2731f60690f9a187b38e513cd61644c3f37ffe7"
+    },
+    "animation/arcane-blueprint-unfold/config.toml": {
+      "bytes": 279,
+      "sha256": "b560816a4816f257d846758c926f9cfc117da6b63b0fac233bf451ec4c071782"
+    },
+    "animation/arcane-blueprint-unfold/effect.toml": {
+      "bytes": 85,
+      "sha256": "b0306bee99664d893fcf7aa87d246228b99c1a0dd3db88f119903c554d852430"
+    },
+    "animation/arcane-blueprint-unfold/preview.png": {
+      "bytes": 13812,
+      "sha256": "b13feb8c2b9ad9d13ec0f9f25d674a7d733e2083d4691386e56e8c298fbd15be"
+    },
+    "animation/arcane-blueprint-unfold/shader.glsl": {
+      "bytes": 2022,
+      "sha256": "71d8d584e7e9b4faa7b522495240f89b2da3c4737e190d59f2a7b667649f22d8"
+    },
+    "animation/arcane-charge-transfer/README.md": {
+      "bytes": 1386,
+      "sha256": "5b8913d101e930cbf82f43808cb83ce6a1b1d92869c83c5f2efe54e1957e4c8d"
+    },
+    "animation/arcane-charge-transfer/config.toml": {
+      "bytes": 275,
+      "sha256": "bbf84fec9a7a60dd963fc168420730b427f46e4e234a9624c4aa8e66f16c56e1"
+    },
+    "animation/arcane-charge-transfer/effect.toml": {
+      "bytes": 84,
+      "sha256": "969565597efc67d20c6d744dfef142afd30599b69dd7ed0168e61be3b2dbad51"
+    },
+    "animation/arcane-charge-transfer/preview.png": {
+      "bytes": 6195,
+      "sha256": "a9656b9834eebc2f0fb24de191d632e3e7b33e514c82c05516a8288ff90260a3"
+    },
+    "animation/arcane-charge-transfer/shader.glsl": {
+      "bytes": 1931,
+      "sha256": "a88dc39d5e20845de9ebeb43f8e617ff6c304b5b5b954266346711c6dc576aa4"
+    },
+    "animation/arcane-ekko-echo/README.md": {
+      "bytes": 1481,
+      "sha256": "ee12f241c20b1d5d60f8586e9e876d10980394439f6bf5ba8ea7612b9e1eca3c"
+    },
+    "animation/arcane-ekko-echo/config.toml": {
+      "bytes": 269,
+      "sha256": "59b5393f0daf899696281ca64264a4d7fa5000071fbcf0b15527e055de9ee2fc"
+    },
+    "animation/arcane-ekko-echo/effect.toml": {
+      "bytes": 78,
+      "sha256": "8738f54b515ca4bf00e3521bf32d2881cc5efc1b46fc1fe2796aa0156449ab8d"
+    },
+    "animation/arcane-ekko-echo/preview.png": {
+      "bytes": 49910,
+      "sha256": "de8f9e992b71867f3c32997d7e7b65d561df148119121ca1fb1345d339e37853"
+    },
+    "animation/arcane-ekko-echo/shader.glsl": {
+      "bytes": 2159,
+      "sha256": "f300514da2cd51b0b107b78be17006303dc6c3e37d95353061b40685f54dbd1f"
+    },
+    "animation/arcane-hexcore-assembly/README.md": {
+      "bytes": 1476,
+      "sha256": "e657f7f60260a882e1c31edddfc9c7afc32e6fbffce62382c424a47da405dfee"
+    },
+    "animation/arcane-hexcore-assembly/config.toml": {
+      "bytes": 281,
+      "sha256": "54681d3110fdc1903f16366bb5d2e8ed7847f6b172797665e11dcee3355f0291"
+    },
+    "animation/arcane-hexcore-assembly/effect.toml": {
+      "bytes": 85,
+      "sha256": "d1796ac84e3e166b041f9c61b3edeeb1ad5047d2bfac0b957a1442e965629ae7"
+    },
+    "animation/arcane-hexcore-assembly/preview.png": {
+      "bytes": 167120,
+      "sha256": "36c8816a25e09d427e6b507b4368753fb16297b8a06e3cadbde3ae099d6b2f16"
+    },
+    "animation/arcane-hexcore-assembly/shader.glsl": {
+      "bytes": 2300,
+      "sha256": "f9dfa9a717b084e224ae2f4fc1409a56889e25afa2b78f1ceb964de2a94d45fe"
+    },
+    "animation/arcane-ink-recede/README.md": {
+      "bytes": 1505,
+      "sha256": "d61f6d7c64e24d0cc83956b6103b661a76f8359b44c0fd108bbf3f15198235cc"
+    },
+    "animation/arcane-ink-recede/config.toml": {
+      "bytes": 272,
+      "sha256": "fe2a266eb7474b43aff239a3d20f0789bc5c537082e62ddf7557b5867514007f"
+    },
+    "animation/arcane-ink-recede/effect.toml": {
+      "bytes": 79,
+      "sha256": "0ab299c310149ffdf35fed86d41756dd61dd7d2fc9431daffe23118f711d6298"
+    },
+    "animation/arcane-ink-recede/preview.png": {
+      "bytes": 3997,
+      "sha256": "9bac171408dfbade57d2c29c7fb3e47e5ec94cfeb4ef7e5c5836c5dad7e34396"
+    },
+    "animation/arcane-ink-recede/shader.glsl": {
+      "bytes": 1756,
+      "sha256": "23f3ba2c0f6fcb718d6e8463633c70ce5cb148c7fd23052887a006341f943466"
+    },
+    "animation/arcane-paintburst/README.md": {
+      "bytes": 1434,
+      "sha256": "bd7e97daa4f6ff65babd1162e062beaafc5da9ef93960ed3f7db26305f2af8a2"
+    },
+    "animation/arcane-paintburst/config.toml": {
+      "bytes": 270,
+      "sha256": "73bbab18bd30fa00cb22fcf4f7475fb70c5873f5d3aef3f1e4b27c7a3a7b8b27"
+    },
+    "animation/arcane-paintburst/effect.toml": {
+      "bytes": 79,
+      "sha256": "a166658f9f2287bcd4dbd7ffa8eef0ad08b4a6e729c814f48fe5d11ae83de011"
+    },
+    "animation/arcane-paintburst/preview.png": {
+      "bytes": 316981,
+      "sha256": "cee8ccd299b40c6a02d51bfd213f5d7dccfaa67c5b7403ed477c6f26200b2151"
+    },
+    "animation/arcane-paintburst/shader.glsl": {
+      "bytes": 1957,
+      "sha256": "0396699f5797f8b840d95362b765f16d8704ba2e128feec93f641702e128055b"
+    },
+    "animation/arcane-piltover-slide/README.md": {
+      "bytes": 1412,
+      "sha256": "57b59d9abf94858bb4c937e5867024d71b143c51c00212bddf1a5634e93419ca"
+    },
+    "animation/arcane-piltover-slide/config.toml": {
+      "bytes": 273,
+      "sha256": "95da5dc1767afa65d74357fc29947dfa4d3400a740602f762c566b8013a6143b"
+    },
+    "animation/arcane-piltover-slide/effect.toml": {
+      "bytes": 83,
+      "sha256": "9a384b6b155b6eec54abaa272c1588aa4f43edeaae643bd542c0abb9b2d57b81"
+    },
+    "animation/arcane-piltover-slide/preview.png": {
+      "bytes": 3057,
+      "sha256": "9850755e30325ae6478308e2f4c19011fb61577028699b27d91949938045bc8f"
+    },
+    "animation/arcane-piltover-slide/shader.glsl": {
+      "bytes": 1790,
+      "sha256": "2da4628e1a6d956d7eb68691df0b442881e701e6877dfbbd5819d70d60328ba7"
+    },
+    "animation/arcane-smuggled-signal/README.md": {
+      "bytes": 1371,
+      "sha256": "aea3eda3dee357e7e4cb517d0f2596147c5d768f519f0d83f12c71ff066f2c23"
+    },
+    "animation/arcane-smuggled-signal/config.toml": {
+      "bytes": 279,
+      "sha256": "2926b458cf1d494d13b2973c9ef74534f4913aabe0095f304574188e5977c50c"
+    },
+    "animation/arcane-smuggled-signal/effect.toml": {
+      "bytes": 84,
+      "sha256": "71d9ad1a281400ad6770341b79646d5ece9b3c19b8eee52afcff52755a422d88"
+    },
+    "animation/arcane-smuggled-signal/preview.png": {
+      "bytes": 43192,
+      "sha256": "7972834ae1e8cbcc06f0b4a94c78e110520cb9015ce7f13d836d084f1fe8029a"
+    },
+    "animation/arcane-smuggled-signal/shader.glsl": {
+      "bytes": 1898,
+      "sha256": "830fca86c179da10419cd7dc4f06db6a72c651219c8e413561cf18ac02b40d13"
     },
     "animation/beach-surf-animation/README.md": {
       "bytes": 4755,
@@ -10318,6 +11346,26 @@
       "bytes": 507,
       "sha256": "48e4c2e96e9c51d795ae78fcba88080e855cb6f9960149bd263800b01d0055fe"
     },
+    "border/arcane-hextech-filament/README.md": {
+      "bytes": 1498,
+      "sha256": "8e7c2c4911bfc7a9ec2d149f2829832a6045e1d6180a59a954bb8a644c0da9aa"
+    },
+    "border/arcane-hextech-filament/config.toml": {
+      "bytes": 187,
+      "sha256": "ab792678cd97d4140f1a4c7fa8e6e61a9ff025834ed9a4e5ee9c8f87b987c91d"
+    },
+    "border/arcane-hextech-filament/effect.toml": {
+      "bytes": 106,
+      "sha256": "0bf2ded59816423be1ce9f2acd7e27083dacef819226b4addaef4e2d9149addd"
+    },
+    "border/arcane-hextech-filament/preview.png": {
+      "bytes": 35331,
+      "sha256": "70cca228d0f9817c4cd681dda9e3dab58e7427e9435e1cb9cb7ce7430c835abb"
+    },
+    "border/arcane-hextech-filament/shader.glsl": {
+      "bytes": 2513,
+      "sha256": "0558d51d7ff131f7b15f6fdcc7cd846dd170a0550df68e6f84090af19796b690"
+    },
     "border/beach-surf/README.md": {
       "bytes": 6428,
       "sha256": "9a11976cd072d3fe6a825418df5d87e851fc0a66dec630afd9f34b5f6a53869b"
@@ -10793,6 +11841,26 @@
     "border/spectrum/shader.glsl": {
       "bytes": 2493,
       "sha256": "edbde4fde75c9414fe63f7749d5b7c74f690d50abf7ca972dd25da621b30ed70"
+    },
+    "cursor/arcane-powder-trail/README.md": {
+      "bytes": 1447,
+      "sha256": "f330e29434f857a8a692c174753d2e2f83fec0f44b19aa95ae59cf1651df0075"
+    },
+    "cursor/arcane-powder-trail/config.toml": {
+      "bytes": 179,
+      "sha256": "cee8a9b8b8ba99ce3e6427d24a697a8a3f7ed459f32a519fde6cb531ae2972a0"
+    },
+    "cursor/arcane-powder-trail/effect.toml": {
+      "bytes": 91,
+      "sha256": "a59efc15255f1d6f8f91dc36f6577a30a877ea404445ee038f2b937fe1a2914b"
+    },
+    "cursor/arcane-powder-trail/preview.png": {
+      "bytes": 10230,
+      "sha256": "0fc0840acdec311edffdc80afda8a7e13b695649b5fe6683e981ecea35b20c0e"
+    },
+    "cursor/arcane-powder-trail/shader.glsl": {
+      "bytes": 2552,
+      "sha256": "ee8fb638324811e7d714ba82b2832a685b29ff1955dfe9d4bfcd174d68cfd437"
     },
     "cursor/blossom-trail/README.md": {
       "bytes": 3908,
@@ -11394,6 +12462,26 @@
       "bytes": 3886,
       "sha256": "cb794b6d6da420250f4157158f50665a730661a3281287b95b15d6c24a54e075"
     },
+    "screen/arcane-undercity-atmosphere/README.md": {
+      "bytes": 1426,
+      "sha256": "d60d0a79b05d5e8ada133614f23341472951012e6bba4eb64c10e1b1fe8e35ca"
+    },
+    "screen/arcane-undercity-atmosphere/config.toml": {
+      "bytes": 195,
+      "sha256": "64020571235daf0e889b476644880f27349bcdba528f2a60a9c4b98401b0d9ea"
+    },
+    "screen/arcane-undercity-atmosphere/effect.toml": {
+      "bytes": 86,
+      "sha256": "8b105a8d3d923ae67d48dad7dddfea7b58f8e9f8e86ccad806d454f2c7c99475"
+    },
+    "screen/arcane-undercity-atmosphere/preview.png": {
+      "bytes": 24116,
+      "sha256": "391f2f5034d62ab04f00bffee2c1d11b9124cf2c46ff3d4fd5426084499a0ba9"
+    },
+    "screen/arcane-undercity-atmosphere/shader.glsl": {
+      "bytes": 1779,
+      "sha256": "ef516a257ea58e8e16e5dad833c513ddb64352ec2324936a464796bf0404df1c"
+    },
     "screen/midnight-fog/README.md": {
       "bytes": 1625,
       "sha256": "5b97a2306e7dd009b336e8f3508aa7804d13ac27bcbc685cc4f513050778585a"
@@ -11453,6 +12541,26 @@
     "window/adaptive-text-v4/shader.glsl": {
       "bytes": 1752,
       "sha256": "dc57eea91a9cdd745b1299e32f3a51c9519584d1df67e1dee689715a1f668b19"
+    },
+    "window/arcane-painted-glass/README.md": {
+      "bytes": 1369,
+      "sha256": "d6b7c402a8a5ec58afab3650c31f93bb28e062a80aa53bb92aff044dd757fd7c"
+    },
+    "window/arcane-painted-glass/config.toml": {
+      "bytes": 181,
+      "sha256": "be40189ccd39bc736fd7bdd8d2a546e59e597c04168e801a4c2c4ee01236de1e"
+    },
+    "window/arcane-painted-glass/effect.toml": {
+      "bytes": 79,
+      "sha256": "a970db5ee3794340097b3d1e95dd1b89f3760aa1516dd1c435f00983bc0c7eb5"
+    },
+    "window/arcane-painted-glass/preview.png": {
+      "bytes": 51765,
+      "sha256": "3ee43464a2c57f3babf70ee9efd1a5006da7268a697e64edf2f94c9101251df7"
+    },
+    "window/arcane-painted-glass/shader.glsl": {
+      "bytes": 1860,
+      "sha256": "40a9e104aae4d72b303bec8e7211030dad77ccdae48653eaeaed5e670d808f89"
     },
     "window/autumn-leaves/README.md": {
       "bytes": 4176,

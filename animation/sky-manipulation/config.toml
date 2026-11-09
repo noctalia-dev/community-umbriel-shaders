@@ -1,0 +1,20 @@
+# Merge into ~/.config/umbriel/config.toml; do not duplicate existing tables.
+[include]
+files = [
+  "shaders/community/animation/sky-manipulation/effect.toml",
+]
+
+[animation]
+enabled = true
+
+[animation.windows_in]
+enabled = true
+effect = "sky-manipulation"
+duration_ms = 550
+curve = "easeout"
+
+[animation.windows_out]
+enabled = true
+effect = "sky-manipulation"
+duration_ms = 450
+curve = "ease"

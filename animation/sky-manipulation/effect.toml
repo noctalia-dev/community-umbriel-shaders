@@ -1,0 +1,4 @@
+[effects.preset."sky-manipulation"]
+kind = "animation"
+shader = "shader.glsl"
+palette = true

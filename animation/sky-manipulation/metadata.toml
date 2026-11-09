@@ -1,0 +1,9 @@
+publish = false
+name = "Sky Manipulation"
+description = "A bowed, rippling fold of space sweeps across the window, swallowing it on close and unfolding it on open, with a chromatic crease and glowing strain lines."
+author = "AngieAlter"
+license = "MIT"
+notice_files = ["LICENSES/AngieAlter-MIT.txt", "animation/sky-manipulation/README.md"]
+uses = ["animation.windows_in", "animation.windows_out"]
+tags = ["fantasy", "glow"]
+tested_on = ["d3bff0fb2458"]

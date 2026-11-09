@@ -556,6 +556,8 @@ Dual Orbit is [MIT licensed by neonvoidx](LICENSES/neonvoidx-MIT.txt).
 
 The four kzzzt presets are [MIT licensed by weegs710](LICENSES/weegs710-MIT.txt).
 
+Sky Manipulation is [MIT licensed by AngieAlter](LICENSES/AngieAlter-MIT.txt).
+
 `animation/tv-glitch` is ported from Simon Schneegans’s [Burn-My-Windows](https://github.com/Schneegans/Burn-My-Windows) and is [GPL-3.0-or-later](LICENSES/BurnMyWindows-GPL-3.0-or-later.txt), like its source.
 
 The pre-existing `animation/example` shader is by Lemmy; its original contribution did not declare a license, and this contribution does not relicense it.

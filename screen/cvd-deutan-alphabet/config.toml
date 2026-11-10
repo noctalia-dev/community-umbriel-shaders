@@ -1,0 +1,5 @@
+[include]
+files = ["shaders/community/screen/cvd-deutan-alphabet/effect.toml"]
+
+[effects]
+screen = "cvd-deutan-alphabet"

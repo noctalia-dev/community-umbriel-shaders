@@ -1,0 +1,8 @@
+publish = true
+name = "CVD Deutan"
+description = "Coarse and fine animated grain selected by a deutan colour-difference heuristic."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "screen/cvd-deutan/README.md"]
+uses = ["effects.screen"]
+tags = ["texture"]

@@ -1,0 +1,8 @@
+publish = true
+name = "CVD Deutan Alphabet"
+description = "Four grain size and refresh-rate combinations encode deutan colour differences."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "screen/cvd-deutan-alphabet/README.md"]
+uses = ["effects.screen"]
+tags = ["texture"]

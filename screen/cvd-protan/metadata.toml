@@ -1,0 +1,8 @@
+publish = true
+name = "CVD Protan"
+description = "Coarse and fine animated grain selected by a protan colour-difference heuristic."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "screen/cvd-protan/README.md"]
+uses = ["effects.screen"]
+tags = ["texture"]

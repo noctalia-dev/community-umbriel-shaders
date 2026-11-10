@@ -1,0 +1,8 @@
+publish = true
+name = "CVD Deutan Combo"
+description = "Angled streaks vary in size with the deutan colour-difference magnitude."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "screen/cvd-deutan-combo/README.md"]
+uses = ["effects.screen"]
+tags = ["texture"]

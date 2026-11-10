@@ -1,0 +1,8 @@
+publish = true
+name = "CVD Deutan Oriented"
+description = "Angled animated streaks encode deutan colour differences."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "screen/cvd-deutan-oriented/README.md"]
+uses = ["effects.screen"]
+tags = ["texture"]

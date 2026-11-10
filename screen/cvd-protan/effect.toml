@@ -1,0 +1,3 @@
+[effects.preset."cvd-protan"]
+kind = "screen"
+shader = "shader.glsl"

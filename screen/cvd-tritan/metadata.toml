@@ -1,0 +1,8 @@
+publish = true
+name = "CVD Tritan"
+description = "Coarse and fine animated grain selected by a tritan colour-difference heuristic."
+author = "Barrulus"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "screen/cvd-tritan/README.md"]
+uses = ["effects.screen"]
+tags = ["texture"]

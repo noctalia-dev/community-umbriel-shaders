@@ -1,0 +1,3 @@
+[effects.preset."cvd-deutan-oriented"]
+kind = "screen"
+shader = "shader.glsl"

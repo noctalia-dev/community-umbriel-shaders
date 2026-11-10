@@ -3,7 +3,7 @@
   "draft": false,
   "source": {
     "repository": "https://github.com/noctalia-dev/community-umbriel-shaders",
-    "revision": "5dff87d189a9ce66da6833b19f0fe1ebebb5ffc2"
+    "revision": "d7a81cedc568baddb432c3cd15ab320196f415a9"
   },
   "feature_definitions": {
     "preset-effects": "Umbriel named effect presets and selectors; the original preset API was introduced at 512e2fb3.",
@@ -7178,6 +7178,58 @@
       }
     },
     {
+      "id": "screen/film-grain",
+      "path": "screen/film-grain",
+      "name": "Film Grain",
+      "description": "Subtle animated grain across the output, with extra strength near black and white.",
+      "author": "BanchouBoo; Barrulus (Umbriel adaptation)",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "LICENSES/BanchouBoo-Unlicense.txt",
+        "screen/film-grain/README.md"
+      ],
+      "tags": [
+        "texture"
+      ],
+      "role": "effect",
+      "kind": "screen",
+      "preset": "film-grain",
+      "uses": [
+        "effects.screen"
+      ],
+      "dependencies": [],
+      "families": [],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [],
+      "install_files": [
+        "LICENSES/BanchouBoo-Unlicense.txt",
+        "LICENSES/Barrulus-MIT.txt",
+        "screen/film-grain/README.md",
+        "screen/film-grain/effect.toml",
+        "screen/film-grain/shader.glsl"
+      ],
+      "preview": {
+        "image": "screen/film-grain/preview.png",
+        "animation": null
+      },
+      "readme": "screen/film-grain/README.md",
+      "config_example": "screen/film-grain/config.toml",
+      "activation": {
+        "include": [
+          "screen/film-grain/effect.toml"
+        ],
+        "settings": {
+          "effects.screen": "film-grain"
+        }
+      }
+    },
+    {
       "id": "screen/midnight-fog",
       "path": "screen/midnight-fog",
       "name": "Midnight Fog",
@@ -10228,6 +10280,10 @@
     }
   ],
   "files": {
+    "LICENSES/BanchouBoo-Unlicense.txt": {
+      "bytes": 1211,
+      "sha256": "6b0382b16279f26ff69014300541967a356a666eb0b91b422f6862f6b7dad17e"
+    },
     "LICENSES/Barrulus-MIT.txt": {
       "bytes": 1065,
       "sha256": "ed107d82f41aa60e61100e2226511e9f4070e7a68bd574627845f5c10b9748f6"
@@ -12971,6 +13027,26 @@
     "screen/cvd-tritan/shader.glsl": {
       "bytes": 1726,
       "sha256": "c45d5a3635d154b76664860f871ba14cbf49e6e7334513ae1dc0b768a50c7064"
+    },
+    "screen/film-grain/README.md": {
+      "bytes": 2956,
+      "sha256": "fb695245174c84e8993b33da85e9db1f3a7bbec11ce8b9800d4305ad237d2cb2"
+    },
+    "screen/film-grain/config.toml": {
+      "bytes": 103,
+      "sha256": "0e022776542e5f488fba9feb5550fb1a952cabe16ce18ea29e9d0b25a5624be0"
+    },
+    "screen/film-grain/effect.toml": {
+      "bytes": 69,
+      "sha256": "50758d4e0d12b796505a138aa7238ccf0e54f70bfc7bc0a9fb9ecc60f9039ef7"
+    },
+    "screen/film-grain/preview.png": {
+      "bytes": 278227,
+      "sha256": "2797e4e7444038348dac793edcb0ee1029c221ae72dedbad379280341bf743d9"
+    },
+    "screen/film-grain/shader.glsl": {
+      "bytes": 1395,
+      "sha256": "44edefdc6117ad7a840a0dcd7eaebb56dae286dffb4d56f57428b7c343acf25e"
     },
     "screen/midnight-fog/README.md": {
       "bytes": 1625,

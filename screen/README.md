@@ -24,3 +24,9 @@ Experimental animated texture cues; select one screen preset at a time.
 | <img src="cvd-deutan-oriented/preview.png" width="160" alt="CVD deutan-oriented preview"> | [CVD deutan-oriented](cvd-deutan-oriented/) | Angled animated streaks encode deutan colour differences. |
 | <img src="cvd-deutan-combo/preview.png" width="160" alt="CVD deutan-combo preview"> | [CVD deutan-combo](cvd-deutan-combo/) | Angled streaks vary in size with the deutan colour-difference magnitude. |
 | <img src="cvd-deutan-drift/preview.png" width="160" alt="CVD deutan-drift preview"> | [CVD deutan-drift](cvd-deutan-drift/) | Persistent grain drifts in a direction selected by deutan colour differences. |
+
+## Film grain
+
+| Preview | Effect | Description |
+| --- | --- | --- |
+| <img src="film-grain/preview.png" width="160" alt="Film Grain preview"> | [Film Grain](film-grain/) | Subtle animated grain, with extra strength near black and white; originally intended as a visual-snow reading aid. |

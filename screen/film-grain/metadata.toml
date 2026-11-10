@@ -1,0 +1,8 @@
+publish = true
+name = "Film Grain"
+description = "Subtle animated grain across the output, with extra strength near black and white."
+author = "BanchouBoo; Barrulus (Umbriel adaptation)"
+license = "MIT"
+notice_files = ["LICENSES/Barrulus-MIT.txt", "LICENSES/BanchouBoo-Unlicense.txt", "screen/film-grain/README.md"]
+uses = ["effects.screen"]
+tags = ["texture"]

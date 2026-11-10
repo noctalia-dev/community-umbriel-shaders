@@ -561,3 +561,9 @@ Sky Manipulation is [MIT licensed by AngieAlter](LICENSES/AngieAlter-MIT.txt).
 `animation/tv-glitch` is ported from Simon Schneegans’s [Burn-My-Windows](https://github.com/Schneegans/Burn-My-Windows) and is [GPL-3.0-or-later](LICENSES/BurnMyWindows-GPL-3.0-or-later.txt), like its source.
 
 The pre-existing `animation/example` shader is by Lemmy; its original contribution did not declare a license, and this contribution does not relicense it.
+
+### Colour-blindness texture cues
+
+The [screen collection](screen/README.md#colour-blindness-texture-cues) includes
+protan, deutan and tritan shimmer presets plus four deutan pattern variants.
+These experimental presets encode colour differences as animated texture across the output.

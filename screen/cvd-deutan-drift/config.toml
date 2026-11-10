@@ -1,0 +1,5 @@
+[include]
+files = ["shaders/community/screen/cvd-deutan-drift/effect.toml"]
+
+[effects]
+screen = "cvd-deutan-drift"

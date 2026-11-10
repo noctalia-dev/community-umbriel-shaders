@@ -3,7 +3,7 @@
   "draft": false,
   "source": {
     "repository": "https://github.com/noctalia-dev/community-umbriel-shaders",
-    "revision": "dcef74c34b3641c0d932eb08380b55ce856414ec"
+    "revision": "5dff87d189a9ce66da6833b19f0fe1ebebb5ffc2"
   },
   "feature_definitions": {
     "preset-effects": "Umbriel named effect presets and selectors; the original preset API was introduced at 512e2fb3.",
@@ -6828,6 +6828,356 @@
       }
     },
     {
+      "id": "screen/cvd-deutan",
+      "path": "screen/cvd-deutan",
+      "name": "CVD Deutan",
+      "description": "Coarse and fine animated grain selected by a deutan colour-difference heuristic.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "screen/cvd-deutan/README.md"
+      ],
+      "tags": [
+        "texture"
+      ],
+      "role": "effect",
+      "kind": "screen",
+      "preset": "cvd-deutan",
+      "uses": [
+        "effects.screen"
+      ],
+      "dependencies": [],
+      "families": [],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "screen/cvd-deutan/README.md",
+        "screen/cvd-deutan/effect.toml",
+        "screen/cvd-deutan/shader.glsl"
+      ],
+      "preview": {
+        "image": "screen/cvd-deutan/preview.png",
+        "animation": null
+      },
+      "readme": "screen/cvd-deutan/README.md",
+      "config_example": "screen/cvd-deutan/config.toml",
+      "activation": {
+        "include": [
+          "screen/cvd-deutan/effect.toml"
+        ],
+        "settings": {
+          "effects.screen": "cvd-deutan"
+        }
+      }
+    },
+    {
+      "id": "screen/cvd-deutan-alphabet",
+      "path": "screen/cvd-deutan-alphabet",
+      "name": "CVD Deutan Alphabet",
+      "description": "Four grain size and refresh-rate combinations encode deutan colour differences.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "screen/cvd-deutan-alphabet/README.md"
+      ],
+      "tags": [
+        "texture"
+      ],
+      "role": "effect",
+      "kind": "screen",
+      "preset": "cvd-deutan-alphabet",
+      "uses": [
+        "effects.screen"
+      ],
+      "dependencies": [],
+      "families": [],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "screen/cvd-deutan-alphabet/README.md",
+        "screen/cvd-deutan-alphabet/effect.toml",
+        "screen/cvd-deutan-alphabet/shader.glsl"
+      ],
+      "preview": {
+        "image": "screen/cvd-deutan-alphabet/preview.png",
+        "animation": null
+      },
+      "readme": "screen/cvd-deutan-alphabet/README.md",
+      "config_example": "screen/cvd-deutan-alphabet/config.toml",
+      "activation": {
+        "include": [
+          "screen/cvd-deutan-alphabet/effect.toml"
+        ],
+        "settings": {
+          "effects.screen": "cvd-deutan-alphabet"
+        }
+      }
+    },
+    {
+      "id": "screen/cvd-deutan-combo",
+      "path": "screen/cvd-deutan-combo",
+      "name": "CVD Deutan Combo",
+      "description": "Angled streaks vary in size with the deutan colour-difference magnitude.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "screen/cvd-deutan-combo/README.md"
+      ],
+      "tags": [
+        "texture"
+      ],
+      "role": "effect",
+      "kind": "screen",
+      "preset": "cvd-deutan-combo",
+      "uses": [
+        "effects.screen"
+      ],
+      "dependencies": [],
+      "families": [],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "screen/cvd-deutan-combo/README.md",
+        "screen/cvd-deutan-combo/effect.toml",
+        "screen/cvd-deutan-combo/shader.glsl"
+      ],
+      "preview": {
+        "image": "screen/cvd-deutan-combo/preview.png",
+        "animation": null
+      },
+      "readme": "screen/cvd-deutan-combo/README.md",
+      "config_example": "screen/cvd-deutan-combo/config.toml",
+      "activation": {
+        "include": [
+          "screen/cvd-deutan-combo/effect.toml"
+        ],
+        "settings": {
+          "effects.screen": "cvd-deutan-combo"
+        }
+      }
+    },
+    {
+      "id": "screen/cvd-deutan-drift",
+      "path": "screen/cvd-deutan-drift",
+      "name": "CVD Deutan Drift",
+      "description": "Persistent grain drifts in a direction selected by deutan colour differences.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "screen/cvd-deutan-drift/README.md"
+      ],
+      "tags": [
+        "texture"
+      ],
+      "role": "effect",
+      "kind": "screen",
+      "preset": "cvd-deutan-drift",
+      "uses": [
+        "effects.screen"
+      ],
+      "dependencies": [],
+      "families": [],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "screen/cvd-deutan-drift/README.md",
+        "screen/cvd-deutan-drift/effect.toml",
+        "screen/cvd-deutan-drift/shader.glsl"
+      ],
+      "preview": {
+        "image": "screen/cvd-deutan-drift/preview.png",
+        "animation": null
+      },
+      "readme": "screen/cvd-deutan-drift/README.md",
+      "config_example": "screen/cvd-deutan-drift/config.toml",
+      "activation": {
+        "include": [
+          "screen/cvd-deutan-drift/effect.toml"
+        ],
+        "settings": {
+          "effects.screen": "cvd-deutan-drift"
+        }
+      }
+    },
+    {
+      "id": "screen/cvd-deutan-oriented",
+      "path": "screen/cvd-deutan-oriented",
+      "name": "CVD Deutan Oriented",
+      "description": "Angled animated streaks encode deutan colour differences.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "screen/cvd-deutan-oriented/README.md"
+      ],
+      "tags": [
+        "texture"
+      ],
+      "role": "effect",
+      "kind": "screen",
+      "preset": "cvd-deutan-oriented",
+      "uses": [
+        "effects.screen"
+      ],
+      "dependencies": [],
+      "families": [],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "screen/cvd-deutan-oriented/README.md",
+        "screen/cvd-deutan-oriented/effect.toml",
+        "screen/cvd-deutan-oriented/shader.glsl"
+      ],
+      "preview": {
+        "image": "screen/cvd-deutan-oriented/preview.png",
+        "animation": null
+      },
+      "readme": "screen/cvd-deutan-oriented/README.md",
+      "config_example": "screen/cvd-deutan-oriented/config.toml",
+      "activation": {
+        "include": [
+          "screen/cvd-deutan-oriented/effect.toml"
+        ],
+        "settings": {
+          "effects.screen": "cvd-deutan-oriented"
+        }
+      }
+    },
+    {
+      "id": "screen/cvd-protan",
+      "path": "screen/cvd-protan",
+      "name": "CVD Protan",
+      "description": "Coarse and fine animated grain selected by a protan colour-difference heuristic.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "screen/cvd-protan/README.md"
+      ],
+      "tags": [
+        "texture"
+      ],
+      "role": "effect",
+      "kind": "screen",
+      "preset": "cvd-protan",
+      "uses": [
+        "effects.screen"
+      ],
+      "dependencies": [],
+      "families": [],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "screen/cvd-protan/README.md",
+        "screen/cvd-protan/effect.toml",
+        "screen/cvd-protan/shader.glsl"
+      ],
+      "preview": {
+        "image": "screen/cvd-protan/preview.png",
+        "animation": null
+      },
+      "readme": "screen/cvd-protan/README.md",
+      "config_example": "screen/cvd-protan/config.toml",
+      "activation": {
+        "include": [
+          "screen/cvd-protan/effect.toml"
+        ],
+        "settings": {
+          "effects.screen": "cvd-protan"
+        }
+      }
+    },
+    {
+      "id": "screen/cvd-tritan",
+      "path": "screen/cvd-tritan",
+      "name": "CVD Tritan",
+      "description": "Coarse and fine animated grain selected by a tritan colour-difference heuristic.",
+      "author": "Barrulus",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "screen/cvd-tritan/README.md"
+      ],
+      "tags": [
+        "texture"
+      ],
+      "role": "effect",
+      "kind": "screen",
+      "preset": "cvd-tritan",
+      "uses": [
+        "effects.screen"
+      ],
+      "dependencies": [],
+      "families": [],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [],
+      "install_files": [
+        "LICENSES/Barrulus-MIT.txt",
+        "screen/cvd-tritan/README.md",
+        "screen/cvd-tritan/effect.toml",
+        "screen/cvd-tritan/shader.glsl"
+      ],
+      "preview": {
+        "image": "screen/cvd-tritan/preview.png",
+        "animation": null
+      },
+      "readme": "screen/cvd-tritan/README.md",
+      "config_example": "screen/cvd-tritan/config.toml",
+      "activation": {
+        "include": [
+          "screen/cvd-tritan/effect.toml"
+        ],
+        "settings": {
+          "effects.screen": "cvd-tritan"
+        }
+      }
+    },
+    {
       "id": "screen/midnight-fog",
       "path": "screen/midnight-fog",
       "name": "Midnight Fog",
@@ -12481,6 +12831,146 @@
     "screen/arcane-undercity-atmosphere/shader.glsl": {
       "bytes": 1779,
       "sha256": "ef516a257ea58e8e16e5dad833c513ddb64352ec2324936a464796bf0404df1c"
+    },
+    "screen/cvd-deutan-alphabet/README.md": {
+      "bytes": 2674,
+      "sha256": "ea39d249b4c616db333991f157c686aa4ad5d2058699788a04b2d868818de773"
+    },
+    "screen/cvd-deutan-alphabet/config.toml": {
+      "bytes": 121,
+      "sha256": "11c6d364d5c684fcd4d2b39972db37d3d00791e549c9f7a6c582dce457b97248"
+    },
+    "screen/cvd-deutan-alphabet/effect.toml": {
+      "bytes": 78,
+      "sha256": "6d1f5fa0307e26bd57795ea66ee4b6cbdc3a88067fe40b94bbfadaafd3185173"
+    },
+    "screen/cvd-deutan-alphabet/preview.png": {
+      "bytes": 38409,
+      "sha256": "23a55cb97059756321302f64e674eccab186e26f6a833e0caafa0cd44aca0486"
+    },
+    "screen/cvd-deutan-alphabet/shader.glsl": {
+      "bytes": 1725,
+      "sha256": "5084d19ac589455cfd50d3cecd01768ef31660d3183d986f1e7521a300d74ba2"
+    },
+    "screen/cvd-deutan-combo/README.md": {
+      "bytes": 2649,
+      "sha256": "e8729eb0e821a19c3b31b93997e2ba4f14ea6811f580153adb811991f46f4e28"
+    },
+    "screen/cvd-deutan-combo/config.toml": {
+      "bytes": 115,
+      "sha256": "2e8fe40d2e56344a89a1b8faa8b6f2b26cd494a99ad5c1ee45be700b0b2ea8a1"
+    },
+    "screen/cvd-deutan-combo/effect.toml": {
+      "bytes": 75,
+      "sha256": "dc474cb6e7e301fa2138010bb866db26c9f19c024786e4d49b9373ff421ad4a0"
+    },
+    "screen/cvd-deutan-combo/preview.png": {
+      "bytes": 18976,
+      "sha256": "605cb8587daa2f9f74b4b1cdc0c891cd7e402999b34e943e3c98b30104346010"
+    },
+    "screen/cvd-deutan-combo/shader.glsl": {
+      "bytes": 1667,
+      "sha256": "64acef12b3936ea04c4aa8ed791e2e890e95029e4c4b6ef82cd81aad7d8147eb"
+    },
+    "screen/cvd-deutan-drift/README.md": {
+      "bytes": 2628,
+      "sha256": "a68d3ea1b8f4c9049ce38cc4572e39b94aae1197bf20530c7634ceb4c718d501"
+    },
+    "screen/cvd-deutan-drift/config.toml": {
+      "bytes": 115,
+      "sha256": "347e2dbdae216fae0e3e91b54959520b9c3825ba9d2df2cd2c88fcde9e498040"
+    },
+    "screen/cvd-deutan-drift/effect.toml": {
+      "bytes": 75,
+      "sha256": "20c9ff0e32725dfe9dd62ffef4c84f33bc4adf95af8cfb0446021fab0c2cc053"
+    },
+    "screen/cvd-deutan-drift/preview.png": {
+      "bytes": 17543,
+      "sha256": "bba7b20a0c5fe93a86deaaa4823fb944159b2a53507434bfa7c9236855b41066"
+    },
+    "screen/cvd-deutan-drift/shader.glsl": {
+      "bytes": 1458,
+      "sha256": "1e5f78d6de236df6b0d301dab09389985b375a271a04118f7c03585f91e78c2c"
+    },
+    "screen/cvd-deutan-oriented/README.md": {
+      "bytes": 2652,
+      "sha256": "d52b290845ede7187d8adbb5c519c7819c69f4e47d845113f1edd3c394718a15"
+    },
+    "screen/cvd-deutan-oriented/config.toml": {
+      "bytes": 121,
+      "sha256": "8ace5529de0d5e3d70be4d7c5f985408c1744c4ae89a638b5a7315d663868779"
+    },
+    "screen/cvd-deutan-oriented/effect.toml": {
+      "bytes": 78,
+      "sha256": "1a17f1e186f401b6844ca4cdbd9f973a517ae5525f13654341f22a77b06a9776"
+    },
+    "screen/cvd-deutan-oriented/preview.png": {
+      "bytes": 17024,
+      "sha256": "819e3f1a249596a048883da990b84d8bad0a0892c0dce1de27a08983ae5ebe23"
+    },
+    "screen/cvd-deutan-oriented/shader.glsl": {
+      "bytes": 1746,
+      "sha256": "f95b0dbb075f78ca52193ba9fd27f9ae2c35e48b99e98c0e4ee739a8e68d2456"
+    },
+    "screen/cvd-deutan/README.md": {
+      "bytes": 2621,
+      "sha256": "60180f4afebe20e9a1b5f654bab0b1482ccbeb20d1b41c329e9839e0a3d7a05e"
+    },
+    "screen/cvd-deutan/config.toml": {
+      "bytes": 103,
+      "sha256": "a663e9a58095ba63bc48cc36d4a386ecd34d4feec84552e4e50ab967b0628dae"
+    },
+    "screen/cvd-deutan/effect.toml": {
+      "bytes": 69,
+      "sha256": "60add9495cccab797bc6e0c2f0ce2e738482d1c0624b1b53dc5b9308a1a119fe"
+    },
+    "screen/cvd-deutan/preview.png": {
+      "bytes": 38294,
+      "sha256": "37c6ec24c5882c6d037b17d72de484f38ecabf8e027f30457b4cb9273b5fafa6"
+    },
+    "screen/cvd-deutan/shader.glsl": {
+      "bytes": 1690,
+      "sha256": "9578afc9862ea578ed5becce1bd84cbfbcfd6cef26e7b575961abe5ac4a07fd8"
+    },
+    "screen/cvd-protan/README.md": {
+      "bytes": 2621,
+      "sha256": "03d92e16c196d152249f4b9cbbb5b01ce89f8859ee1c6a1be7ca52bb5b81fadf"
+    },
+    "screen/cvd-protan/config.toml": {
+      "bytes": 103,
+      "sha256": "0f3103a0f2267bc12c47292be0eb698d245f6fee47a4ba48b8b3e3f5b351bc40"
+    },
+    "screen/cvd-protan/effect.toml": {
+      "bytes": 69,
+      "sha256": "420ea956ca78b430de704d9c53bc38c29919238b547c7250ba608f8ad4756757"
+    },
+    "screen/cvd-protan/preview.png": {
+      "bytes": 33547,
+      "sha256": "1d6af97eca674126eab25cebbc9425f8616dcfb8ac13956bcf259cbd14426960"
+    },
+    "screen/cvd-protan/shader.glsl": {
+      "bytes": 1714,
+      "sha256": "b60e2cc549ca9bf212bd8c536420c0c7e830ad731127c4744d008212c7dd2eab"
+    },
+    "screen/cvd-tritan/README.md": {
+      "bytes": 2621,
+      "sha256": "16cb4b0a5d1ec3d2829dc656164bea4bfd1db33d0ea6d1491e51e84a013aecdc"
+    },
+    "screen/cvd-tritan/config.toml": {
+      "bytes": 103,
+      "sha256": "81030b6c1dd39d916d6f36136ad4f6f239d2ca2c80b1bc45d89a49bceba14ac2"
+    },
+    "screen/cvd-tritan/effect.toml": {
+      "bytes": 69,
+      "sha256": "2dc86202c896d2a4c96460cd31da8bf32d943146e0a2dc8e8e563a255996500a"
+    },
+    "screen/cvd-tritan/preview.png": {
+      "bytes": 9971,
+      "sha256": "1b3e987bcd5ee3ab2026efb3156787546c9980a357d34d0204f07b696717ed8c"
+    },
+    "screen/cvd-tritan/shader.glsl": {
+      "bytes": 1726,
+      "sha256": "c45d5a3635d154b76664860f871ba14cbf49e6e7334513ae1dc0b768a50c7064"
     },
     "screen/midnight-fog/README.md": {
       "bytes": 1625,

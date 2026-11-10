@@ -567,3 +567,6 @@ The pre-existing `animation/example` shader is by Lemmy; its original contributi
 The [screen collection](screen/README.md#colour-blindness-texture-cues) includes
 protan, deutan and tritan shimmer presets plus four deutan pattern variants.
 These experimental presets encode colour differences as animated texture across the output.
+
+[Film Grain](screen/film-grain/) adds subtle animated grain across the output,
+retaining the older library preset originally intended as a visual-snow reading aid.

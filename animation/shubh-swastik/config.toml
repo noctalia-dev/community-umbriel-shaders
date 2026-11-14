@@ -1,0 +1,17 @@
+# Activation example: merge into your Umbriel config.toml.
+# Append the include path to your existing [include] files list, and merge the
+# [animation] tables into existing ones (repeating a TOML table is an error).
+# Paths are relative to config.toml; this assumes the folder is at
+# ~/.config/umbriel/shaders/community/animation/shubh-swastik/.
+[include]
+files = ["shaders/community/animation/shubh-swastik/effect.toml"]
+
+[animation]
+enabled = true
+
+[animation.workspaces]
+enabled = true
+style = "reveal"
+effect = "shubh-swastik"
+duration_ms = 1200
+curve = "linear"

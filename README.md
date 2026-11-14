@@ -2,7 +2,7 @@
 
 A collection of reusable GLSL effects for the [Umbriel Wayland compositor](https://github.com/noctalia-dev/umbriel), organised by kind.
 
-This collection includes community presets by Barrulus, Dual Orbit by neonvoidx, the four kzzzt presets by weegs710, bundled Umbriel examples, and the original minimal animation example. Browse the categories for descriptions, previews, and copyable settings:
+This collection includes Shubh Swastik by Zero (`zero_likes_nothing`), community presets by Barrulus, Dual Orbit by neonvoidx, the four kzzzt presets by weegs710, bundled Umbriel examples, and the original minimal animation example. Browse the categories for descriptions, previews, and copyable settings:
 
 | Kind | What it affects |
 | --- | --- |

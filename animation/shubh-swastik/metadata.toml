@@ -1,0 +1,15 @@
+publish = true
+name = "Shubh Swastik"
+description = "An upright Hindu swastika and sixteen diyas trace in amber light, then a wavering portal reveals the next workspace."
+author = "Zero (zero_likes_nothing)"
+license = "MIT"
+notice_files = ["LICENSES/Zero-MIT.txt", "animation/shubh-swastik/README.md"]
+uses = ["animation.workspaces"]
+tags = ["festival", "glow", "fire", "geometric"]
+tested_on = ["Umbriel 0.1.0 (33a782d)"]
+
+[requirements]
+features = ["workspace-reveal-full-scene"]
+
+[required_settings]
+"animation.workspaces.style" = "reveal"

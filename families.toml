@@ -34,8 +34,8 @@ tags = ["water", "nature"]
 [families.diwali]
 publish = true
 name = "Diwali"
-description = "Oil lamps, sparkling lights, festival trails, cloud-puff window transitions and a rangoli workspace reveal."
-members = ["border/diya-lights", "window/diya-glow-overlay", "cursor/festival-sparks", "window/firelit-clouds", "animation/rangoli-iris", "animation/cloud-puff"]
+description = "Oil lamps, sparkling lights, festival trails, cloud-puff window transitions, and Rangoli Iris or Shubh Swastik workspace reveals."
+members = ["border/diya-lights", "window/diya-glow-overlay", "cursor/festival-sparks", "window/firelit-clouds", "animation/rangoli-iris", "animation/shubh-swastik", "animation/cloud-puff"]
 tags = ["festival", "glow"]
 
 [families.diwali.defaults]

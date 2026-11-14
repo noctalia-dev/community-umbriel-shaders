@@ -1,0 +1,5 @@
+# Shubh Swastik workspace transition. Including this file only registers the
+# preset; select it in [animation.workspaces] (see config.toml).
+[effects.preset."shubh-swastik"]
+kind = "animation"
+shader = "shader.glsl"

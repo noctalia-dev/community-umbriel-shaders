@@ -3,7 +3,7 @@
   "draft": false,
   "source": {
     "repository": "https://github.com/noctalia-dev/community-umbriel-shaders",
-    "revision": "d7a81cedc568baddb432c3cd15ab320196f415a9"
+    "revision": "5f19b0677dd3fefe1c3daaead5958e54251b1c0b"
   },
   "feature_definitions": {
     "preset-effects": "Umbriel named effect presets and selectors; the original preset API was introduced at 512e2fb3.",
@@ -2243,6 +2243,71 @@
           "animation.windows_out.duration_ms": 800,
           "animation.windows_out.effect": "shattered-glass",
           "animation.windows_out.enabled": true
+        }
+      }
+    },
+    {
+      "id": "animation/shubh-swastik",
+      "path": "animation/shubh-swastik",
+      "name": "Shubh Swastik",
+      "description": "An upright Hindu swastika and sixteen diyas trace in amber light, then a wavering portal reveals the next workspace.",
+      "author": "Zero (zero_likes_nothing)",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Zero-MIT.txt",
+        "animation/shubh-swastik/README.md"
+      ],
+      "tags": [
+        "festival",
+        "glow",
+        "fire",
+        "geometric"
+      ],
+      "role": "effect",
+      "kind": "animation",
+      "preset": "shubh-swastik",
+      "uses": [
+        "animation.workspaces"
+      ],
+      "dependencies": [],
+      "families": [
+        "diwali"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects",
+          "workspace-reveal-full-scene"
+        ]
+      },
+      "required_settings": {
+        "animation.workspaces.style": "reveal"
+      },
+      "tested_on": [
+        "Umbriel 0.1.0 (33a782d)"
+      ],
+      "install_files": [
+        "LICENSES/Zero-MIT.txt",
+        "animation/shubh-swastik/README.md",
+        "animation/shubh-swastik/effect.toml",
+        "animation/shubh-swastik/shader.glsl"
+      ],
+      "preview": {
+        "image": "animation/shubh-swastik/preview.png",
+        "animation": "animation/shubh-swastik/preview.gif"
+      },
+      "readme": "animation/shubh-swastik/README.md",
+      "config_example": "animation/shubh-swastik/config.toml",
+      "activation": {
+        "include": [
+          "animation/shubh-swastik/effect.toml"
+        ],
+        "settings": {
+          "animation.enabled": true,
+          "animation.workspaces.curve": "linear",
+          "animation.workspaces.duration_ms": 1200,
+          "animation.workspaces.effect": "shubh-swastik",
+          "animation.workspaces.enabled": true,
+          "animation.workspaces.style": "reveal"
         }
       }
     },
@@ -9867,13 +9932,14 @@
     {
       "id": "diwali",
       "name": "Diwali",
-      "description": "Oil lamps, sparkling lights, festival trails, cloud-puff window transitions and a rangoli workspace reveal.",
+      "description": "Oil lamps, sparkling lights, festival trails, cloud-puff window transitions, and Rangoli Iris or Shubh Swastik workspace reveals.",
       "members": [
         "border/diya-lights",
         "window/diya-glow-overlay",
         "cursor/festival-sparks",
         "window/firelit-clouds",
         "animation/rangoli-iris",
+        "animation/shubh-swastik",
         "animation/cloud-puff"
       ],
       "tags": [
@@ -9881,7 +9947,8 @@
         "glow"
       ],
       "authors": [
-        "Barrulus"
+        "Barrulus",
+        "Zero (zero_likes_nothing)"
       ],
       "preview": {
         "image": null,
@@ -10295,6 +10362,10 @@
     "LICENSES/Noctalia-MIT.txt": {
       "bytes": 1065,
       "sha256": "7edc1a7c9516614978b05f9c35379129996f2f92136f309defc6a863e70635e2"
+    },
+    "LICENSES/Zero-MIT.txt": {
+      "bytes": 1082,
+      "sha256": "9f271b7d798df8d2161234fdb6ce8783527947a8d7a463acc2a02c9344febdc3"
     },
     "LICENSES/neonvoidx-MIT.txt": {
       "bytes": 1066,
@@ -11103,6 +11174,30 @@
     "animation/shattered-glass/shader.glsl": {
       "bytes": 24093,
       "sha256": "5011522e270b541d8ffeacb16fdee592dc7d122bb49dbc6e402b0e9f55dd4e4f"
+    },
+    "animation/shubh-swastik/README.md": {
+      "bytes": 4177,
+      "sha256": "db7b8b6b5e309bb89daf1a0ff3c82b4a67354ec50adf19192a9a1b06d706f442"
+    },
+    "animation/shubh-swastik/config.toml": {
+      "bytes": 568,
+      "sha256": "b1252b861bf49c04143c50771eb5dfc1ebe93e9c7e9b8ce599d5ee65672df3f6"
+    },
+    "animation/shubh-swastik/effect.toml": {
+      "bytes": 217,
+      "sha256": "6a1c939ad83442d6509e6792642de83668637dde389f377d8136b9b78256be8e"
+    },
+    "animation/shubh-swastik/preview.gif": {
+      "bytes": 3322498,
+      "sha256": "fbafbe98ec8f79d9e80d87a7f7a9e021d9f51901d3348392580426ec1b12d0ab"
+    },
+    "animation/shubh-swastik/preview.png": {
+      "bytes": 282920,
+      "sha256": "c52b8e63baf64b81560483ab6b8cca3f8e6ba5c0f0f91ddeb90875d37c81949d"
+    },
+    "animation/shubh-swastik/shader.glsl": {
+      "bytes": 9732,
+      "sha256": "fa3717dd19f4d46304821066583d94e8a93a3ee1b1e2a75a076bc596d3e3551f"
     },
     "animation/spooky-move/README.md": {
       "bytes": 3362,

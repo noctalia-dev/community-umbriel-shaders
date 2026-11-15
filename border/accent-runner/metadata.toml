@@ -1,0 +1,8 @@
+publish = false
+name = "Accent Runner"
+description = "A soft, clockwise-moving accent travels around the focused window border."
+author = "CyberKid"
+license = "MIT"
+notice_files = ["LICENSES/Noctalia-MIT.txt", "border/accent-runner/README.md"]
+uses = ["effects.border"]
+tags = ["minimal", "glow", "runner"]

@@ -1,0 +1,12 @@
+[effects.preset."accent-runner"]
+kind = "border"
+shader = "shader.glsl"
+palette = true
+padding = 24
+speed = 2.0
+animated = true
+
+[effects.preset."accent-runner".light]
+spread = 48
+intensity = 2.0
+threshold = 0.4

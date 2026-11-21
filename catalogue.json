@@ -3,7 +3,7 @@
   "draft": false,
   "source": {
     "repository": "https://github.com/noctalia-dev/community-umbriel-shaders",
-    "revision": "e0c6a67d019297e9670920216408b37f37f734f0"
+    "revision": "8244fa66d82b96a4c9268d3f22081e9ea7a5f5e9"
   },
   "feature_definitions": {
     "preset-effects": "Umbriel named effect presets and selectors; the original preset API was introduced at 512e2fb3.",
@@ -5221,6 +5221,64 @@
       }
     },
     {
+      "id": "border/singularity-ring",
+      "path": "border/singularity-ring",
+      "name": "Singularity Ring",
+      "description": "A singularity's corona boils along the focused window's edge, its disc's rim and plasma just inside; swells with audio when a feed is present.",
+      "author": "weegs710",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/weegs710-MIT.txt",
+        "border/singularity-ring/README.md"
+      ],
+      "tags": [
+        "space",
+        "glow",
+        "audio-reactive"
+      ],
+      "role": "effect",
+      "kind": "border",
+      "preset": "singularity-ring",
+      "uses": [
+        "effects.border"
+      ],
+      "dependencies": [
+        "window/singularity-inner"
+      ],
+      "families": [
+        "singularity"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [
+        "0.1.0 (13332d4)"
+      ],
+      "install_files": [
+        "LICENSES/weegs710-MIT.txt",
+        "border/singularity-ring/README.md",
+        "border/singularity-ring/effect.toml",
+        "border/singularity-ring/shader.glsl"
+      ],
+      "preview": {
+        "image": "border/singularity-ring/preview.png",
+        "animation": null
+      },
+      "readme": "border/singularity-ring/README.md",
+      "config_example": "border/singularity-ring/config.toml",
+      "activation": {
+        "include": [
+          "border/singularity-ring/effect.toml"
+        ],
+        "settings": {
+          "effects.border": "singularity-ring"
+        }
+      }
+    },
+    {
       "id": "border/somethings-watching",
       "path": "border/somethings-watching",
       "name": "Something’s Watching — Pumpkin Parade",
@@ -6507,6 +6565,63 @@
         ],
         "settings": {
           "effects.cursor": "cursor.shockwave"
+        }
+      }
+    },
+    {
+      "id": "cursor/singularity-cursor",
+      "path": "cursor/singularity-cursor",
+      "name": "Singularity Cursor",
+      "description": "A miniature singularity orbits off the click point, chases the pointer with inertia when it moves and eases back into orbit; swells with audio when a feed is present.",
+      "author": "weegs710",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/weegs710-MIT.txt",
+        "cursor/singularity-cursor/README.md"
+      ],
+      "tags": [
+        "space",
+        "glow",
+        "audio-reactive"
+      ],
+      "role": "effect",
+      "kind": "cursor",
+      "preset": "singularity-cursor",
+      "uses": [
+        "effects.cursor"
+      ],
+      "dependencies": [],
+      "families": [
+        "singularity"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects",
+          "cursor-pointer-history"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [
+        "0.1.0 (13332d4)"
+      ],
+      "install_files": [
+        "LICENSES/weegs710-MIT.txt",
+        "cursor/singularity-cursor/README.md",
+        "cursor/singularity-cursor/effect.toml",
+        "cursor/singularity-cursor/shader.glsl"
+      ],
+      "preview": {
+        "image": "cursor/singularity-cursor/preview.png",
+        "animation": null
+      },
+      "readme": "cursor/singularity-cursor/README.md",
+      "config_example": "cursor/singularity-cursor/config.toml",
+      "activation": {
+        "include": [
+          "cursor/singularity-cursor/effect.toml"
+        ],
+        "settings": {
+          "effects.cursor": "singularity-cursor"
         }
       }
     },
@@ -9632,6 +9747,62 @@
       }
     },
     {
+      "id": "window/singularity-inner",
+      "path": "window/singularity-inner",
+      "name": "Singularity Inner",
+      "description": "The inner-window half of the singularity-ring border: the disc's rim gradient and boiling plasma along the window edge.",
+      "author": "weegs710",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/weegs710-MIT.txt",
+        "window/singularity-inner/README.md"
+      ],
+      "tags": [
+        "space",
+        "glow",
+        "audio-reactive"
+      ],
+      "role": "companion",
+      "kind": "window",
+      "preset": "singularity-inner",
+      "uses": [
+        "effects.window"
+      ],
+      "dependencies": [],
+      "families": [
+        "singularity"
+      ],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [
+        "0.1.0 (13332d4)"
+      ],
+      "install_files": [
+        "LICENSES/weegs710-MIT.txt",
+        "window/singularity-inner/README.md",
+        "window/singularity-inner/effect.toml",
+        "window/singularity-inner/shader.glsl"
+      ],
+      "preview": {
+        "image": "window/singularity-inner/preview.png",
+        "animation": null
+      },
+      "readme": "window/singularity-inner/README.md",
+      "config_example": "window/singularity-inner/config.toml",
+      "activation": {
+        "include": [
+          "window/singularity-inner/effect.toml"
+        ],
+        "settings": {
+          "effects.window": "singularity-inner"
+        }
+      }
+    },
+    {
       "id": "window/snowfall",
       "path": "window/snowfall",
       "name": "Snowfall",
@@ -10297,6 +10468,38 @@
           "effects.border": "psychedelic.fractal-flow",
           "effects.cursor": "psychedelic.fractal-trail",
           "effects.window": "psychedelic.fractal-veil"
+        }
+      }
+    },
+    {
+      "id": "singularity",
+      "name": "Singularity",
+      "description": "A singularity's corona around the focused window with its disc's plasma just inside, and a miniature of it orbiting the pointer.",
+      "members": [
+        "border/singularity-ring",
+        "window/singularity-inner",
+        "cursor/singularity-cursor"
+      ],
+      "tags": [
+        "space"
+      ],
+      "authors": [
+        "weegs710"
+      ],
+      "preview": {
+        "image": null,
+        "animation": null
+      },
+      "readme": null,
+      "config_example": null,
+      "activation": {
+        "include": [
+          "border/singularity-ring/effect.toml",
+          "cursor/singularity-cursor/effect.toml"
+        ],
+        "settings": {
+          "effects.border": "singularity-ring",
+          "effects.cursor": "singularity-cursor"
         }
       }
     },
@@ -12370,6 +12573,26 @@
       "bytes": 4090,
       "sha256": "8edcb242f8688576f69344395a33421f78ad81bc7193892f257353d9c555f15f"
     },
+    "border/singularity-ring/README.md": {
+      "bytes": 5086,
+      "sha256": "c2507a87890ce3755eee9dd493062ededcc6e30c88176b537272ea221b7d74e9"
+    },
+    "border/singularity-ring/config.toml": {
+      "bytes": 193,
+      "sha256": "9b75f033a75828383a39da715962ede20e67b26a1c9cc8c081406170c825508c"
+    },
+    "border/singularity-ring/effect.toml": {
+      "bytes": 449,
+      "sha256": "276d2d8a02776e784a8ed977b87e8ab9c64ad3883b8bb5a7047d87ab33eef212"
+    },
+    "border/singularity-ring/preview.png": {
+      "bytes": 50483,
+      "sha256": "db005e0413d16c6fe1b3fe0f3a5df9d0fa5f6de757b87e5d511e788ef02787d5"
+    },
+    "border/singularity-ring/shader.glsl": {
+      "bytes": 205775,
+      "sha256": "2cac3bbd0005d3402e1ec48005360fcdbaa44d129e71bc52bf01623b0d8378a6"
+    },
     "border/somethings-watching/README.md": {
       "bytes": 3256,
       "sha256": "ceb6cada4e2b3246dd45599c65b59fc7ec2d9e8f1460db57a1b0c0be415dc713"
@@ -12881,6 +13104,26 @@
     "cursor/shockwave/shader.glsl": {
       "bytes": 1396,
       "sha256": "ea6ab80fdb90d27f9a7cc58ec5d03bf1d8f724fefa4543e1db2b3e75886ea28a"
+    },
+    "cursor/singularity-cursor/README.md": {
+      "bytes": 3127,
+      "sha256": "5b3fcd3a9af7dcd8d3cd3973d87d8c887d395f13f1b6d2311da7aa1ad07c9690"
+    },
+    "cursor/singularity-cursor/config.toml": {
+      "bytes": 197,
+      "sha256": "4c350251f4b2b79fdb83040b9b76c80b6ee19b9b63cacaeb7a23ecf5a0063c50"
+    },
+    "cursor/singularity-cursor/effect.toml": {
+      "bytes": 376,
+      "sha256": "ab953665bc0bfe62373b107223443a2b2f32a269e14238393b648d85d2ea68ab"
+    },
+    "cursor/singularity-cursor/preview.png": {
+      "bytes": 7353,
+      "sha256": "faa923226be96704ff8397463b8275df31019a9ed1b79394d8f1d7dd0f0c6121"
+    },
+    "cursor/singularity-cursor/shader.glsl": {
+      "bytes": 227429,
+      "sha256": "1fce9997a145a8751769c4c9eabbdc19d1082c3683beb5168f1468b919a7dd33"
     },
     "cursor/solar-system/README.md": {
       "bytes": 4400,
@@ -14129,6 +14372,26 @@
     "window/sentient-circuit/shader.glsl": {
       "bytes": 5658,
       "sha256": "5d193b93f8b5ca2f904c8bf801ac259938a9e9577adef3b18d64eef4a2785b16"
+    },
+    "window/singularity-inner/README.md": {
+      "bytes": 2194,
+      "sha256": "85d3aa039de0054129df78935fd7d151d9a0f9eb04dc0df7ccf8e9dac0ff334f"
+    },
+    "window/singularity-inner/config.toml": {
+      "bytes": 195,
+      "sha256": "6e63f45ee238fdd999e3149a45a94e93c6384ea4ec224b60c6fe32bf9bd2bbd6"
+    },
+    "window/singularity-inner/effect.toml": {
+      "bytes": 195,
+      "sha256": "6e0cd645c3f2b2aaa86646f8fed80cd4e86c059c969149bfb1a9acf7dca78ca4"
+    },
+    "window/singularity-inner/preview.png": {
+      "bytes": 22789,
+      "sha256": "b76212eee126d6d15bb962f383a510f89b65dafb025a466a0c9176a4ed551667"
+    },
+    "window/singularity-inner/shader.glsl": {
+      "bytes": 20007,
+      "sha256": "ec064189b6bca61f1a98af847a7b8c3030e597b68bedb703c2e27869c186c07b"
     },
     "window/snowfall/README.md": {
       "bytes": 4085,

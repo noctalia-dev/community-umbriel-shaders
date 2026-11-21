@@ -1,4 +1,4 @@
-publish = false
+publish = true
 name = "Singularity Inner"
 description = "The inner-window half of the singularity-ring border: the disc's rim gradient and boiling plasma along the window edge."
 author = "weegs710"

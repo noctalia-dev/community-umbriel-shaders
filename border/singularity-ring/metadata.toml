@@ -1,4 +1,4 @@
-publish = false
+publish = true
 name = "Singularity Ring"
 description = "A singularity's corona boils along the focused window's edge, its disc's rim and plasma just inside; swells with audio when a feed is present."
 author = "weegs710"

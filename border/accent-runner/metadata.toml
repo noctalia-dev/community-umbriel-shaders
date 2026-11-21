@@ -1,4 +1,4 @@
-publish = false
+publish = true
 name = "Accent Runner"
 description = "A soft, clockwise-moving accent travels around the focused window border."
 author = "CyberKid"

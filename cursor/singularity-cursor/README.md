@@ -47,7 +47,9 @@ Raising `RING_R` or `ORBIT_R` needs a matching `radius` in `effect.toml`.
 
 ## Compatibility and cost
 
-Requires Umbriel's preset effects API ([`512e2fb3`](https://github.com/noctalia-dev/umbriel/commit/512e2fb3)) and the pointer path (`umbriel_pointer_path`). Tested on Umbriel 0.1.0 (`13332d4`) with Mesa on a Radeon 680M. Measured in a headless session at 60 Hz on a Radeon 680M: about 1.5 points of GPU time at rest and about 8 while the pointer sweeps fast circles. HDR, rotated outputs and fractional scaling are not tested.
+Requires Umbriel's preset effects API ([`512e2fb3`](https://github.com/noctalia-dev/umbriel/commit/512e2fb3)) and the pointer path (`umbriel_pointer_path`). The original version was tested on Umbriel 0.1.0 (`13332d4`) with Mesa on a Radeon 680M.
+
+The chase now replays up to 64 path samples per pixel before rejecting pixels outside the ring. This prevents fast out-and-back movements from clipping or hiding the ring, but can increase GPU cost while the pointer moves over a large area. The previous measurements (about 1.5 points of GPU time at rest and 8 during fast circles at 60 Hz on a Radeon 680M) predate this correction; its GPU cost and appearance still need checking in a compositor. HDR, rotated outputs and fractional scaling are not tested.
 
 ## Attribution
 

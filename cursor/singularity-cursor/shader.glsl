@@ -51,10 +51,6 @@ const float CHASE_W = 7.75;
 const float CHASE_DELAY = 0.1;
 // umbriel spaces path samples about 32 ms apart, so a longer gap is a rest: the pointer sat still and only moved in the last RAMP seconds of it.
 const float RAMP = 0.12;
-// The cheap pass that finds which pixels are near enough to need the full one: every this many samples, over only the last COARSE_AGE seconds since older ones carry under 1% of the weight, and how far it can land from the full pass in px.
-const float COARSE = 4.0;
-const float COARSE_AGE = 1.0;
-const float COARSE_PX = 40.0;
 // De-tiling the corona: how far off the shared 2 s clock each quarter may start (share of the loop), seconds per turn of the corona, and the swell round the ring (depth, cell count, drift rate).
 const float JITTER = 1.0;
 const float ROT_PERIOD = 60.0;
@@ -2011,15 +2007,13 @@ vec2 se_seg(vec2 lc, float la, vec2 qc, float qa, bool rest) {
     return qc;
 }
 
-// Where the singularity's centre is in px: its place on the orbit round the pointer as the chase sees it plus the miss, replayed from rest on the orbit round the newest sample older than `from` seconds, every stride-th sample and both ends of every rest.
-vec2 se_body(float stride, float from) {
+// Where the singularity's centre is in px: its place on the orbit round the pointer as the chase sees it plus the miss, replayed from rest through every available path sample.
+vec2 se_body() {
     float th = TAU * umbriel_time / ORBIT_PERIOD;
     vec2 orb = ORBIT_R * vec2(cos(th), sin(th));
     if (umbriel_pointer_count < 1) return umbriel_pointer * umbriel_size + orb;
     vec2 lc = umbriel_pointer_path[0].xy * umbriel_size;
     float la = umbriel_pointer_path[0].z;
-    vec2 pc = lc;
-    float pa = la;
     vec2 ce = lc;
     bool done = la <= CHASE_DELAY;
     g_s = vec4(0.0);
@@ -2028,36 +2022,10 @@ vec2 se_body(float stride, float from) {
         if (done || k >= umbriel_pointer_count) break;
         vec4 q = umbriel_pointer_path[k];
         vec2 qc = q.xy * umbriel_size;
-        if (q.z > from) {
-            lc = qc;
-            la = q.z;
-            pc = qc;
-            pa = q.z;
-            ce = qc;
-            done = la <= CHASE_DELAY;
-            continue;
-        }
-        if (pa - q.z > RAMP) {
-            if (pa < la) {
-                ce = se_seg(lc, la, pc, pa, false);
-                lc = pc;
-                la = pa;
-                done = pa <= CHASE_DELAY;
-            }
-            if (!done) {
-                ce = se_seg(lc, la, qc, q.z, true);
-                lc = qc;
-                la = q.z;
-                done = q.z <= CHASE_DELAY;
-            }
-        } else if (mod(float(k), stride) < 0.5 || k == umbriel_pointer_count - 1 || q.z <= CHASE_DELAY) {
-            ce = se_seg(lc, la, qc, q.z, false);
-            lc = qc;
-            la = q.z;
-            done = q.z <= CHASE_DELAY;
-        }
-        pc = qc;
-        pa = q.z;
+        ce = se_seg(lc, la, qc, q.z, la - q.z > RAMP);
+        lc = qc;
+        la = q.z;
+        done = q.z <= CHASE_DELAY;
     }
     if (!done) ce = se_seg(lc, la, lc, 0.0, true);
     return ce + orb + g_s.xy;
@@ -2066,12 +2034,12 @@ vec2 se_body(float stride, float from) {
 vec4 cursor(vec2 uv) {
     vec4 src = umbriel_sample(uv);
     vec2 here = uv * umbriel_size;
-    if (length(here - se_body(COARSE, COARSE_AGE)) > RING_R + REACH + COARSE_PX) return src;
-    vec2 p = here - se_body(1.0, 1.0e6);
+    // Cull only against the exact centre: skipped samples can hide arbitrarily large excursions.
+    vec2 p = here - se_body();
     float rho = length(p);
+    if (rho > RING_R + REACH) return src;
     // A see-through black disc under the plasma: on a bright background the added light would clip to white, so the disc takes some light away first and the interior keeps its detail.
     src.rgb *= 1.0 - DISC_DARK * (1.0 - smoothstep(RING_R - DISC_FEATHER, RING_R, rho));
-    if (rho > RING_R + REACH) return src;
     float r = (rho - RING_R) * FIT_R / RING_R;
     vec3 base = se_base();
     // Theta samples clockwise from pointing right, the fitted corona's own unwrap.

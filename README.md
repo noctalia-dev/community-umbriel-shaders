@@ -554,7 +554,7 @@ Barrulus’s contributed presets are [MIT licensed](LICENSES/Barrulus-MIT.txt). 
 
 Dual Orbit is [MIT licensed by neonvoidx](LICENSES/neonvoidx-MIT.txt).
 
-The four kzzzt presets are [MIT licensed by weegs710](LICENSES/weegs710-MIT.txt).
+The four kzzzt presets and the three singularity presets are [MIT licensed by weegs710](LICENSES/weegs710-MIT.txt).
 
 Sky Manipulation is [MIT licensed by AngieAlter](LICENSES/AngieAlter-MIT.txt).
 

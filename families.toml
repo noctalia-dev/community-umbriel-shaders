@@ -166,3 +166,14 @@ tags = ["geometric", "glow"]
 "animation.overview" = "animation/arcane-blueprint-unfold"
 "animation.border" = "animation/arcane-charge-transfer"
 "animation.dim_unfocused" = "animation/arcane-ink-recede"
+
+[families.singularity]
+publish = false
+name = "Singularity"
+description = "A singularity's corona around the focused window with its disc's plasma just inside, and a miniature of it orbiting the pointer."
+members = ["border/singularity-ring", "window/singularity-inner", "cursor/singularity-cursor"]
+tags = ["space"]
+
+[families.singularity.defaults]
+"effects.border" = "border/singularity-ring"
+"effects.cursor" = "cursor/singularity-cursor"

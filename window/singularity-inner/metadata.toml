@@ -1,0 +1,10 @@
+publish = false
+name = "Singularity Inner"
+description = "The inner-window half of the singularity-ring border: the disc's rim gradient and boiling plasma along the window edge."
+author = "weegs710"
+license = "MIT"
+notice_files = ["LICENSES/weegs710-MIT.txt", "window/singularity-inner/README.md"]
+uses = ["effects.window"]
+tags = ["space", "glow", "audio-reactive"]
+role = "companion"
+tested_on = ["0.1.0 (13332d4)"]

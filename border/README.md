@@ -28,6 +28,7 @@
 | <img src="sentient-spark/preview.png" width="160" alt="sentient-spark preview"> | [sentient-spark](sentient-spark/) | Independent emerald and white micro-discharges around the whole perimeter. |
 | <img src="heartbeat/preview.png" width="160" alt="Heartbeat preview"> | [Heartbeat](heartbeat/) | Viscous red border with heartbeat. |
 | <img src="somethings-watching/preview.png" width="160" alt="Something’s Watching preview"> | [somethings-watching](somethings-watching/) | Twisting vines, growing jack-o’-lanterns, blinking cat eyes and three marching skeletons, spanning the frame and inward overlay. |
+| <img src="singularity-ring/preview.png" width="160" alt="Singularity Ring preview"> | [Singularity Ring](singularity-ring/) | A singularity's corona boils along the focused window's edge, its disc's rim and plasma just inside; swells with audio when a feed is present. |
 
 ## Arcane-inspired family
 

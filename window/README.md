@@ -49,6 +49,7 @@
 | <img src="haunted-glass/preview.png" width="160" alt="Haunted Glass preview"> | [haunted-glass](haunted-glass/) | Three hooked talons dent and rake the glass, leaving grooves and branching fractures that heal. |
 | <img src="somethings-watching-overlay/preview.png" width="160" alt="Inward fire and eyes"> | [somethings-watching-overlay](somethings-watching-overlay/) | Inward vines, growing pumpkins, cat eyes and skeletons, selected by the After Dark border. |
 | <img src="music-smoke/preview.png" width="160" alt="Music Smoke preview"> | [music-smoke](music-smoke/) | Audio-reactive rising smoke; silence restores the sampled window. |
+| <img src="singularity-inner/preview.png" width="160" alt="Singularity Inner preview"> | [Singularity Inner](singularity-inner/) | The inner-window half of the singularity-ring border: the disc's rim gradient and boiling plasma along the window edge. |
 
 ## Arcane-inspired family
 

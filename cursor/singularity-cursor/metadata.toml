@@ -1,0 +1,12 @@
+publish = false
+name = "Singularity Cursor"
+description = "A miniature singularity orbits off the click point, chases the pointer with inertia when it moves and eases back into orbit; swells with audio when a feed is present."
+author = "weegs710"
+license = "MIT"
+notice_files = ["LICENSES/weegs710-MIT.txt", "cursor/singularity-cursor/README.md"]
+uses = ["effects.cursor"]
+tags = ["space", "glow", "audio-reactive"]
+tested_on = ["0.1.0 (13332d4)"]
+
+[requirements]
+features = ["cursor-pointer-history"]

@@ -1,0 +1,9 @@
+publish = false
+name = "Singularity Ring"
+description = "A singularity's corona boils along the focused window's edge, its disc's rim and plasma just inside; swells with audio when a feed is present."
+author = "weegs710"
+license = "MIT"
+notice_files = ["LICENSES/weegs710-MIT.txt", "border/singularity-ring/README.md"]
+uses = ["effects.border"]
+tags = ["space", "glow", "audio-reactive"]
+tested_on = ["0.1.0 (13332d4)"]

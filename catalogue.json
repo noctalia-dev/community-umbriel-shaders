@@ -3,7 +3,7 @@
   "draft": false,
   "source": {
     "repository": "https://github.com/noctalia-dev/community-umbriel-shaders",
-    "revision": "dc8a655331fd2e94aa0f9e586f605640b0ba2b50"
+    "revision": "e0c6a67d019297e9670920216408b37f37f734f0"
   },
   "feature_definitions": {
     "preset-effects": "Umbriel named effect presets and selectors; the original preset API was introduced at 512e2fb3.",
@@ -4010,6 +4010,57 @@
         ],
         "settings": {
           "effects.border": "accent-pulse"
+        }
+      }
+    },
+    {
+      "id": "border/accent-runner",
+      "path": "border/accent-runner",
+      "name": "Accent Runner",
+      "description": "A soft, clockwise-moving accent travels around the focused window border.",
+      "author": "CyberKid",
+      "license": "MIT",
+      "notice_files": [
+        "LICENSES/Noctalia-MIT.txt",
+        "border/accent-runner/README.md"
+      ],
+      "tags": [
+        "minimal",
+        "glow"
+      ],
+      "role": "effect",
+      "kind": "border",
+      "preset": "accent-runner",
+      "uses": [
+        "effects.border"
+      ],
+      "dependencies": [],
+      "families": [],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [],
+      "install_files": [
+        "LICENSES/Noctalia-MIT.txt",
+        "border/accent-runner/README.md",
+        "border/accent-runner/effect.toml",
+        "border/accent-runner/shader.glsl"
+      ],
+      "preview": {
+        "image": "border/accent-runner/preview.png",
+        "animation": null
+      },
+      "readme": "border/accent-runner/README.md",
+      "config_example": "border/accent-runner/config.toml",
+      "activation": {
+        "include": [
+          "border/accent-runner/effect.toml"
+        ],
+        "settings": {
+          "effects.border": "accent-runner"
         }
       }
     },
@@ -11846,6 +11897,26 @@
     "border/accent-pulse/shader.glsl": {
       "bytes": 507,
       "sha256": "48e4c2e96e9c51d795ae78fcba88080e855cb6f9960149bd263800b01d0055fe"
+    },
+    "border/accent-runner/README.md": {
+      "bytes": 2696,
+      "sha256": "8d0425fbb431410e7277d92e1f6d02711589cc9c01b93524161c621432ebcb99"
+    },
+    "border/accent-runner/config.toml": {
+      "bytes": 187,
+      "sha256": "a9adf52ea492692deaf6fdc825428f929ef1331530f919eb9a5b20e78fa32248"
+    },
+    "border/accent-runner/effect.toml": {
+      "bytes": 212,
+      "sha256": "399e8f370e1af8c9f28065ef9fb347c8969f5fbbfa3170757753f973d42b1ce6"
+    },
+    "border/accent-runner/preview.png": {
+      "bytes": 13661,
+      "sha256": "02760ee031c1ff10027d940f6da39d46253f020849321221142a85539bdd98ba"
+    },
+    "border/accent-runner/shader.glsl": {
+      "bytes": 563,
+      "sha256": "557e536390a99a6c56f84a322e85505ce57b49ceaac67d3b7ff5bf50e53ef585"
     },
     "border/arcane-hextech-filament/README.md": {
       "bytes": 1498,

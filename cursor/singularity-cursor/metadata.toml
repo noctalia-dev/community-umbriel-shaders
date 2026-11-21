@@ -1,4 +1,4 @@
-publish = false
+publish = true
 name = "Singularity Cursor"
 description = "A miniature singularity orbits off the click point, chases the pointer with inertia when it moves and eases back into orbit; swells with audio when a feed is present."
 author = "weegs710"

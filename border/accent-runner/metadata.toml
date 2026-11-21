@@ -5,4 +5,4 @@ author = "CyberKid"
 license = "MIT"
 notice_files = ["LICENSES/Noctalia-MIT.txt", "border/accent-runner/README.md"]
 uses = ["effects.border"]
-tags = ["minimal", "glow", "runner"]
+tags = ["minimal", "glow"]

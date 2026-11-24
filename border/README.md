@@ -4,6 +4,7 @@
 
 | Preview | Effect | Description |
 | --- | --- | --- |
+| <img src="oscilloscope/preview.png" width="160" alt="Oscilloscope preview"> | [Oscilloscope](oscilloscope/) | 64-band audio standing wave by cows on Discord, with a strong bottom trace and a gentler top trace. |
 | <img src="spectrum/preview.png" width="160" alt="Spectrum preview"> | [Spectrum](spectrum/) | Thin audio-driven colour ring with angular frequency detail; dims in silence and restores the native ring when disconnected. |
 | <img src="fractal-flow/preview.png" width="160" alt="Fractal Flow preview"> | [Fractal Flow](fractal-flow/) | A rolling fractal front unfolds, splits and merges around the focused window and its inward overlay. |
 | <img src="diya-lights/preview.png" width="160" alt="Diya Lights preview"> | [Diya Lights](diya-lights/) | Small oil lamps straddling the border, with multicoloured sparkling lights and a matching inward overlay. |

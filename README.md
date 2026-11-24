@@ -2,7 +2,7 @@
 
 A collection of reusable GLSL effects for the [Umbriel Wayland compositor](https://github.com/noctalia-dev/umbriel), organised by kind.
 
-This collection includes Shubh Swastik by Zero (`zero_likes_nothing`), community presets by Barrulus, Dual Orbit by neonvoidx, the four kzzzt presets by weegs710, bundled Umbriel examples, and the original minimal animation example. Browse the categories for descriptions, previews, and copyable settings:
+This collection includes Shubh Swastik by Zero (`zero_likes_nothing`), community presets by Barrulus, Dual Orbit by neonvoidx, the four kzzzt presets by weegs710, [Oscilloscope](border/oscilloscope/) by cows on Discord, bundled Umbriel examples, and the original minimal animation example. Browse the categories for descriptions, previews, and copyable settings:
 
 | Kind | What it affects |
 | --- | --- |
@@ -561,6 +561,10 @@ Sky Manipulation is [MIT licensed by AngieAlter](LICENSES/AngieAlter-MIT.txt).
 `animation/tv-glitch` is ported from Simon Schneegans’s [Burn-My-Windows](https://github.com/Schneegans/Burn-My-Windows) and is [GPL-3.0-or-later](LICENSES/BurnMyWindows-GPL-3.0-or-later.txt), like its source.
 
 The pre-existing `animation/example` shader is by Lemmy; its original contribution did not declare a license, and this contribution does not relicense it.
+
+[Oscilloscope](border/oscilloscope/) is by cows on Discord (GitHub: acous).
+Its source gist declares no licence; it remains unpublished in the catalogue
+pending an explicit licence and review.
 
 ### Colour-blindness texture cues
 

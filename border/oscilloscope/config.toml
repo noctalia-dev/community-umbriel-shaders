@@ -1,0 +1,6 @@
+# Merge into existing tables in ~/.config/umbriel/config.toml.
+[include]
+files = ["shaders/community/border/oscilloscope/effect.toml"]
+
+[effects]
+border = "oscilloscope"

@@ -3,7 +3,7 @@
   "draft": false,
   "source": {
     "repository": "https://github.com/noctalia-dev/community-umbriel-shaders",
-    "revision": "8f63e5a0c907f59131ad5fca25a8d886e13bc898"
+    "revision": "3ae677854bb4fa309fd3bd9260a4a92a12a58920"
   },
   "feature_definitions": {
     "preset-effects": "Umbriel named effect presets and selectors; the original preset API was introduced at 512e2fb3.",
@@ -4857,6 +4857,55 @@
         ],
         "settings": {
           "effects.border": "neon-bleed"
+        }
+      }
+    },
+    {
+      "id": "border/oscilloscope",
+      "path": "border/oscilloscope",
+      "name": "Oscilloscope",
+      "description": "A 64-band audio standing wave along the bottom border, with a gentler top trace.",
+      "author": "cows (Discord)",
+      "license": "LicenseRef-Unspecified",
+      "notice_files": [
+        "border/oscilloscope/README.md"
+      ],
+      "tags": [
+        "glow",
+        "audio-reactive"
+      ],
+      "role": "effect",
+      "kind": "border",
+      "preset": "oscilloscope",
+      "uses": [
+        "effects.border"
+      ],
+      "dependencies": [],
+      "families": [],
+      "requirements": {
+        "features": [
+          "preset-effects"
+        ]
+      },
+      "required_settings": {},
+      "tested_on": [],
+      "install_files": [
+        "border/oscilloscope/README.md",
+        "border/oscilloscope/effect.toml",
+        "border/oscilloscope/shader.glsl"
+      ],
+      "preview": {
+        "image": "border/oscilloscope/preview.png",
+        "animation": null
+      },
+      "readme": "border/oscilloscope/README.md",
+      "config_example": "border/oscilloscope/config.toml",
+      "activation": {
+        "include": [
+          "border/oscilloscope/effect.toml"
+        ],
+        "settings": {
+          "effects.border": "oscilloscope"
         }
       }
     },
@@ -12432,6 +12481,26 @@
     "border/neon-bleed/shader.glsl": {
       "bytes": 9376,
       "sha256": "b15d49317e6df45ca728cc51d38b9e8fe3666e66c53d68bb8ef31ec49640ae25"
+    },
+    "border/oscilloscope/README.md": {
+      "bytes": 5756,
+      "sha256": "e34c9fa07774f08047381c3e20610bca23cba6dfa390e1677b46b324d3dad9b9"
+    },
+    "border/oscilloscope/config.toml": {
+      "bytes": 170,
+      "sha256": "81fa01ec18ae0f607cab285d210ed2ac35f0489b7a888efa2e57badf8f4d0e7c"
+    },
+    "border/oscilloscope/effect.toml": {
+      "bytes": 125,
+      "sha256": "8d63e5424cabca371177e86e8d56592b66e7a3d64c8d0219674abd1cc00a9cb0"
+    },
+    "border/oscilloscope/preview.png": {
+      "bytes": 28349,
+      "sha256": "b18d47b5128b6eb24d0c7e047218278289b628fdbac8806c296a18993f4c06cc"
+    },
+    "border/oscilloscope/shader.glsl": {
+      "bytes": 7981,
+      "sha256": "8a28b8333291877e5744b53fc2e343c21a37c6b0424c9239964a121b9fe532f2"
     },
     "border/paper/README.md": {
       "bytes": 6257,

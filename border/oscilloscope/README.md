@@ -99,6 +99,6 @@ Community adaptation packages the preset and optimises synthesis while retaining
 the original appearance and response.
 
 The source gist does not declare a licence. This contribution does not assign
-one on the author's behalf. Metadata records `LicenseRef-Unspecified` and
-`publish = false`; catalogue publication awaits an explicit licence and review.
+one on the author's behalf. Metadata records `LicenseRef-Unspecified`. Catalogue
+inclusion does not assign a licence or change the source author’s rights.
 This shader is not covered by the repository's other contributors' MIT notices.

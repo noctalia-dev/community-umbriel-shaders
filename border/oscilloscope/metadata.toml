@@ -1,4 +1,4 @@
-publish = false
+publish = true
 name = "Oscilloscope"
 description = "A 64-band audio standing wave along the bottom border, with a gentler top trace."
 author = "cows (Discord)"

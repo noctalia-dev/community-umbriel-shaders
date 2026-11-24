@@ -563,8 +563,8 @@ Sky Manipulation is [MIT licensed by AngieAlter](LICENSES/AngieAlter-MIT.txt).
 The pre-existing `animation/example` shader is by Lemmy; its original contribution did not declare a license, and this contribution does not relicense it.
 
 [Oscilloscope](border/oscilloscope/) is by cows on Discord (GitHub: acous).
-Its source gist declares no licence; it remains unpublished in the catalogue
-pending an explicit licence and review.
+Its source gist declares no licence; catalogue inclusion does not assign one
+on the author’s behalf.
 
 ### Colour-blindness texture cues
 

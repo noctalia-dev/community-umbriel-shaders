@@ -1,0 +1,8 @@
+publish = false
+name = "Oscilloscope"
+description = "A 64-band audio standing wave along the bottom border, with a gentler top trace."
+author = "cows (Discord)"
+license = "LicenseRef-Unspecified"
+notice_files = ["border/oscilloscope/README.md"]
+uses = ["effects.border"]
+tags = ["glow", "audio-reactive"]

@@ -1,0 +1,7 @@
+[effects.preset.oscilloscope]
+kind = "border"
+shader = "shader.glsl"
+palette = true
+padding = 64
+animated = true
+speed = 1.0
